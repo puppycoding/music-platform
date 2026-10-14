@@ -1,0 +1,662 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_title": "Music Catalog — YouTube Only",
+  "language": "th",
+  "created_at": "2026-10-12",
+  "purpose": "Catalog of songs with direct YouTube video links for an embedded YouTube player on the website. A video URL does not guarantee embedding/playback availability.",
+  "data_quality": {
+    "youtube_only_export": true,
+    "songs_total": 20,
+    "youtube_direct_links_found": 118,
+    "songs_without_verified_youtube_link": 0,
+    "complete": true,
+    "note": "Duplicate song titles within the same artist were removed, keeping the first occurrence. Song IDs are assigned sequentially per artist.",
+    "youtube_complete": true,
+    "allowed_artists_only": true,
+    "allowed_artist_names": [
+      "PURPEECH",
+      "Dr.Fuu",
+      "guncharlie",
+      "Three Man Down"
+    ],
+    "songs_removed_outside_allowed_artists": 0,
+    "songs_without_youtube_link": 0,
+    "image_url_update": {
+      "method": "YouTube thumbnail URLs derived from existing YouTube video IDs in the catalog",
+      "songs": "Thumbnail URL populated when a song has a YouTube video_id.",
+      "albums": "Uses first associated song thumbnail as a representative image when album artwork was missing; not verified official album artwork.",
+      "artists": "Uses first associated song thumbnail as a representative image when artist portrait was missing; not a verified artist portrait.",
+      "note": "YouTube thumbnail URLs may be unavailable for removed/private videos; review image URLs before production."
+    }
+  },
+  "artists": [
+    {
+      "id": "artist_guncharlie",
+      "name": "guncharlie",
+      "country": "TH",
+      "spotify_artist_id": "1qveov8f3HXFhDIWtFO5tG",
+      "spotify_url": "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG",
+      "image_url": "https://i.ytimg.com/vi/I7iu2twr9v4/hqdefault.jpg",
+      "image_status": "representative_track_thumbnail_not_verified_artist_photo"
+    }
+  ],
+  "albums": [
+    {
+      "id": "album_guncharlie_like_you_never_left",
+      "title": "Like You Never Left",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "release_year": 2025,
+      "album_type": "album",
+      "cover_url": "https://i.ytimg.com/vi/I7iu2twr9v4/hqdefault.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": null,
+          "url": "https://open.spotify.com/search/Like%20You%20Never%20Left%20guncharlie%20album",
+          "search_url": "https://open.spotify.com/search/Like%20You%20Never%20Left%20guncharlie%20album",
+          "link_type": "search"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Like+You+Never+Left+guncharlie+album",
+          "search_url": "https://www.youtube.com/results?search_query=Like+You+Never+Left+guncharlie+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [],
+      "metadata_status": "partial_verify_artwork_and_release_metadata",
+      "cover_status": "representative_track_thumbnail_not_verified_album_artwork"
+    },
+    {
+      "id": "album_guncharlie_singles",
+      "title": "Singles and other releases",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "release_year": null,
+      "album_type": "single_collection",
+      "cover_url": "https://i.ytimg.com/vi/YKYkRyB0CCA/hqdefault.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": "1qveov8f3HXFhDIWtFO5tG",
+          "url": "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Singles+and+other+releases+guncharlie+album",
+          "search_url": "https://www.youtube.com/results?search_query=Singles+and+other+releases+guncharlie+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "partial_verify_artwork_and_release_metadata",
+      "cover_status": "representative_track_thumbnail_not_verified_album_artwork"
+    }
+  ],
+  "songs": [
+    {
+      "id": "guncharlie_001",
+      "title": "เผื่อวันไหนเธอจะกลับมา",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/I7iu2twr9v4/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 239,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "I7iu2twr9v4",
+          "url": "https://www.youtube.com/watch?v=I7iu2twr9v4",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=I7iu2twr9v4",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_002",
+      "title": "ไม่มีที่ไปก็ต้องไป",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/wy1rq2TtBDk/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 223,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "wy1rq2TtBDk",
+          "url": "https://www.youtube.com/watch?v=wy1rq2TtBDk",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "official_music_video",
+          "channel": "Kicks Records"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=wy1rq2TtBDk",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_003",
+      "title": "สิ่งที่เธอทิ้งง่ายที่สุด",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/0_brxpPCviw/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "0_brxpPCviw",
+          "url": "https://www.youtube.com/watch?v=0_brxpPCviw",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=0_brxpPCviw",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_004",
+      "title": "คนที่คุณอาจรู้จัก",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/T0oVUw8fhzM/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "T0oVUw8fhzM",
+          "url": "https://www.youtube.com/watch?v=T0oVUw8fhzM",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=T0oVUw8fhzM",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_005",
+      "title": "กลับไปใช้ชีวิตแบบเดิม",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/WDJFl_ABAIU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 250,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "WDJFl_ABAIU",
+          "url": "https://www.youtube.com/watch?v=WDJFl_ABAIU",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "topic_audio",
+          "channel": "guncharlie - Topic"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/track/0e4DnxHb7xjCqEPYv91v6t"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=WDJFl_ABAIU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_006",
+      "title": "Lost Jigsaw",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/tnhBwIPRvXI/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "tnhBwIPRvXI",
+          "url": "https://www.youtube.com/watch?v=tnhBwIPRvXI",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "official_music_video",
+          "channel": "Kicks Records"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=tnhBwIPRvXI",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_007",
+      "title": "ตุ๊กตาหิมะ",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/uek-6ZjxQfc/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "uek-6ZjxQfc",
+          "url": "https://www.youtube.com/watch?v=uek-6ZjxQfc",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=uek-6ZjxQfc",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_008",
+      "title": "ถ้าคิดถึงเธอขึ้นมา",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/_XCichC13wY/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 244,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "_XCichC13wY",
+          "url": "https://www.youtube.com/watch?v=_XCichC13wY",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=_XCichC13wY",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_009",
+      "title": "เวลาไม่เยียวยา",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/8x2fqnqjt0A/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "8x2fqnqjt0A",
+          "url": "https://www.youtube.com/watch?v=8x2fqnqjt0A",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=8x2fqnqjt0A",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_010",
+      "title": "อย่าพาฉันไปไกลกว่านี้",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/daZKp3kygcU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "daZKp3kygcU",
+          "url": "https://www.youtube.com/watch?v=daZKp3kygcU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=daZKp3kygcU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_011",
+      "title": "ใต้เปลือกตา - See You Anytime",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/n7OoJFFcD80/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "n7OoJFFcD80",
+          "url": "https://www.youtube.com/watch?v=n7OoJFFcD80",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=n7OoJFFcD80",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_012",
+      "title": "จากกันโดยสมบูรณ์",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/Jdzs-qcURQE/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 206,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Jdzs-qcURQE",
+          "url": "https://www.youtube.com/watch?v=Jdzs-qcURQE",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "official_music_video",
+          "channel": "Kicks Records"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/track/6SAcZT7H44417uxybshTEy"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=Jdzs-qcURQE",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_013",
+      "title": "7 นาทีสุดท้าย",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/X0yMZnOgttM/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "X0yMZnOgttM",
+          "url": "https://www.youtube.com/watch?v=X0yMZnOgttM",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=X0yMZnOgttM",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_014",
+      "title": "ไม่ได้ลืมแค่ไม่ได้เจอ - Flashback",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/YKYkRyB0CCA/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 228,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "YKYkRyB0CCA",
+          "url": "https://www.youtube.com/watch?v=YKYkRyB0CCA",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=YKYkRyB0CCA",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_015",
+      "title": "จากกันโดยสมบูรณ์ - Live Session",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/fYd5L89r-Tc/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 240,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "fYd5L89r-Tc",
+          "url": "https://www.youtube.com/watch?v=fYd5L89r-Tc",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=fYd5L89r-Tc",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_016",
+      "title": "ไม่ได้ลืมแค่ไม่ได้เจอ - Live Session",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/6JbqGuX3yOo/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 229,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "6JbqGuX3yOo",
+          "url": "https://www.youtube.com/watch?v=6JbqGuX3yOo",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=6JbqGuX3yOo",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_017",
+      "title": "ส่วนหนึ่งของชีวิต",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/13dCeAZa70g/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 259,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "13dCeAZa70g",
+          "url": "https://www.youtube.com/watch?v=13dCeAZa70g",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=13dCeAZa70g",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_018",
+      "title": "ศูนย์คูณอะไรก็ได้ศูนย์",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/FF2JcCyYBKA/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 190,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "FF2JcCyYBKA",
+          "url": "https://www.youtube.com/watch?v=FF2JcCyYBKA",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "official_music_video",
+          "channel": "Kicks Records"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/track/4DE4fRvrmz9OirN65YLT1R"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=FF2JcCyYBKA",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_019",
+      "title": "ไม่มีที่ไปก็ต้องไป - Live Session",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/-tqSevdGsx0/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 223,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "-tqSevdGsx0",
+          "url": "https://www.youtube.com/watch?v=-tqSevdGsx0",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/track/08ZBKxaRe6bHo85oUXT5S9"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=-tqSevdGsx0",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "guncharlie_020",
+      "title": "ฉันคือความทรงจำดีๆของเธอรึเปล่า",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/Ex6MZVLyjvw/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Ex6MZVLyjvw",
+          "url": "https://www.youtube.com/watch?v=Ex6MZVLyjvw",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=Ex6MZVLyjvw",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    }
+  ]
+}

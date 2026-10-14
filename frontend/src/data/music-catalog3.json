@@ -1,0 +1,3387 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_title": "Music Catalog — YouTube Only",
+  "language": "th",
+  "created_at": "2026-10-12",
+  "purpose": "Catalog of songs with direct YouTube video links for an embedded YouTube player on the website. A video URL does not guarantee embedding/playback availability.",
+  "artists": [
+    {
+      "id": "artist_guncharlie",
+      "name": "guncharlie",
+      "country": "TH",
+      "spotify_artist_id": "1qveov8f3HXFhDIWtFO5tG",
+      "spotify_url": "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG",
+      "image_url": "https://i.ytimg.com/vi/I7iu2twr9v4/hqdefault.jpg",
+      "image_status": "representative_track_thumbnail_not_verified_artist_photo"
+    },
+    {
+      "id": "artist_drfuu",
+      "name": "Dr.Fuu",
+      "country": "TH",
+      "spotify_artist_id": null,
+      "spotify_url": null,
+      "image_url": "https://i.ytimg.com/vi/FLoWTjcZrs8/hqdefault.jpg",
+      "image_status": "representative_track_thumbnail_not_verified_artist_photo"
+    },
+    {
+      "id": "artist_purpeech",
+      "name": "PURPEECH",
+      "country": "TH",
+      "spotify_artist_id": null,
+      "spotify_url": null,
+      "image_url": "https://i.ytimg.com/vi/Hc4OrO4LRWw/hqdefault.jpg",
+      "image_status": "representative_track_thumbnail_not_verified_artist_photo"
+    },
+    {
+      "id": "artist_three_man_down",
+      "name": "Three Man Down",
+      "country": "TH",
+      "spotify_artist_id": "1qAOsY7jv9GFTv4HoVof5P",
+      "spotify_url": "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P",
+      "image_url": "https://i.ytimg.com/vi/-aG0B5NwOuw/hqdefault.jpg",
+      "image_status": "representative_track_thumbnail_not_verified_artist_photo"
+    }
+  ],
+  "albums": [
+    {
+      "id": "album_guncharlie_like_you_never_left",
+      "title": "Like You Never Left",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "release_year": 2025,
+      "album_type": "album",
+      "cover_url": "https://i.ytimg.com/vi/I7iu2twr9v4/hqdefault.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": null,
+          "url": "https://open.spotify.com/search/Like%20You%20Never%20Left%20guncharlie%20album",
+          "search_url": "https://open.spotify.com/search/Like%20You%20Never%20Left%20guncharlie%20album",
+          "link_type": "search"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Like+You+Never+Left+guncharlie+album",
+          "search_url": "https://www.youtube.com/results?search_query=Like+You+Never+Left+guncharlie+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [],
+      "metadata_status": "partial_verify_artwork_and_release_metadata",
+      "cover_status": "representative_track_thumbnail_not_verified_album_artwork"
+    },
+    {
+      "id": "album_guncharlie_singles",
+      "title": "Singles and other releases",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "release_year": null,
+      "album_type": "single_collection",
+      "cover_url": "https://i.ytimg.com/vi/YKYkRyB0CCA/hqdefault.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": "1qveov8f3HXFhDIWtFO5tG",
+          "url": "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Singles+and+other+releases+guncharlie+album",
+          "search_url": "https://www.youtube.com/results?search_query=Singles+and+other+releases+guncharlie+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "partial_verify_artwork_and_release_metadata",
+      "cover_status": "representative_track_thumbnail_not_verified_album_artwork"
+    },
+    {
+      "id": "album_drfuu_duangdao",
+      "title": "ดวงดาวแห่งรัก",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "release_year": null,
+      "album_type": "album",
+      "cover_url": "https://is4-ssl.mzstatic.com/image/thumb/Music2/v4/65/0c/d6/650cd643-dab2-ef03-7cb8-34435e2d9809/Ep_Mail_Single_-_Dr.Fuu_2400x2400.jpg/1200x1200bf-60.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": "7ifKK5iq8nQTslaTqd1Ywo",
+          "url": "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81+Dr.Fuu+album",
+          "search_url": "https://www.youtube.com/results?search_query=%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81+Dr.Fuu+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
+      ],
+      "metadata_status": "artwork_url_added_source_linked",
+      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984"
+    },
+    {
+      "id": "album_drfuu_other",
+      "title": "Other singles and popular songs",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "release_year": null,
+      "album_type": "single_collection",
+      "cover_url": "https://i.ytimg.com/vi/UHu3tb0lQKs/maxresdefault.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": "37i9dQZF1DZ06evO38mS34",
+          "url": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Other+singles+and+popular+songs+Dr.Fuu+album",
+          "search_url": "https://www.youtube.com/results?search_query=Other+singles+and+popular+songs+Dr.Fuu+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34",
+        "https://www.youtube.com/watch?v=UHu3tb0lQKs"
+      ],
+      "metadata_status": "artwork_url_added_source_linked",
+      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs"
+    },
+    {
+      "id": "album_purpeech_purfectpeech",
+      "title": "PurfectPeech",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "release_year": 2024,
+      "album_type": "album_and_singles_collection",
+      "cover_url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/a6/48/ba/a648ba9f-2567-c3a9-f0c2-86e661eae74c/cover.jpg/400x400bb.webp",
+      "providers": {
+        "spotify": {
+          "album_id": null,
+          "url": "https://open.spotify.com/search/PurfectPeech%20PURPEECH%20album",
+          "search_url": "https://open.spotify.com/search/PurfectPeech%20PURPEECH%20album",
+          "link_type": "search"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=PurfectPeech+PURPEECH+album",
+          "search_url": "https://www.youtube.com/results?search_query=PurfectPeech+PURPEECH+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://music.apple.com/us/album/purfectpeech/1725320200"
+      ],
+      "metadata_status": "artwork_url_added_source_linked",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200"
+    },
+    {
+      "id": "album_purpeech_live",
+      "title": "The Peechman Show Live",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "release_year": 2025,
+      "album_type": "live_album",
+      "cover_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3c/f5/ed/3cf5ede5-ba3d-77d0-0835-5762a3751de8/cover.jpg/3000x3000bb.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": null,
+          "url": "https://open.spotify.com/search/The%20Peechman%20Show%20Live%20PURPEECH%20album",
+          "search_url": "https://open.spotify.com/search/The%20Peechman%20Show%20Live%20PURPEECH%20album",
+          "link_type": "search"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=The+Peechman+Show+Live+PURPEECH+album",
+          "search_url": "https://www.youtube.com/results?search_query=The+Peechman+Show+Live+PURPEECH+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [],
+      "metadata_status": "artwork_url_added_source_linked",
+      "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live"
+    },
+    {
+      "id": "album_tmd_city",
+      "title": "This City Won't Be Lonely Anymore",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2021,
+      "album_type": "album",
+      "cover_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/28/34/7c283465-65c8-e63c-3cb0-5122910f2abc/888332916769.jpg/1200x1200bb.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": "2CW683T46NKuomRUrqv00W",
+          "url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=This+City+Won%27t+Be+Lonely+Anymore+Three+Man+Down+album",
+          "search_url": "https://www.youtube.com/results?search_query=This+City+Won%27t+Be+Lonely+Anymore+Three+Man+Down+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W",
+        "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937"
+      ],
+      "metadata_status": "artwork_url_added_source_linked",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937"
+    },
+    {
+      "id": "album_tmd_28",
+      "title": "28",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2023,
+      "album_type": "album",
+      "cover_url": "https://mpics-cdn-acc.mgronline.com/pics/Images/566000007146702.JPEG",
+      "providers": {
+        "spotify": {
+          "album_id": "43Z6Hv2xoIKNUR7ELaDx8Y",
+          "url": "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=28+Three+Man+Down+album",
+          "search_url": "https://www.youtube.com/results?search_query=28+Three+Man+Down+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y",
+        "https://mgronline.com/entertainment/detail/9660000070378"
+      ],
+      "metadata_status": "artwork_url_added_source_linked",
+      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378"
+    },
+    {
+      "id": "album_tmd_iii",
+      "title": "III",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2025,
+      "album_type": "album",
+      "cover_url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/17/23/f8/1723f883-4443-0706-274f-7457922d5d53/cover.jpg/1200x1200bb.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": "59hXVrRW78L0BTtrZ1pn9M",
+          "url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=III+Three+Man+Down+album",
+          "search_url": "https://www.youtube.com/results?search_query=III+Three+Man+Down+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M",
+        "https://music.apple.com/us/album/iii/1814806436"
+      ],
+      "metadata_status": "artwork_url_added_source_linked",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436"
+    },
+    {
+      "id": "album_tmd_other_singles",
+      "title": "Other singles and soundtrack releases",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": null,
+      "album_type": "single_collection",
+      "cover_url": "https://i.ytimg.com/vi/XTWJFGF-Ev4/hqdefault.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": "1qAOsY7jv9GFTv4HoVof5P",
+          "url": "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Other+singles+and+soundtrack+releases+Three+Man+Down+album",
+          "search_url": "https://www.youtube.com/results?search_query=Other+singles+and+soundtrack+releases+Three+Man+Down+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P"
+      ],
+      "metadata_status": "partial_verify_artwork_and_release_metadata",
+      "cover_status": "representative_track_thumbnail_not_verified_album_artwork"
+    }
+  ],
+  "songs": [
+    {
+      "id": "song_0001",
+      "title": "เผื่อวันไหนเธอจะกลับมา",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/I7iu2twr9v4/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 239,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "I7iu2twr9v4",
+          "url": "https://www.youtube.com/watch?v=I7iu2twr9v4",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=I7iu2twr9v4",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0002",
+      "title": "ไม่มีที่ไปก็ต้องไป",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/wy1rq2TtBDk/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 223,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "wy1rq2TtBDk",
+          "url": "https://www.youtube.com/watch?v=wy1rq2TtBDk",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "official_music_video",
+          "channel": "Kicks Records"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=wy1rq2TtBDk",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0003",
+      "title": "สิ่งที่เธอทิ้งง่ายที่สุด",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/0_brxpPCviw/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "0_brxpPCviw",
+          "url": "https://www.youtube.com/watch?v=0_brxpPCviw",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=0_brxpPCviw",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0004",
+      "title": "คนที่คุณอาจรู้จัก",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/T0oVUw8fhzM/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "T0oVUw8fhzM",
+          "url": "https://www.youtube.com/watch?v=T0oVUw8fhzM",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=T0oVUw8fhzM",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0005",
+      "title": "กลับไปใช้ชีวิตแบบเดิม",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/WDJFl_ABAIU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 250,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "WDJFl_ABAIU",
+          "url": "https://www.youtube.com/watch?v=WDJFl_ABAIU",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "topic_audio",
+          "channel": "guncharlie - Topic"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/track/0e4DnxHb7xjCqEPYv91v6t"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=WDJFl_ABAIU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0006",
+      "title": "Lost Jigsaw",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/tnhBwIPRvXI/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "tnhBwIPRvXI",
+          "url": "https://www.youtube.com/watch?v=tnhBwIPRvXI",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "official_music_video",
+          "channel": "Kicks Records"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=tnhBwIPRvXI",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0007",
+      "title": "ตุ๊กตาหิมะ",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/uek-6ZjxQfc/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "uek-6ZjxQfc",
+          "url": "https://www.youtube.com/watch?v=uek-6ZjxQfc",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=uek-6ZjxQfc",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0008",
+      "title": "ถ้าคิดถึงเธอขึ้นมา",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/_XCichC13wY/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 244,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "_XCichC13wY",
+          "url": "https://www.youtube.com/watch?v=_XCichC13wY",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=_XCichC13wY",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0009",
+      "title": "เวลาไม่เยียวยา",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/8x2fqnqjt0A/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "8x2fqnqjt0A",
+          "url": "https://www.youtube.com/watch?v=8x2fqnqjt0A",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=8x2fqnqjt0A",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0010",
+      "title": "อย่าพาฉันไปไกลกว่านี้",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/daZKp3kygcU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "daZKp3kygcU",
+          "url": "https://www.youtube.com/watch?v=daZKp3kygcU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=daZKp3kygcU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0011",
+      "title": "ใต้เปลือกตา - See You Anytime",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/n7OoJFFcD80/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "n7OoJFFcD80",
+          "url": "https://www.youtube.com/watch?v=n7OoJFFcD80",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=n7OoJFFcD80",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0012",
+      "title": "จากกันโดยสมบูรณ์",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/Jdzs-qcURQE/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 206,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Jdzs-qcURQE",
+          "url": "https://www.youtube.com/watch?v=Jdzs-qcURQE",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "official_music_video",
+          "channel": "Kicks Records"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/track/6SAcZT7H44417uxybshTEy"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=Jdzs-qcURQE",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0013",
+      "title": "7 นาทีสุดท้าย",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_like_you_never_left",
+      "cover_url": "https://i.ytimg.com/vi/X0yMZnOgttM/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "X0yMZnOgttM",
+          "url": "https://www.youtube.com/watch?v=X0yMZnOgttM",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=X0yMZnOgttM",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0014",
+      "title": "ไม่ได้ลืมแค่ไม่ได้เจอ - Flashback",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/YKYkRyB0CCA/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 228,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "YKYkRyB0CCA",
+          "url": "https://www.youtube.com/watch?v=YKYkRyB0CCA",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=YKYkRyB0CCA",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0015",
+      "title": "จากกันโดยสมบูรณ์ - Live Session",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/fYd5L89r-Tc/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 240,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "fYd5L89r-Tc",
+          "url": "https://www.youtube.com/watch?v=fYd5L89r-Tc",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=fYd5L89r-Tc",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0016",
+      "title": "ไม่ได้ลืมแค่ไม่ได้เจอ - Live Session",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/6JbqGuX3yOo/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 229,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "6JbqGuX3yOo",
+          "url": "https://www.youtube.com/watch?v=6JbqGuX3yOo",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=6JbqGuX3yOo",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0017",
+      "title": "ส่วนหนึ่งของชีวิต",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/13dCeAZa70g/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 259,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "13dCeAZa70g",
+          "url": "https://www.youtube.com/watch?v=13dCeAZa70g",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=13dCeAZa70g",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0018",
+      "title": "ศูนย์คูณอะไรก็ได้ศูนย์",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/FF2JcCyYBKA/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 190,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "FF2JcCyYBKA",
+          "url": "https://www.youtube.com/watch?v=FF2JcCyYBKA",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "official_music_video",
+          "channel": "Kicks Records"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/track/4DE4fRvrmz9OirN65YLT1R"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=FF2JcCyYBKA",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0019",
+      "title": "ไม่มีที่ไปก็ต้องไป - Live Session",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/-tqSevdGsx0/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 223,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "-tqSevdGsx0",
+          "url": "https://www.youtube.com/watch?v=-tqSevdGsx0",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/track/08ZBKxaRe6bHo85oUXT5S9"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=-tqSevdGsx0",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0020",
+      "title": "ฉันคือความทรงจำดีๆของเธอรึเปล่า",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "album_id": "album_guncharlie_singles",
+      "cover_url": "https://i.ytimg.com/vi/Ex6MZVLyjvw/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Ex6MZVLyjvw",
+          "url": "https://www.youtube.com/watch?v=Ex6MZVLyjvw",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=Ex6MZVLyjvw",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0021",
+      "title": "ปลาทอง",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/FLoWTjcZrs8/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 249,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "FLoWTjcZrs8",
+          "url": "https://www.youtube.com/watch?v=FLoWTjcZrs8",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
+      "listen_url": "https://www.youtube.com/watch?v=FLoWTjcZrs8",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0022",
+      "title": "โรคกลัวฝน",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/LsEfAla0J0I/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 259,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "LsEfAla0J0I",
+          "url": "https://www.youtube.com/watch?v=LsEfAla0J0I",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "official_music_video",
+          "channel": "RSMUSIC-X"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
+      "listen_url": "https://www.youtube.com/watch?v=LsEfAla0J0I",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0023",
+      "title": "ดวงดาวแห่งรัก",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/jpmYW8swW58/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 319,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "jpmYW8swW58",
+          "url": "https://www.youtube.com/watch?v=jpmYW8swW58",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "verification_note": "Dr.Fuu - ดวงดาวแห่งรัก"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
+      "listen_url": "https://www.youtube.com/watch?v=jpmYW8swW58",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0024",
+      "title": "เจ็บแลกรัก",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/gawU9-yiD8I/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 263,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "gawU9-yiD8I",
+          "url": "https://www.youtube.com/watch?v=gawU9-yiD8I",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
+      "listen_url": "https://www.youtube.com/watch?v=gawU9-yiD8I",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0025",
+      "title": "พักใจชั่วคราว",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/CtRa7W1Q480/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 303,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "CtRa7W1Q480",
+          "url": "https://www.youtube.com/watch?v=CtRa7W1Q480",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
+      "listen_url": "https://www.youtube.com/watch?v=CtRa7W1Q480",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0026",
+      "title": "พูดแล้วอยากจะร้องไห้",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/1ZmnS8qSP7E/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 269,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "1ZmnS8qSP7E",
+          "url": "https://www.youtube.com/watch?v=1ZmnS8qSP7E",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "verification_note": "Dr.Fuu - พูดแล้วอยากจะร้องไห้"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
+      "listen_url": "https://www.youtube.com/watch?v=1ZmnS8qSP7E",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0027",
+      "title": "คำทำนาย",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/7QgNAE1IqXU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 283,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "7QgNAE1IqXU",
+          "url": "https://www.youtube.com/watch?v=7QgNAE1IqXU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
+      "listen_url": "https://www.youtube.com/watch?v=7QgNAE1IqXU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0028",
+      "title": "เจตนาไม่ดี",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/5zTYLWnST14/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 275,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "5zTYLWnST14",
+          "url": "https://www.youtube.com/watch?v=5zTYLWnST14",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
+      "listen_url": "https://www.youtube.com/watch?v=5zTYLWnST14",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0029",
+      "title": "รักหรือไม่รัก",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/zN2pUIgVHaQ/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 223,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "zN2pUIgVHaQ",
+          "url": "https://www.youtube.com/watch?v=zN2pUIgVHaQ",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
+      "listen_url": "https://www.youtube.com/watch?v=zN2pUIgVHaQ",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0030",
+      "title": "ที่สุดในสามโลก",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/9eTSTATUI9w/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 238,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "9eTSTATUI9w",
+          "url": "https://www.youtube.com/watch?v=9eTSTATUI9w",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
+      "listen_url": "https://www.youtube.com/watch?v=9eTSTATUI9w",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0031",
+      "title": "ใจเหลือเหลือ",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_other",
+      "cover_url": "https://i.ytimg.com/vi/UHu3tb0lQKs/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "UHu3tb0lQKs",
+          "url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "verification_note": "Dr.Fuu - ใจเหลือเหลือ"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
+      "listen_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0032",
+      "title": "ลบ",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_other",
+      "cover_url": "https://i.ytimg.com/vi/5HhEOfhVSB8/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "5HhEOfhVSB8",
+          "url": "https://www.youtube.com/watch?v=5HhEOfhVSB8",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
+      "listen_url": "https://www.youtube.com/watch?v=5HhEOfhVSB8",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0033",
+      "title": "เมื่อไหร่จะรัก",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_other",
+      "cover_url": "https://i.ytimg.com/vi/7OGTEKszT4A/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "7OGTEKszT4A",
+          "url": "https://www.youtube.com/watch?v=7OGTEKszT4A",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
+      "listen_url": "https://www.youtube.com/watch?v=7OGTEKszT4A",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0034",
+      "title": "คู่ชีวิต",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_other",
+      "cover_url": "https://i.ytimg.com/vi/YOAdahFqxnc/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "YOAdahFqxnc",
+          "url": "https://www.youtube.com/watch?v=YOAdahFqxnc",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
+      "listen_url": "https://www.youtube.com/watch?v=YOAdahFqxnc",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0035",
+      "title": "เธอไม่เคยเป็นแฟนเก่า",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_other",
+      "cover_url": "https://i.ytimg.com/vi/euZX5k9pato/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "euZX5k9pato",
+          "url": "https://www.youtube.com/watch?v=euZX5k9pato",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
+      "listen_url": "https://www.youtube.com/watch?v=euZX5k9pato",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0036",
+      "title": "ไม่ใช่เทวดา",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_other",
+      "cover_url": "https://i.ytimg.com/vi/dad0pGJPxS0/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "dad0pGJPxS0",
+          "url": "https://www.youtube.com/watch?v=dad0pGJPxS0",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
+      "listen_url": "https://www.youtube.com/watch?v=dad0pGJPxS0",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0037",
+      "title": "รักแท้แพ้ไม่รัก",
+      "artist_ids": [
+        "artist_drfuu"
+      ],
+      "album_id": "album_drfuu_other",
+      "cover_url": "https://i.ytimg.com/vi/56_14equ0es/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "56_14equ0es",
+          "url": "https://www.youtube.com/watch?v=56_14equ0es",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
+      "listen_url": "https://www.youtube.com/watch?v=56_14equ0es",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0038",
+      "title": "กลัวว่าฉันจะไม่เสียใจ",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/Hc4OrO4LRWw/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Hc4OrO4LRWw",
+          "url": "https://www.youtube.com/watch?v=Hc4OrO4LRWw",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=Hc4OrO4LRWw",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0039",
+      "title": "หนึ่งคนตรงนี้ (I'm here)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/HSUY57U2kJ4/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "HSUY57U2kJ4",
+          "url": "https://www.youtube.com/watch?v=HSUY57U2kJ4",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=HSUY57U2kJ4",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0040",
+      "title": "สบายดี",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/fZMPI0nSP5k/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "fZMPI0nSP5k",
+          "url": "https://www.youtube.com/watch?v=fZMPI0nSP5k",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=fZMPI0nSP5k",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0041",
+      "title": "ภาพถ่ายวันวาน",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/p_ZH_oqoz7k/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "p_ZH_oqoz7k",
+          "url": "https://www.youtube.com/watch?v=p_ZH_oqoz7k",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=p_ZH_oqoz7k",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0042",
+      "title": "Radio 1.920 MHz (จดหมาย)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/Crj7ABIbBRw/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Crj7ABIbBRw",
+          "url": "https://www.youtube.com/watch?v=Crj7ABIbBRw",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=Crj7ABIbBRw",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0043",
+      "title": "สายรุ้งหลังฝนโปรย",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/Xyq7W28X_1Q/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Xyq7W28X_1Q",
+          "url": "https://www.youtube.com/watch?v=Xyq7W28X_1Q",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=Xyq7W28X_1Q",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0044",
+      "title": "Radio 1.920 MHz (สายจากทางบ้าน)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/YDUmdUP_e60/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "YDUmdUP_e60",
+          "url": "https://www.youtube.com/watch?v=YDUmdUP_e60",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=YDUmdUP_e60",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0045",
+      "title": "กลัวว่าฉันจะไม่เสียใจ (Live Session)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/GKNYcw9clAY/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "GKNYcw9clAY",
+          "url": "https://www.youtube.com/watch?v=GKNYcw9clAY",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "PURPEECH x LIPTA - กลัวว่าฉันจะไม่เสียใจ (Fear) [Live Session]",
+          "channel_title": "PURPEECH Official"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=GKNYcw9clAY",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0046",
+      "title": "ไม่ได้ลืมแค่ไม่ได้เจอ - Live Session",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/6JbqGuX3yOo/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "6JbqGuX3yOo",
+          "url": "https://www.youtube.com/watch?v=6JbqGuX3yOo",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=6JbqGuX3yOo",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0047",
+      "title": "ดีใจที่ได้พบเธอ (Peech.)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/mftAzF_9VbI/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "mftAzF_9VbI",
+          "url": "https://www.youtube.com/watch?v=mftAzF_9VbI",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=mftAzF_9VbI",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0048",
+      "title": "ขอบคุณครับ (Live Session)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/TwYx9fxn3vc/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "TwYx9fxn3vc",
+          "url": "https://www.youtube.com/watch?v=TwYx9fxn3vc",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "ขอบคุณครับ - Lipta feat. PURPEECH [Live Session]",
+          "channel_title": "LIPTAofficial"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=TwYx9fxn3vc",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0049",
+      "title": "ไม่มีวันไหนที่ไม่คิดถึง (starlost.)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/-IKugu3e0wE/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "-IKugu3e0wE",
+          "url": "https://www.youtube.com/watch?v=-IKugu3e0wE",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=-IKugu3e0wE",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0050",
+      "title": "ตกกะใจทำได้ลง (Oops.)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/o7UFzgu4oAw/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "o7UFzgu4oAw",
+          "url": "https://www.youtube.com/watch?v=o7UFzgu4oAw",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=o7UFzgu4oAw",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0051",
+      "title": "ทิ้งไว้อย่างพอใจ",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/T1EzV1pMSMQ/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "T1EzV1pMSMQ",
+          "url": "https://www.youtube.com/watch?v=T1EzV1pMSMQ",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=T1EzV1pMSMQ",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0052",
+      "title": "อาจเป็นเพราะฉันเอง (me.)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/y687Um7b54E/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "y687Um7b54E",
+          "url": "https://www.youtube.com/watch?v=y687Um7b54E",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=y687Um7b54E",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0053",
+      "title": "รักรออยู่ไม่ไกล",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/HBOz7XiKl-s/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "HBOz7XiKl-s",
+          "url": "https://www.youtube.com/watch?v=HBOz7XiKl-s",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=HBOz7XiKl-s",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0054",
+      "title": "หากจะเพียงขอ (Sincare)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_purfectpeech",
+      "cover_url": "https://i.ytimg.com/vi/Ht_6puWUJH4/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Ht_6puWUJH4",
+          "url": "https://www.youtube.com/watch?v=Ht_6puWUJH4",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
+      "listen_url": "https://www.youtube.com/watch?v=Ht_6puWUJH4",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0055",
+      "title": "กาลครั้งหนึ่งบนโลก (Parsec) (Live)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_live",
+      "cover_url": "https://i.ytimg.com/vi/v0v3drSaEhc/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "v0v3drSaEhc",
+          "url": "https://www.youtube.com/watch?v=v0v3drSaEhc",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live",
+      "listen_url": "https://www.youtube.com/watch?v=v0v3drSaEhc",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0056",
+      "title": "กลัวว่าฉันจะไม่เสียใจ (Live)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_live",
+      "cover_url": "https://i.ytimg.com/vi/GKNYcw9clAY/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "GKNYcw9clAY",
+          "url": "https://www.youtube.com/watch?v=GKNYcw9clAY",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "PURPEECH x LIPTA - กลัวว่าฉันจะไม่เสียใจ (Fear) [Live Session]",
+          "channel_title": "PURPEECH Official"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live",
+      "listen_url": "https://www.youtube.com/watch?v=GKNYcw9clAY",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0057",
+      "title": "ภาพถ่ายวันวาน (Live)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_live",
+      "cover_url": "https://i.ytimg.com/vi/5y6xqfFbg2s/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "5y6xqfFbg2s",
+          "url": "https://www.youtube.com/watch?v=5y6xqfFbg2s",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "PURPEECH x THE TOYS - ภาพถ่ายวันวาน at BLEND 285 Signature presents The Peech Man Show Concert",
+          "channel_title": "Whattheduck"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live",
+      "listen_url": "https://www.youtube.com/watch?v=5y6xqfFbg2s",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0058",
+      "title": "Interlude (Live)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_live",
+      "cover_url": "https://i.ytimg.com/vi/-gYtlr7O4NM/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "-gYtlr7O4NM",
+          "url": "https://www.youtube.com/watch?v=-gYtlr7O4NM",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "Interlude (Live)",
+          "channel_title": "PURPEECH - Topic"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live",
+      "listen_url": "https://www.youtube.com/watch?v=-gYtlr7O4NM",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0059",
+      "title": "สายรุ้งหลังฝนโปรย (Live)",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "album_id": "album_purpeech_live",
+      "cover_url": "https://i.ytimg.com/vi/An0zayK8fhQ/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "An0zayK8fhQ",
+          "url": "https://www.youtube.com/watch?v=An0zayK8fhQ",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live",
+      "listen_url": "https://www.youtube.com/watch?v=An0zayK8fhQ",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0060",
+      "title": "เดาไม่เก่ง",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/-aG0B5NwOuw/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 186,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "-aG0B5NwOuw",
+          "url": "https://www.youtube.com/watch?v=-aG0B5NwOuw",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=-aG0B5NwOuw",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0061",
+      "title": "ตอนไม่ได้เจอ",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/L0he1HJtPJI/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 201,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "L0he1HJtPJI",
+          "url": "https://www.youtube.com/watch?v=L0he1HJtPJI",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=L0he1HJtPJI",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0062",
+      "title": "เลือกคนที่เขารักเรา",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/HaiMF32P4qM/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 226,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "HaiMF32P4qM",
+          "url": "https://www.youtube.com/watch?v=HaiMF32P4qM",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "official_music_video",
+          "channel": "GeneLab"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=HaiMF32P4qM",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0063",
+      "title": "คุยคนเดียวเก่ง",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/0nYXaAx51-g/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 202,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "0nYXaAx51-g",
+          "url": "https://www.youtube.com/watch?v=0nYXaAx51-g",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=0nYXaAx51-g",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0064",
+      "title": "Friend Zone",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/ZKlIFPpYAXo/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 229,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "ZKlIFPpYAXo",
+          "url": "https://www.youtube.com/watch?v=ZKlIFPpYAXo",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=ZKlIFPpYAXo",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0065",
+      "title": "Time Zone",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/rETImOVDTo8/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 278,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "rETImOVDTo8",
+          "url": "https://www.youtube.com/watch?v=rETImOVDTo8",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=rETImOVDTo8",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0066",
+      "title": "ไปเถอะเธอ",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/wexEbXItRIs/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 236,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "wexEbXItRIs",
+          "url": "https://www.youtube.com/watch?v=wexEbXItRIs",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=wexEbXItRIs",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0067",
+      "title": "ฝันถึงแฟนเก่า",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/3O_Hxdtoyac/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 241,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "3O_Hxdtoyac",
+          "url": "https://www.youtube.com/watch?v=3O_Hxdtoyac",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=3O_Hxdtoyac",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0068",
+      "title": "รถฉันบินไม่ได้",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/rYmAUMfic30/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 217,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "rYmAUMfic30",
+          "url": "https://www.youtube.com/watch?v=rYmAUMfic30",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=rYmAUMfic30",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0069",
+      "title": "ทีมรอเธอ",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/xIKVRB78pS4/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 247,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "xIKVRB78pS4",
+          "url": "https://www.youtube.com/watch?v=xIKVRB78pS4",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=xIKVRB78pS4",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0070",
+      "title": "ฝนตกไหม",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/ENnGPkhVu2g/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 261,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "ENnGPkhVu2g",
+          "url": "https://www.youtube.com/watch?v=ENnGPkhVu2g",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=ENnGPkhVu2g",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0071",
+      "title": "ผ่านตา",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/7-kQeLoDxBU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 201,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "7-kQeLoDxBU",
+          "url": "https://www.youtube.com/watch?v=7-kQeLoDxBU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=7-kQeLoDxBU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0072",
+      "title": "หมดไอจี",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/OGgUy3MPE30/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 143,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "OGgUy3MPE30",
+          "url": "https://www.youtube.com/watch?v=OGgUy3MPE30",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=OGgUy3MPE30",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0073",
+      "title": "ข้างกัน (City) [feat. ออม TELEx TELEXs]",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/ks7p6DA0dKk/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 296,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "ks7p6DA0dKk",
+          "url": "https://www.youtube.com/watch?v=ks7p6DA0dKk",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "official_music_video",
+          "channel": "Three Man Down official video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=ks7p6DA0dKk",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0074",
+      "title": "ถ้าเธอรักฉันจริง",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/JBAuRoIRAs8/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 240,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "JBAuRoIRAs8",
+          "url": "https://www.youtube.com/watch?v=JBAuRoIRAs8",
+          "link_type": "video",
+          "verification": "title_artist_match",
+          "video_kind": "official_music_video",
+          "channel": "GeneLab"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=JBAuRoIRAs8",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0075",
+      "title": "ไม่เคยมีดาวในเมืองใหญ่",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_city",
+      "cover_url": "https://i.ytimg.com/vi/lJRXwgpddZ4/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 235,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "lJRXwgpddZ4",
+          "url": "https://www.youtube.com/watch?v=lJRXwgpddZ4",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937",
+      "listen_url": "https://www.youtube.com/watch?v=lJRXwgpddZ4",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0076",
+      "title": "28",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_28",
+      "cover_url": "https://i.ytimg.com/vi/mDOM-pe99VE/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 70,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "mDOM-pe99VE",
+          "url": "https://www.youtube.com/watch?v=mDOM-pe99VE",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378",
+      "listen_url": "https://www.youtube.com/watch?v=mDOM-pe99VE",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0077",
+      "title": "ปล่อยให้เวลา (Broken Clock)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_28",
+      "cover_url": "https://i.ytimg.com/vi/ywtN9eWJRmE/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 169,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "ywtN9eWJRmE",
+          "url": "https://www.youtube.com/watch?v=ywtN9eWJRmE",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "ปล่อยให้เวลา - Three Man Down |Official MV|",
+          "channel_title": "GeneLab"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378",
+      "listen_url": "https://www.youtube.com/watch?v=ywtN9eWJRmE",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0078",
+      "title": "เมา (Drunk in Love)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_28",
+      "cover_url": "https://i.ytimg.com/vi/hV9w2KQn26U/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 163,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "hV9w2KQn26U",
+          "url": "https://www.youtube.com/watch?v=hV9w2KQn26U",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378",
+      "listen_url": "https://www.youtube.com/watch?v=hV9w2KQn26U",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0079",
+      "title": "ไหนบอกเลิกแล้ว (In My Bed)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_28",
+      "cover_url": "https://i.ytimg.com/vi/E310t-eXfMU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 219,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "E310t-eXfMU",
+          "url": "https://www.youtube.com/watch?v=E310t-eXfMU",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "ไหนบอกเลิกแล้ว  - Three Man Down |Official MV|",
+          "channel_title": "GeneLab"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378",
+      "listen_url": "https://www.youtube.com/watch?v=E310t-eXfMU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0080",
+      "title": "ไม่อยากให้เธอไม่สบาย (You)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_28",
+      "cover_url": "https://i.ytimg.com/vi/bz4ZsBSvwFI/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 270,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "bz4ZsBSvwFI",
+          "url": "https://www.youtube.com/watch?v=bz4ZsBSvwFI",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378",
+      "listen_url": "https://www.youtube.com/watch?v=bz4ZsBSvwFI",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0081",
+      "title": "เด็กเกินไป (Too Young)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_28",
+      "cover_url": "https://i.ytimg.com/vi/SCaVrRWSGic/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 224,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "SCaVrRWSGic",
+          "url": "https://www.youtube.com/watch?v=SCaVrRWSGic",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "เด็กเกินไป - Three Man Down |Official MV|",
+          "channel_title": "GeneLab"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378",
+      "listen_url": "https://www.youtube.com/watch?v=SCaVrRWSGic",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0082",
+      "title": "เปิดตัวเขา (Rebound)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_28",
+      "cover_url": "https://i.ytimg.com/vi/XnxWDyyQj18/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 218,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "XnxWDyyQj18",
+          "url": "https://www.youtube.com/watch?v=XnxWDyyQj18",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378",
+      "listen_url": "https://www.youtube.com/watch?v=XnxWDyyQj18",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0083",
+      "title": "คนใหม่ (Someone New)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_28",
+      "cover_url": "https://i.ytimg.com/vi/ptIZhaT_KOo/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 214,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "ptIZhaT_KOo",
+          "url": "https://www.youtube.com/watch?v=ptIZhaT_KOo",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378",
+      "listen_url": "https://www.youtube.com/watch?v=ptIZhaT_KOo",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0084",
+      "title": "น้อง (Nong)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_28",
+      "cover_url": "https://i.ytimg.com/vi/VVs5UHgafv8/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 188,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "VVs5UHgafv8",
+          "url": "https://www.youtube.com/watch?v=VVs5UHgafv8",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "น้อง - Three Man Down Feat. URBOYTJ |Official MV|",
+          "channel_title": "GeneLab"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378",
+      "listen_url": "https://www.youtube.com/watch?v=VVs5UHgafv8",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0085",
+      "title": "ไม่อยากชิน (Don’t Wanna Get Used to It)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_28",
+      "cover_url": "https://i.ytimg.com/vi/v45ZIE7fvKU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 252,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "v45ZIE7fvKU",
+          "url": "https://www.youtube.com/watch?v=v45ZIE7fvKU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378",
+      "listen_url": "https://www.youtube.com/watch?v=v45ZIE7fvKU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0086",
+      "title": "วิธีไม่เสียใจ (How to Not Be Sad)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_28",
+      "cover_url": "https://i.ytimg.com/vi/57mecAq5Qpc/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 214,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "57mecAq5Qpc",
+          "url": "https://www.youtube.com/watch?v=57mecAq5Qpc",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378",
+      "listen_url": "https://www.youtube.com/watch?v=57mecAq5Qpc",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0087",
+      "title": "ลึกลงไป",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/9oybWpnaqOM/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 83,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "9oybWpnaqOM",
+          "url": "https://www.youtube.com/watch?v=9oybWpnaqOM",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=9oybWpnaqOM",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0088",
+      "title": "เริ่มใหม่",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/8U4HrSKu9AI/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 201,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "8U4HrSKu9AI",
+          "url": "https://www.youtube.com/watch?v=8U4HrSKu9AI",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=8U4HrSKu9AI",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0089",
+      "title": "ขอโทษที่ติดต่อไป (feat. Nap The Nap)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/bOfSCHLcj8w/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 252,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "bOfSCHLcj8w",
+          "url": "https://www.youtube.com/watch?v=bOfSCHLcj8w",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=bOfSCHLcj8w",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0090",
+      "title": "ก็แค่พูดมา (feat. The TOYS)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/IZaTSHohVjM/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 246,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "IZaTSHohVjM",
+          "url": "https://www.youtube.com/watch?v=IZaTSHohVjM",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "ก็แค่พูดมา - Three Man Down Feat. THE TOYS |Official MV|",
+          "channel_title": "GeneLab"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=IZaTSHohVjM",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0091",
+      "title": "ยอมถอย",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/ZVA_RJJTNOo/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 230,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "ZVA_RJJTNOo",
+          "url": "https://www.youtube.com/watch?v=ZVA_RJJTNOo",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=ZVA_RJJTNOo",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0092",
+      "title": "รักใครไม่ไหว",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/OGG-ZEEvaX0/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 250,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "OGG-ZEEvaX0",
+          "url": "https://www.youtube.com/watch?v=OGG-ZEEvaX0",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=OGG-ZEEvaX0",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0093",
+      "title": "ทุกอย่างยังเหมือนเดิม (feat. COCKTAIL)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/Obx3Tz8xNjg/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 208,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Obx3Tz8xNjg",
+          "url": "https://www.youtube.com/watch?v=Obx3Tz8xNjg",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "ทุกอย่างยังเหมือนเดิม - Three Man Down Feat. COCKTAIL |Official MV|",
+          "channel_title": "GeneLab"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=Obx3Tz8xNjg",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0094",
+      "title": "ไม่ให้ไป",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/4Ef7jOl8Fw4/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 240,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "4Ef7jOl8Fw4",
+          "url": "https://www.youtube.com/watch?v=4Ef7jOl8Fw4",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=4Ef7jOl8Fw4",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0095",
+      "title": "ทางออก",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/z3NVJijkCBs/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 220,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "z3NVJijkCBs",
+          "url": "https://www.youtube.com/watch?v=z3NVJijkCBs",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=z3NVJijkCBs",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0096",
+      "title": "ข้อยกเว้น",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/Mkq1FfF-d3s/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 55,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Mkq1FfF-d3s",
+          "url": "https://www.youtube.com/watch?v=Mkq1FfF-d3s",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=Mkq1FfF-d3s",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0097",
+      "title": "เพลงรัก",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/OYPiXBIgvJ8/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 267,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "OYPiXBIgvJ8",
+          "url": "https://www.youtube.com/watch?v=OYPiXBIgvJ8",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=OYPiXBIgvJ8",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0098",
+      "title": "ชาตินี้",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/YFRlGyhADqQ/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 215,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "YFRlGyhADqQ",
+          "url": "https://www.youtube.com/watch?v=YFRlGyhADqQ",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=YFRlGyhADqQ",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0099",
+      "title": "ขอบคุณที่กลับมา",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_iii",
+      "cover_url": "https://i.ytimg.com/vi/P4fmqS0zGOY/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": 245,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "P4fmqS0zGOY",
+          "url": "https://www.youtube.com/watch?v=P4fmqS0zGOY",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436",
+      "listen_url": "https://www.youtube.com/watch?v=P4fmqS0zGOY",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0100",
+      "title": "วันเกิดฉันปีนี้ (HBD to me)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_other_singles",
+      "cover_url": "https://i.ytimg.com/vi/XTWJFGF-Ev4/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "XTWJFGF-Ev4",
+          "url": "https://www.youtube.com/watch?v=XTWJFGF-Ev4",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=XTWJFGF-Ev4",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0101",
+      "title": "ไม่เคยได้ลา (Original Soundtrack From เทอม 4)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_other_singles",
+      "cover_url": "https://i.ytimg.com/vi/ldSl6agcUAI/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "ldSl6agcUAI",
+          "url": "https://www.youtube.com/watch?v=ldSl6agcUAI",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "ไม่เคยได้ลา Ost. เทอม 4 - Three Man Down |Movie Version|",
+          "channel_title": "BRIDGE Management"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=ldSl6agcUAI",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0102",
+      "title": "เหตุผล (feat. whateve)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_other_singles",
+      "cover_url": "https://i.ytimg.com/vi/LCuxGozZh7c/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "LCuxGozZh7c",
+          "url": "https://www.youtube.com/watch?v=LCuxGozZh7c",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "เหตุผล - Three Man Down Feat. whateve |Official MV|",
+          "channel_title": "GeneLab"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=LCuxGozZh7c",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0103",
+      "title": "เพื่อนสนิท (Platonic Love) [feat. PEEMWASU OF BUS]",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_other_singles",
+      "cover_url": "https://i.ytimg.com/vi/KEq5oiG35hI/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "KEq5oiG35hI",
+          "url": "https://www.youtube.com/watch?v=KEq5oiG35hI",
+          "link_type": "video",
+          "review_status": "direct_youtube_candidate_needs_review",
+          "matched_video_title": "เพื่อนสนิท (Platonic Love) - Three Man Down Feat. PEEMWASU OF BUS |Official MV|",
+          "channel_title": "GeneLab"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=KEq5oiG35hI",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0104",
+      "title": "เปิดตัวเขา",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_other_singles",
+      "cover_url": "https://i.ytimg.com/vi/XnxWDyyQj18/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "XnxWDyyQj18",
+          "url": "https://www.youtube.com/watch?v=XnxWDyyQj18",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=XnxWDyyQj18",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0105",
+      "title": "รักใครไม่ไหว",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_other_singles",
+      "cover_url": "https://i.ytimg.com/vi/OGG-ZEEvaX0/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "OGG-ZEEvaX0",
+          "url": "https://www.youtube.com/watch?v=OGG-ZEEvaX0",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=OGG-ZEEvaX0",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0106",
+      "title": "ฝนตกไหม",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_other_singles",
+      "cover_url": "https://i.ytimg.com/vi/ENnGPkhVu2g/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "ENnGPkhVu2g",
+          "url": "https://www.youtube.com/watch?v=ENnGPkhVu2g",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P"
+      ],
+      "metadata_status": "direct_youtube_link_verified",
+      "listen_url": "https://www.youtube.com/watch?v=ENnGPkhVu2g",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "song_0107",
+      "title": "ถ้าเธอรักฉันจริง",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "album_id": "album_tmd_other_singles",
+      "cover_url": "https://i.ytimg.com/vi/JBAuRoIRAs8/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "JBAuRoIRAs8",
+          "url": "https://www.youtube.com/watch?v=JBAuRoIRAs8",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": [
+        "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P"
+      ],
+      "metadata_status": "direct_youtube_candidate_needs_review",
+      "listen_url": "https://www.youtube.com/watch?v=JBAuRoIRAs8",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    }
+  ],
+  "data_quality": {
+    "youtube_only_export": true,
+    "songs_total": 107,
+    "youtube_direct_links_found": 118,
+    "songs_without_verified_youtube_link": 0,
+    "complete": true,
+    "note": "All 118 entries have a direct YouTube URL selected. New additions were matched using video title/channel metadata and web search; not every link has been manually playback-verified. Duplicate tracks and requested versions are preserved.",
+    "youtube_complete": true,
+    "allowed_artists_only": true,
+    "allowed_artist_names": [
+      "PURPEECH",
+      "Dr.Fuu",
+      "guncharlie",
+      "Three Man Down"
+    ],
+    "songs_removed_outside_allowed_artists": 0,
+    "songs_without_youtube_link": 0,
+    "image_url_update": {
+      "method": "YouTube thumbnail URLs derived from existing YouTube video IDs in the catalog",
+      "songs": "Thumbnail URL populated when a song has a YouTube video_id.",
+      "albums": "Uses first associated song thumbnail as a representative image when album artwork was missing; not verified official album artwork.",
+      "artists": "Uses first associated song thumbnail as a representative image when artist portrait was missing; not a verified artist portrait.",
+      "note": "YouTube thumbnail URLs may be unavailable for removed/private videos; review image URLs before production."
+    }
+  }
+}
