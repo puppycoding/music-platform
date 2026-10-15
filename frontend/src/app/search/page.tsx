@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useMemo, useState } from "react";
@@ -158,13 +157,22 @@ function getRandomSongs(source: Song[], count = 12): Song[] {
   return shuffled.slice(0, Math.min(count, shuffled.length));
 }
 
+/**
+ * ใช้ลำดับเพลงจาก catalog สำหรับการแสดงผลครั้งแรก
+ * เพื่อให้ Server และ Client แสดงผลตรงกัน
+ */
+function getInitialSongs(source: Song[], count = 12): Song[] {
+  return source.slice(0, Math.min(count, source.length));
+}
+
 export default function SearchPage() {
   const { playSong } = useMusicPlayer();
 
   const [query, setQuery] = useState("");
 
+  // ใช้ลำดับคงที่ในรอบแรก เพื่อป้องกัน Hydration mismatch
   const [recommendedSongs, setRecommendedSongs] = useState<Song[]>(() =>
-    getRandomSongs(songs, 12)
+    getInitialSongs(songs, 12)
   );
 
   const [imageErrors, setImageErrors] = useState<
@@ -457,10 +465,11 @@ export default function SearchPage() {
                           handlePlaySong(song);
                         }
                       }}
-                      className={`group flex min-w-0 cursor-pointer items-center gap-3 px-3 py-3 transition hover:bg-[#252033] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#8b5cf6] sm:gap-4 sm:px-5 ${index !== filteredSongs.length - 1
+                      className={`group flex min-w-0 cursor-pointer items-center gap-3 px-3 py-3 transition hover:bg-[#252033] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#8b5cf6] sm:gap-4 sm:px-5 ${
+                        index !== filteredSongs.length - 1
                           ? "border-b border-[#302a3b]"
                           : ""
-                        }`}
+                      }`}
                     >
                       {/* Song cover */}
                       <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg bg-[#252033] sm:h-14 sm:w-14">

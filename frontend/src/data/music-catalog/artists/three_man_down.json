@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_title": "Music Catalog — YouTube Only",
+  "language": "th",
+  "created_at": "2026-10-12",
+  "artists": [
+    {
+      "id": "artist_three_man_down",
+      "name": "Three Man Down",
+      "country": "TH",
+      "spotify_artist_id": "1qAOsY7jv9GFTv4HoVof5P",
+      "spotify_url": "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P",
+      "image_url": "https://i.ytimg.com/vi/-aG0B5NwOuw/hqdefault.jpg",
+      "image_status": "representative_track_thumbnail_not_verified_artist_photo"
+    }
+  ]
+}

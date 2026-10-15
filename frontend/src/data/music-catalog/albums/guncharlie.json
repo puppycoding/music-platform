@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_title": "Music Catalog — YouTube Only",
+  "albums": [
+    {
+      "id": "album_guncharlie_like_you_never_left",
+      "title": "Like You Never Left",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "release_year": 2025,
+      "album_type": "album",
+      "cover_url": "https://i.ytimg.com/vi/I7iu2twr9v4/hqdefault.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": null,
+          "url": "https://open.spotify.com/search/Like%20You%20Never%20Left%20guncharlie%20album",
+          "search_url": "https://open.spotify.com/search/Like%20You%20Never%20Left%20guncharlie%20album",
+          "link_type": "search"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Like+You+Never+Left+guncharlie+album",
+          "search_url": "https://www.youtube.com/results?search_query=Like+You+Never+Left+guncharlie+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [],
+      "metadata_status": "partial_verify_artwork_and_release_metadata",
+      "cover_status": "representative_track_thumbnail_not_verified_album_artwork"
+    },
+    {
+      "id": "album_guncharlie_singles",
+      "title": "Singles and other releases",
+      "artist_ids": [
+        "artist_guncharlie"
+      ],
+      "release_year": null,
+      "album_type": "single_collection",
+      "cover_url": "https://i.ytimg.com/vi/YKYkRyB0CCA/hqdefault.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": "1qveov8f3HXFhDIWtFO5tG",
+          "url": "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Singles+and+other+releases+guncharlie+album",
+          "search_url": "https://www.youtube.com/results?search_query=Singles+and+other+releases+guncharlie+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG"
+      ],
+      "metadata_status": "partial_verify_artwork_and_release_metadata",
+      "cover_status": "representative_track_thumbnail_not_verified_album_artwork"
+    }
+  ]
+}

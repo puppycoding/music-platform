@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_title": "Music Catalog — YouTube Only",
+  "artists": [
+    {
+      "id": "artist_guncharlie",
+      "name": "guncharlie",
+      "country": "TH",
+      "spotify_artist_id": "1qveov8f3HXFhDIWtFO5tG",
+      "spotify_url": "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG",
+      "image_url": "https://i.ytimg.com/vi/I7iu2twr9v4/hqdefault.jpg",
+      "image_status": "representative_track_thumbnail_not_verified_artist_photo"
+    }
+  ]
+}

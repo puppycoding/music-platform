@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_title": "Music Catalog — YouTube Only",
+  "language": "th",
+  "created_at": "2026-10-12",
+  "albums": [
+    {
+      "id": "album_purpeech_purfectpeech",
+      "title": "PurfectPeech",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "release_year": 2024,
+      "album_type": "album_and_singles_collection",
+      "cover_url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/a6/48/ba/a648ba9f-2567-c3a9-f0c2-86e661eae74c/cover.jpg/400x400bb.webp",
+      "providers": {
+        "spotify": {
+          "album_id": null,
+          "url": "https://open.spotify.com/search/PurfectPeech%20PURPEECH%20album",
+          "search_url": "https://open.spotify.com/search/PurfectPeech%20PURPEECH%20album",
+          "link_type": "search"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=PurfectPeech+PURPEECH+album",
+          "search_url": "https://www.youtube.com/results?search_query=PurfectPeech+PURPEECH+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://music.apple.com/us/album/purfectpeech/1725320200"
+      ],
+      "metadata_status": "artwork_url_added_source_linked",
+      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200"
+    },
+    {
+      "id": "album_purpeech_live",
+      "title": "The Peechman Show Live",
+      "artist_ids": [
+        "artist_purpeech"
+      ],
+      "release_year": 2025,
+      "album_type": "live_album",
+      "cover_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3c/f5/ed/3cf5ede5-ba3d-77d0-0835-5762a3751de8/cover.jpg/3000x3000bb.jpg",
+      "providers": {
+        "spotify": {
+          "album_id": null,
+          "url": "https://open.spotify.com/search/The%20Peechman%20Show%20Live%20PURPEECH%20album",
+          "search_url": "https://open.spotify.com/search/The%20Peechman%20Show%20Live%20PURPEECH%20album",
+          "link_type": "search"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=The+Peechman+Show+Live+PURPEECH+album",
+          "search_url": "https://www.youtube.com/results?search_query=The+Peechman+Show+Live+PURPEECH+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [],
+      "metadata_status": "artwork_url_added_source_linked",
+      "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live"
+    }
+  ]
+}

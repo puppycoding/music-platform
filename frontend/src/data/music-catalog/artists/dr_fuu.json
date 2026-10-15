@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_title": "Music Catalog — YouTube Only",
+  "language": "th",
+  "created_at": "2026-10-12",
+  "artists": [
+    {
+      "id": "artist_drfuu",
+      "name": "Dr.Fuu",
+      "country": "TH",
+      "spotify_artist_id": null,
+      "spotify_url": null,
+      "image_url": "https://i.ytimg.com/vi/FLoWTjcZrs8/hqdefault.jpg",
+      "image_status": "representative_track_thumbnail_not_verified_artist_photo"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import catalog from "../data/music-catalog";
 import { useMusicPlayer } from "../components/music/MusicPlayerProvider";
 
@@ -199,6 +200,7 @@ function SongCard({ song }: { song: Song }) {
 
 /* =========================
    การ์ดศิลปิน
+   คลิกเพื่อไปหน้ารายละเอียดศิลปิน
 ========================= */
 
 function ArtistCard({
@@ -211,7 +213,17 @@ function ArtistCard({
   const showImage = Boolean(artist.image_url) && !imageError;
 
   return (
-    <article className="min-w-0 rounded-2xl border border-border bg-surface p-4 transition hover:bg-surface-hover">
+    <Link
+      href={`/artists/${encodeURIComponent(artist.id)}?returnTo=%2F`}
+      onClick={() => {
+        sessionStorage.setItem(
+          "artistDetailReturnTo",
+          window.location.pathname + window.location.search
+        );
+      }}
+      className="block min-w-0 rounded-2xl border border-border bg-surface p-4 transition hover:bg-surface-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+      aria-label={`ดูรายละเอียดศิลปิน ${artist.name}`}
+    >
       <div className="relative mx-auto mb-3 aspect-square w-full max-w-28 overflow-hidden rounded-full bg-gradient-to-br from-violet-950 via-purple-900 to-surface-hover">
         <div className="absolute inset-0 flex items-center justify-center text-3xl font-bold text-primary">
           {artist.name.charAt(0)}
@@ -236,7 +248,7 @@ function ArtistCard({
       </p>
 
       <p className="mt-1 text-center text-sm text-muted">ศิลปิน</p>
-    </article>
+    </Link>
   );
 }
 

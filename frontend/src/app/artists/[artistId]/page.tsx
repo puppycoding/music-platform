@@ -1,8 +1,12 @@
-
 "use client";
 
 import Link from "next/link";
-import { useParams, useRouter, useSearchParams } from "next/navigation";
+import {
+    useParams,
+    useRouter,
+    useSearchParams,
+    usePathname,
+} from "next/navigation";
 import catalog from "../../../data/music-catalog";
 
 type Artist = {
@@ -31,6 +35,7 @@ const musicCatalog = catalog as unknown as Catalog;
 export default function ArtistDetailPage() {
     const router = useRouter();
     const searchParams = useSearchParams();
+    const pathname = usePathname();
     const params = useParams<{ artistId: string }>();
 
     const artistId = decodeURIComponent(params.artistId ?? "");
@@ -43,25 +48,38 @@ export default function ArtistDetailPage() {
         album.artist_ids?.includes(artistId)
     );
 
-    // ย้อนกลับไปยังหน้าที่เข้ามา หากมาจากหน้าค้นหา
-    // ถ้าไม่ได้มาจากหน้าค้นหา ให้กลับไปหน้ารวมศิลปิน
-
+    // กลับไปยังหน้าที่เข้ามา หากไม่มีข้อมูลให้กลับหน้ารวมศิลปิน
     const handleBack = () => {
-        // ใช้ returnTo จาก URL ก่อน เพื่อให้รู้แน่นอนว่ามาจากหน้าค้นหา
-
         const returnTo = searchParams.get("returnTo");
         const savedPath = sessionStorage.getItem("artistDetailReturnTo");
 
-        if (returnTo === "/search" || savedPath?.startsWith("/search")) {
-            sessionStorage.removeItem("artistDetailReturnTo");
-            router.replace(savedPath?.startsWith("/search") ? savedPath : "/search");
-            return;
+        // ตรวจสอบเส้นทางที่บันทึกไว้จากหน้าก่อนหน้า
+        const isValidReturnPath = (path: string | null): boolean => {
+            if (!path || !path.startsWith("/") || path.startsWith("//")) {
+                return false;
+            }
+
+            // ไม่ให้ย้อนกลับมาหน้ารายละเอียดศิลปินเดิมซ้ำ
+            if (path.startsWith("/artists/") && path !== "/artists") {
+                return false;
+            }
+
+            return true;
+        };
+
+        let targetPath = "/artists";
+
+        if (isValidReturnPath(returnTo)) {
+            targetPath = returnTo!;
+        } else if (isValidReturnPath(savedPath)) {
+            targetPath = savedPath!;
+        } else if (pathname.startsWith("/artists/")) {
+            targetPath = "/artists";
         }
 
         sessionStorage.removeItem("artistDetailReturnTo");
-        router.replace("/artists");
+        router.replace(targetPath);
     };
-
 
     if (!artist) {
         return (
@@ -140,7 +158,9 @@ export default function ArtistDetailPage() {
                     </div>
 
                     <div className="min-w-0">
-                        <p className="text-sm font-medium text-violet-300">ARTIST</p>
+                        <p className="text-sm font-medium text-violet-300">
+                            ARTIST
+                        </p>
 
                         <h1 className="mt-2 break-words text-3xl font-bold sm:text-5xl">
                             {artist.name}
@@ -161,7 +181,9 @@ export default function ArtistDetailPage() {
                 {/* Artist albums */}
                 <section className="mt-10">
                     <div className="mb-5">
-                        <h2 className="text-2xl font-bold">อัลบั้มของศิลปิน</h2>
+                        <h2 className="text-2xl font-bold">
+                            อัลบั้มของศิลปิน
+                        </h2>
 
                         <p className="mt-1 text-sm text-zinc-400">
                             เลือกอัลบั้มเพื่อดูรายชื่อเพลง
@@ -186,7 +208,9 @@ export default function ArtistDetailPage() {
                                 >
                                     <div className="relative mb-3 aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-[#35234f] to-[#191522]">
                                         <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-                                            <span className="text-5xl text-white/20">♫</span>
+                                            <span className="text-5xl text-white/20">
+                                                ♫
+                                            </span>
                                         </div>
 
                                         {album.cover_url && (
@@ -196,7 +220,8 @@ export default function ArtistDetailPage() {
                                                 loading="lazy"
                                                 className="relative z-10 h-full w-full object-cover transition duration-300 group-hover:scale-105"
                                                 onError={(event) => {
-                                                    event.currentTarget.style.display = "none";
+                                                    event.currentTarget.style.display =
+                                                        "none";
                                                 }}
                                             />
                                         )}
