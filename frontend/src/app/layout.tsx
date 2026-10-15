@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 
-import MusicPlayerProvider from "../components/music/MusicPlayerProvider";
-import PlayerBar from "../components/music/PlayerBar";
+import MusicPlayerProvider from "../components/music-player/providers/MusicPlayerProvider";
+import PlayerBar from "../components/music-player/components/PlayerBar";
 
 export const metadata: Metadata = {
   title: "MUSIC PLATFORM",
@@ -81,13 +81,23 @@ export default function RootLayout({
             </p>
 
             <nav className="space-y-2">
+
               <Link
                 href="/"
                 className="flex items-center gap-3 rounded-xl px-3 py-3 text-sm text-[#a1a1aa] transition hover:bg-[#252033] hover:text-white"
               >
-                <span className="text-lg">🏠</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                  aria-hidden="true"
+                >
+                  <path d="M12 2.1 1 12h3v9h7v-6h2v6h7v-9h3L12 2.1Zm0 2.69 6 5.4V19h-3v-6H9v6H6v-8.81l6-5.4Z" />
+                </svg>
                 หน้าแรก
               </Link>
+
 
               <Link
                 href="/search"

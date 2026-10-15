@@ -2,7 +2,7 @@
 "use client";
 
 import VolumeControl from "./VolumeControl";
-import { useMusicPlayer } from "./music/MusicPlayerProvider";
+import { useMusicPlayer } from "../providers/MusicPlayerProvider";
 
 export default function PlayerVolume() {
   const { volume, setVolume } = useMusicPlayer();

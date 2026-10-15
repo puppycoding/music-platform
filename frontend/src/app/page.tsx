@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import catalog from "../data/music-catalog";
-import { useMusicPlayer } from "../components/music/MusicPlayerProvider";
+import { useMusicPlayer } from "../components/music-player/providers/MusicPlayerProvider";
 
 const artists = catalog.artists;
 
@@ -53,7 +53,7 @@ type AlbumData = Album & {
 function getRandomSongs<T>(songs: T[], count: number): T[] {
   const shuffled = [...songs];
 
-  for (let i = shuffled.length - 1; i > 0; i--) {
+  for (let i = shuffled.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
@@ -128,19 +128,76 @@ function getArtistName(song: Song): string {
 }
 
 /* =========================
-   การ์ดเพลง
-   คลิกตรงไหนก็เล่นเพลงได้
+   ไอคอนสามจุด
 ========================= */
 
-function SongCard({ song }: { song: Song }) {
+function MoreIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="h-5 w-5"
+      aria-hidden="true"
+    >
+      <circle cx="5" cy="12" r="1.8" />
+      <circle cx="12" cy="12" r="1.8" />
+      <circle cx="19" cy="12" r="1.8" />
+    </svg>
+  );
+}
+
+/* =========================
+   การ์ดเพลง
+   คลิกการ์ดเพื่อเล่นเพลง
+   ปุ่มสามจุดเปิดเมนูเพิ่มเติม
+========================= */
+
+
+function SongCard({
+  song,
+  activeMenu,
+  setActiveMenu,
+  showToast,
+}: {
+  song: Song;
+  activeMenu: string | null;
+  setActiveMenu: (id: string | null) => void;
+  showToast: (message: string) => void;
+}) {
   const [imageError, setImageError] = useState(false);
-  const { playSong } = useMusicPlayer();
+  const { playSong, addToQueue } = useMusicPlayer();
 
   const coverUrl = getCoverUrl(song);
   const artistName = getArtistName(song);
+  const isMenuOpen = activeMenu === song.id;
 
   function handlePlaySong() {
     playSong(song.id);
+    setActiveMenu(null);
+  }
+
+  function handleAddToQueue(event: React.MouseEvent<HTMLButtonElement>) {
+    event.stopPropagation();
+
+    try {
+      addToQueue(song.id);
+      setActiveMenu(null);
+      showToast("เพิ่มเพลงเข้าคิวแล้ว");
+    } catch (error) {
+      console.error("เพิ่มเพลงเข้าคิวไม่สำเร็จ:", error);
+      showToast("เพิ่มเพลงเข้าคิวไม่สำเร็จ");
+    }
+  }
+
+  async function handleCopyTitle() {
+    try {
+      await navigator.clipboard.writeText(song.title);
+      showToast("คัดลอกชื่อเพลงแล้ว");
+    } catch {
+      showToast("คัดลอกไม่สำเร็จ กรุณาลองอีกครั้ง");
+    }
+
+    setActiveMenu(null);
   }
 
   return (
@@ -150,43 +207,137 @@ function SongCard({ song }: { song: Song }) {
       aria-label={`เล่นเพลง ${song.title}`}
       onClick={handlePlaySong}
       onKeyDown={(event) => {
-        if (event.key === "Enter" || event.key === " ") {
+        if (
+          event.target === event.currentTarget &&
+          (event.key === "Enter" || event.key === " ")
+        ) {
           event.preventDefault();
           handlePlaySong();
         }
       }}
-      className="group min-w-0 cursor-pointer rounded-2xl border border-border bg-surface p-3 transition hover:bg-surface-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+      className="group relative min-w-0 cursor-pointer rounded-2xl border border-border bg-surface p-3 transition hover:bg-surface-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
     >
-      <div className="relative mx-auto mb-3 aspect-square w-full max-w-36 overflow-hidden rounded-xl bg-surface-hover">
-        {coverUrl && !imageError ? (
-          <img
-            src={coverUrl}
-            alt={`ปกเพลง ${song.title}`}
-            className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-105"
-            loading="lazy"
-            onError={() => setImageError(true)}
-          />
-        ) : (
-          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-violet-950 via-purple-900 to-surface-hover">
-            <span className="px-3 text-center text-4xl font-bold text-primary">
-              {song.title.charAt(0)}
-            </span>
-          </div>
-        )}
+      {/* รูปปกเพลง: แยก overflow-hidden ไว้เฉพาะกรอบรูป */}
+      <div className="relative mx-auto mb-3 aspect-square w-full max-w-36">
+        <div className="absolute inset-0 overflow-hidden rounded-xl bg-surface-hover">
+          {coverUrl && !imageError ? (
+            <img
+              src={coverUrl}
+              alt={`ปกเพลง ${song.title}`}
+              className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-105"
+              loading="lazy"
+              onError={() => setImageError(true)}
+            />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-violet-950 via-purple-900 to-surface-hover">
+              <span className="px-3 text-center text-4xl font-bold text-primary">
+                {song.title.charAt(0)}
+              </span>
+            </div>
+          )}
+        </div>
 
-        <button
-          type="button"
-          aria-label={`เล่นเพลง ${song.title}`}
-          onClick={(event) => {
-            event.stopPropagation();
-            handlePlaySong();
-          }}
-          className="absolute bottom-2 right-2 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-lg text-white shadow-lg transition hover:scale-110 hover:bg-primary-hover md:opacity-0 md:group-hover:opacity-100"
+        {/* ปุ่มสามจุดและเมนู */}
+        <div
+          className="absolute bottom-2 right-2 z-50"
+          onClick={(event) => event.stopPropagation()}
+          onKeyDown={(event) => event.stopPropagation()}
         >
-          ▶
-        </button>
+          <button
+            type="button"
+            aria-label={`ตัวเลือกเพิ่มเติมสำหรับเพลง ${song.title}`}
+            aria-expanded={isMenuOpen}
+            title="ตัวเลือกเพิ่มเติม"
+            onClick={(event) => {
+              event.stopPropagation();
+              setActiveMenu(isMenuOpen ? null : song.id);
+            }}
+            className={`flex h-10 w-10 items-center justify-center rounded-full bg-black/75 text-white shadow-lg backdrop-blur-sm transition hover:scale-110 hover:bg-primary ${
+              isMenuOpen
+                ? "bg-primary"
+                : "md:opacity-0 md:group-hover:opacity-100"
+            }`}
+          >
+            <MoreIcon />
+          </button>
+
+          {isMenuOpen && (
+            <div
+              className="absolute right-0 top-full z-50 mt-2 w-48 overflow-hidden rounded-xl border border-border bg-surface py-1 text-foreground shadow-2xl"
+              onClick={(event) => event.stopPropagation()}
+            >
+              <button
+                type="button"
+                onClick={handleAddToQueue}
+                className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm transition hover:bg-surface-hover"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  className="h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                >
+                  <path d="M9 6h12M9 12h12M9 18h12" />
+                  <path d="M3 6h.01M3 12h.01M3 18h.01" />
+                  <path d="M17 15v6m-3-3h6" />
+                </svg>
+                เพิ่มเข้าคิว
+              </button>
+
+              <button
+                type="button"
+                onClick={() => void handleCopyTitle()}
+                className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm transition hover:bg-surface-hover"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  className="h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                >
+                  <rect x="8" y="8" width="12" height="12" rx="2" />
+                  <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" />
+                </svg>
+                คัดลอกชื่อเพลง
+              </button>
+
+              {song.artist_ids[0] && (
+                <Link
+                  href={`/artists/${encodeURIComponent(song.artist_ids[0])}?returnTo=%2F`}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    sessionStorage.setItem(
+                      "artistDetailReturnTo",
+                      window.location.pathname + window.location.search
+                    );
+                    setActiveMenu(null);
+                  }}
+                  className="flex w-full items-center gap-3 px-4 py-3 text-sm transition hover:bg-surface-hover"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    className="h-4 w-4 shrink-0"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M4 21a8 8 0 0 1 16 0" />
+                  </svg>
+                  ดูเพลงของศิลปิน
+                </Link>
+              )}
+            </div>
+          )}
+        </div>
       </div>
 
+      {/* ชื่อเพลงและศิลปิน */}
       <h3 className="truncate font-semibold" title={song.title}>
         {song.title}
       </h3>
@@ -200,7 +351,6 @@ function SongCard({ song }: { song: Song }) {
 
 /* =========================
    การ์ดศิลปิน
-   คลิกเพื่อไปหน้ารายละเอียดศิลปิน
 ========================= */
 
 function ArtistCard({
@@ -258,6 +408,8 @@ function ArtistCard({
 
 export default function Home() {
   const [songs, setSongs] = useState<Song[]>([]);
+  const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const [toast, setToast] = useState("");
 
   useEffect(() => {
     // สุ่มเพลง 8 เพลงเมื่อหน้า Home เปิดขึ้น
@@ -266,10 +418,22 @@ export default function Home() {
 
   function shuffleSongs() {
     setSongs(getRandomSongs(catalog.songs, 8));
+    setActiveMenu(null);
+  }
+
+  function showToast(message: string) {
+    setToast(message);
+    window.setTimeout(() => setToast(""), 2000);
   }
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main
+      className="min-h-screen bg-background text-foreground"
+      onClick={() => {
+        if (activeMenu) setActiveMenu(null);
+      }}
+    >
+      {/* Header */}
       <header className="flex items-center justify-between border-b border-border px-5 py-4 md:px-10">
         <div>
           <p className="text-sm text-muted">ยินดีต้อนรับสู่</p>
@@ -351,7 +515,13 @@ export default function Home() {
 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
             {songs.map((song) => (
-              <SongCard key={song.id} song={song} />
+              <SongCard
+                key={song.id}
+                song={song}
+                activeMenu={activeMenu}
+                setActiveMenu={setActiveMenu}
+                showToast={showToast}
+              />
             ))}
           </div>
         </section>
@@ -371,6 +541,17 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      {/* Toast แจ้งเตือน */}
+      {toast && (
+        <div
+          role="status"
+          className="fixed bottom-28 left-1/2 z-[60] -translate-x-1/2 rounded-xl border border-border bg-surface px-5 py-3 text-sm text-foreground shadow-2xl"
+          onClick={(event) => event.stopPropagation()}
+        >
+          {toast}
+        </div>
+      )}
     </main>
   );
 }

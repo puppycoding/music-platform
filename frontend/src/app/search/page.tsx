@@ -1,8 +1,9 @@
+
 "use client";
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { useMusicPlayer } from "../../components/music/MusicPlayerProvider";
+import { useMusicPlayer } from "../../components/music-player/providers/MusicPlayerProvider";
 import catalog from "../../data/music-catalog";
 
 type Artist = {
@@ -166,7 +167,7 @@ function getInitialSongs(source: Song[], count = 12): Song[] {
 }
 
 export default function SearchPage() {
-  const { playSong } = useMusicPlayer();
+  const { playSong, addToQueue } = useMusicPlayer();
 
   const [query, setQuery] = useState("");
 
@@ -256,6 +257,21 @@ export default function SearchPage() {
 
     playSong(song.id);
     setActiveMenu(null);
+  }
+
+  // เพิ่มเพลงเข้าคิวโดยไม่เปลี่ยนเพลงที่กำลังเล่น
+  function handleAddToQueue(song: Song) {
+    if (!song.id) {
+      setToast("ไม่พบรหัสเพลง");
+      window.setTimeout(() => setToast(""), 2000);
+      return;
+    }
+
+    addToQueue(song.id);
+    setToast("เพิ่มเพลงเข้าคิวแล้ว");
+    setActiveMenu(null);
+
+    window.setTimeout(() => setToast(""), 2000);
   }
 
   return (
@@ -541,6 +557,29 @@ export default function SearchPage() {
 
                         {activeMenu === key && (
                           <div className="absolute right-0 top-full z-30 mt-2 w-48 overflow-hidden rounded-xl border border-[#302a3b] bg-[#191522] py-1 shadow-xl">
+                            {/* เพิ่มเข้าคิว */}
+                            <button
+                              type="button"
+                              onClick={() => handleAddToQueue(song)}
+                              className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#f5f3ff] transition hover:bg-[#302a3b]"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="1.8"
+                                className="h-4 w-4 shrink-0"
+                                aria-hidden="true"
+                              >
+                                <path d="M9 6h12M9 12h12M9 18h12" />
+                                <path d="M3 6h.01M3 12h.01M3 18h.01" />
+                                <path d="M17 15v6m-3-3h6" />
+                              </svg>
+
+                              เพิ่มเข้าคิว
+                            </button>
+
+                            {/* คัดลอกชื่อเพลง */}
                             <button
                               type="button"
                               onClick={() => {
@@ -570,6 +609,7 @@ export default function SearchPage() {
                               คัดลอกชื่อเพลง
                             </button>
 
+                            {/* ดูเพลงของศิลปิน */}
                             {firstArtist?.name && (
                               <button
                                 type="button"

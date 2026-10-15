@@ -1,10 +1,9 @@
-
 "use client";
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useState } from "react";
-import { useMusicPlayer } from "../../../../../components/music/MusicPlayerProvider";
+import { useMusicPlayer } from "../../../../../components/music-player/providers/MusicPlayerProvider";
 import catalog from "../../../../../data/music-catalog";
 
 type Artist = {
@@ -61,6 +60,7 @@ export default function AlbumDetailPage() {
     currentSong,
     isPlaying,
     playSong,
+    addToQueue,
   } = useMusicPlayer();
 
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -95,6 +95,30 @@ export default function AlbumDetailPage() {
         setToast("");
       }, 2500);
     }
+  }
+
+  function handleAddToQueue(song: Song) {
+    const playerTrack = playerSongs.find(
+      (track) => track.id === song.id
+    );
+
+    if (!playerTrack) {
+      setToast("ไม่พบเพลงในระบบเล่นเพลง");
+      window.setTimeout(() => setToast(""), 2000);
+      setActiveMenu(null);
+      return;
+    }
+
+    try {
+      addToQueue(song.id);
+      setToast("เพิ่มเพลงเข้าคิวแล้ว");
+    } catch (error) {
+      console.error("เพิ่มเพลงเข้าคิวไม่สำเร็จ:", error);
+      setToast("เพิ่มเพลงเข้าคิวไม่สำเร็จ");
+    }
+
+    setActiveMenu(null);
+    window.setTimeout(() => setToast(""), 2000);
   }
 
   if (!artist || !album) {
@@ -327,6 +351,29 @@ export default function AlbumDetailPage() {
 
                       {menuIsOpen && (
                         <div className="absolute right-0 top-full z-30 mt-2 w-48 overflow-hidden rounded-xl border border-[#302a3b] bg-[#191522] py-1 shadow-xl">
+                          {/* เพิ่มเข้าคิว */}
+                          <button
+                            type="button"
+                            onClick={() => handleAddToQueue(song)}
+                            className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#f5f3ff] transition hover:bg-[#302a3b]"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="1.8"
+                              className="h-4 w-4 shrink-0"
+                              aria-hidden="true"
+                            >
+                              <path d="M9 6h12M9 12h12M9 18h12" />
+                              <path d="M3 6h.01M3 12h.01M3 18h.01" />
+                              <path d="M17 15v6m-3-3h6" />
+                            </svg>
+
+                            เพิ่มเข้าคิว
+                          </button>
+
+                          {/* คัดลอกชื่อเพลง */}
                           <button
                             type="button"
                             onClick={() => {
@@ -352,20 +399,8 @@ export default function AlbumDetailPage() {
                               />
                               <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" />
                             </svg>
-                            คัดลอกชื่อเพลง
-                          </button>
 
-                          <button
-                            type="button"
-                            disabled={!canPlay}
-                            onClick={() => {
-                              handlePlay();
-                              setActiveMenu(null);
-                            }}
-                            className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#f5f3ff] transition hover:bg-[#302a3b] disabled:cursor-not-allowed disabled:opacity-40"
-                          >
-                            <span className="text-base">▶</span>
-                            เล่นเพลง
+                            คัดลอกชื่อเพลง
                           </button>
                         </div>
                       )}
