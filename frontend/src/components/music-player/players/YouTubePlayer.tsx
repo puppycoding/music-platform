@@ -17,10 +17,18 @@ export type YouTubePlayerState =
   | "cued"
   | "error";
 
+export type YouTubePlayerProgress = {
+  currentTime: number;
+  duration: number;
+};
+
 export type YouTubePlayerControls = {
   play: () => void;
   pause: () => void;
   loadVideo: (videoId: string) => void;
+  getCurrentTime: () => number;
+  getDuration: () => number;
+  seekTo: (seconds: number) => void;
 };
 
 type YouTubePlayerInstance = {
@@ -30,6 +38,9 @@ type YouTubePlayerInstance = {
   pauseVideo: () => void;
   setVolume: (volume: number) => void;
   getPlayerState: () => number;
+  getCurrentTime: () => number;
+  getDuration: () => number;
+  seekTo: (seconds: number, allowSeekAhead: boolean) => void;
   destroy?: () => void;
 };
 
@@ -52,6 +63,7 @@ type YouTubePlayerOptions = {
   onReady?: () => void;
   onControlsReady?: (controls: YouTubePlayerControls) => void;
   onStateChange?: (state: YouTubePlayerState) => void;
+  onProgress?: (progress: YouTubePlayerProgress) => void;
   onError?: (errorCode: number) => void;
 };
 
@@ -148,8 +160,6 @@ function loadYouTubeAPI(): Promise<void> {
       };
 
       document.head.appendChild(script);
-    } else if (window.YT?.Player) {
-      finish();
     }
   });
 
@@ -170,6 +180,31 @@ function mapPlayerState(state: number): YouTubePlayerState {
   return "unstarted";
 }
 
+function readProgress(
+  player: YouTubePlayerInstance,
+): YouTubePlayerProgress {
+  let currentTime = 0;
+  let duration = 0;
+
+  try {
+    currentTime = player.getCurrentTime();
+    duration = player.getDuration();
+  } catch {
+    // YouTube Player อาจยังไม่พร้อมอ่านเวลา
+  }
+
+  return {
+    currentTime:
+      Number.isFinite(currentTime) && currentTime > 0
+        ? currentTime
+        : 0,
+    duration:
+      Number.isFinite(duration) && duration > 0
+        ? duration
+        : 0,
+  };
+}
+
 export default function YouTubePlayer({
   videoId = null,
   volume = 65,
@@ -177,6 +212,7 @@ export default function YouTubePlayer({
   onReady,
   onControlsReady,
   onStateChange,
+  onProgress,
   onError,
 }: YouTubePlayerOptions) {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -189,6 +225,7 @@ export default function YouTubePlayer({
   const onReadyRef = useRef(onReady);
   const onControlsReadyRef = useRef(onControlsReady);
   const onStateChangeRef = useRef(onStateChange);
+  const onProgressRef = useRef(onProgress);
   const onErrorRef = useRef(onError);
 
   const [isReady, setIsReady] = useState(false);
@@ -200,6 +237,7 @@ export default function YouTubePlayer({
   onReadyRef.current = onReady;
   onControlsReadyRef.current = onControlsReady;
   onStateChangeRef.current = onStateChange;
+  onProgressRef.current = onProgress;
   onErrorRef.current = onError;
 
   const createPlayer = useCallback(async () => {
@@ -253,15 +291,36 @@ export default function YouTubePlayer({
 
               loadVideo: (nextVideoId: string) => {
                 if (!nextVideoId.trim()) return;
+
                 readyPlayer.loadVideoById(nextVideoId);
+              },
+
+              getCurrentTime: () => {
+                return readProgress(readyPlayer).currentTime;
+              },
+
+              getDuration: () => {
+                return readProgress(readyPlayer).duration;
+              },
+
+              seekTo: (seconds: number) => {
+                if (!Number.isFinite(seconds)) return;
+
+                const duration = readProgress(readyPlayer).duration;
+                const targetTime = Math.max(
+                  0,
+                  duration > 0
+                    ? Math.min(seconds, duration)
+                    : seconds,
+                );
+
+                readyPlayer.seekTo(targetTime, true);
               },
             });
 
             setIsReady(true);
             onReadyRef.current?.();
 
-            // ใช้ autoplay เฉพาะกรณีที่ระบุไว้
-            // การเปลี่ยนเพลงปกติให้ Provider เป็นผู้สั่ง loadVideo
             const currentVideoId = latestVideoIdRef.current;
 
             if (currentVideoId && latestAutoplayRef.current) {
@@ -273,6 +332,15 @@ export default function YouTubePlayer({
             onStateChangeRef.current?.(
               mapPlayerState(event.data),
             );
+
+            // ส่งเวลาทันทีเมื่อสถานะเพลงเปลี่ยน
+            const currentPlayer = playerRef.current;
+
+            if (currentPlayer) {
+              onProgressRef.current?.(
+                readProgress(currentPlayer),
+              );
+            }
           },
 
           onError: (event) => {
@@ -318,6 +386,30 @@ export default function YouTubePlayer({
     const safeVolume = Math.max(0, Math.min(100, volume));
     player.setVolume(safeVolume);
   }, [volume, isReady]);
+
+  // อ่านเวลาจริงจาก YouTube Player API ทุก 500 มิลลิวินาที
+  useEffect(() => {
+    if (!isReady) return;
+
+    const updateProgress = () => {
+      const player = playerRef.current;
+
+      if (!player) return;
+
+      onProgressRef.current?.(readProgress(player));
+    };
+
+    updateProgress();
+
+    const intervalId = window.setInterval(
+      updateProgress,
+      500,
+    );
+
+    return () => {
+      window.clearInterval(intervalId);
+    };
+  }, [isReady]);
 
   return (
     <div

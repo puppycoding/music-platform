@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useMusicPlayer } from "../../components/music-player/providers/MusicPlayerProvider";
 import catalog from "../../data/music-catalog";
@@ -10,9 +10,10 @@ type Artist = {
   id: string;
   name: string;
   country?: string;
+  image_url?: string | null;
   spotify_artist_id?: string;
   spotify_url?: string;
-  image_url?: string;
+  [key: string]: unknown;
 };
 
 type Song = {
@@ -44,8 +45,9 @@ type MusicCatalog = {
   songs?: Song[];
 };
 
-const musicCatalog = catalog as MusicCatalog;
+type SearchFilter = "all" | "songs" | "artists";
 
+const musicCatalog = catalog as MusicCatalog;
 const artists: Artist[] = musicCatalog.artists ?? [];
 const songs: Song[] = musicCatalog.songs ?? [];
 
@@ -84,18 +86,9 @@ function getArtistName(song: Song): string {
   return names.length > 0 ? names.join(", ") : "ไม่ทราบศิลปิน";
 }
 
-function getArtistCover(artist: Artist): string | undefined {
-  return artist.image_url || undefined;
-}
-
-function getCover(song: Song): string | undefined {
-  if (song.cover_url) {
-    return song.cover_url;
-  }
-
-  if (song.image_url) {
-    return song.image_url;
-  }
+function getSongCover(song: Song): string | undefined {
+  if (song.cover_url) return song.cover_url;
+  if (song.image_url) return song.image_url;
 
   const youtubeId = song.providers?.youtube?.video_id;
 
@@ -110,17 +103,42 @@ function getSongKey(song: Song, index: number): string {
   return song.id ?? `${getSongTitle(song)}-${index}`;
 }
 
-function SearchIcon({
-  className = "h-5 w-5",
-}: {
-  className?: string;
-}) {
+function getInitials(name: string): string {
+  const words = name.trim().split(/\s+/).filter(Boolean);
+
+  if (words.length > 1) {
+    return `${words[0][0]}${words[1][0]}`.toUpperCase();
+  }
+
+  return name.slice(0, 2).toUpperCase();
+}
+
+function getRandomItems<T>(source: T[], count: number): T[] {
+  const shuffled = [...source];
+
+  for (let i = shuffled.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  return shuffled.slice(0, Math.min(count, shuffled.length));
+}
+
+function getRandomSongs(source: Song[], count = 12): Song[] {
+  return getRandomItems(source, count);
+}
+
+function getRandomArtists(source: Artist[], count = 6): Artist[] {
+  return getRandomItems(source, count);
+}
+
+function SearchIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1.8"
       className={className}
       aria-hidden="true"
     >
@@ -130,11 +148,7 @@ function SearchIcon({
   );
 }
 
-function MusicIcon({
-  className = "h-5 w-5",
-}: {
-  className?: string;
-}) {
+function MusicIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -147,53 +161,153 @@ function MusicIcon({
   );
 }
 
-function getRandomSongs(source: Song[], count = 12): Song[] {
-  const shuffled = [...source];
-
-  for (let i = shuffled.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-
-  return shuffled.slice(0, Math.min(count, shuffled.length));
+function ArtistIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4 21a8 8 0 0 1 16 0" />
+    </svg>
+  );
 }
 
-/**
- * ใช้ลำดับเพลงจาก catalog สำหรับการแสดงผลครั้งแรก
- * เพื่อให้ Server และ Client แสดงผลตรงกัน
- */
-function getInitialSongs(source: Song[], count = 12): Song[] {
-  return source.slice(0, Math.min(count, source.length));
+function ShuffleIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5" />
+    </svg>
+  );
+}
+
+function ArtistCard({
+  artist,
+  index,
+  imageFailed,
+  onImageError,
+}: {
+  artist: Artist;
+  index: number;
+  imageFailed: boolean;
+  onImageError: () => void;
+}) {
+  const imageUrl =
+    typeof artist.image_url === "string" && artist.image_url.trim()
+      ? artist.image_url.trim()
+      : undefined;
+
+  return (
+    <Link
+      href={`/artists/${encodeURIComponent(artist.id)}?returnTo=%2Fsearch`}
+      onClick={() => {
+        try {
+          sessionStorage.setItem(
+            "artistDetailReturnTo",
+            window.location.pathname + window.location.search
+          );
+        } catch {
+          // ไม่ขัดขวางการนำทางหาก sessionStorage ใช้งานไม่ได้
+        }
+      }}
+      aria-label={`ดูผลงานของ ${artist.name}`}
+      className="artist-card group block min-w-0 rounded-2xl outline-none focus-visible:ring-2 focus-visible:ring-violet-400"
+      style={{ animationDelay: `${Math.min(index, 10) * 45}ms` }}
+    >
+      <div className="relative aspect-square overflow-hidden rounded-2xl border border-white/[0.07] bg-[#191421] shadow-[0_8px_28px_rgba(0,0,0,0.18)] transition duration-500 group-hover:-translate-y-1 group-hover:border-violet-300/30 group-hover:shadow-[0_16px_36px_rgba(124,58,237,0.14)]">
+        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#49305d] via-[#292033] to-[#131019]">
+          <span className="text-5xl font-bold tracking-tight text-white/25 sm:text-6xl">
+            {getInitials(artist.name)}
+          </span>
+        </div>
+
+        {imageUrl && !imageFailed && (
+          <img
+            src={imageUrl}
+            alt={artist.name}
+            loading={index < 6 ? "eager" : "lazy"}
+            decoding="async"
+            onError={onImageError}
+            className="absolute inset-0 z-[1] h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+        )}
+
+        <div className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-t from-black/60 via-transparent to-white/[0.03]" />
+
+        <div className="absolute inset-x-0 bottom-0 z-[3] p-3">
+          <span className="inline-flex rounded-full border border-white/15 bg-black/25 px-2.5 py-1 text-[9px] font-semibold tracking-[0.15em] text-white/90 backdrop-blur-md">
+            ARTIST
+          </span>
+        </div>
+      </div>
+
+      <div className="px-0.5 pt-3">
+        <h3
+          title={artist.name}
+          className="truncate text-sm font-semibold text-zinc-200 transition-colors group-hover:text-white sm:text-[15px]"
+        >
+          {artist.name}
+        </h3>
+        <p className="mt-1 text-xs text-zinc-500">ศิลปิน</p>
+      </div>
+    </Link>
+  );
 }
 
 export default function SearchPage() {
   const { playSong, addToQueue } = useMusicPlayer();
 
   const [query, setQuery] = useState("");
+  const [filter, setFilter] = useState<SearchFilter>("all");
 
-  // ใช้ลำดับคงที่ในรอบแรก เพื่อป้องกัน Hydration mismatch
-  const [recommendedSongs, setRecommendedSongs] = useState<Song[]>(() =>
-    getInitialSongs(songs, 12)
-  );
+  // ใช้ข้อมูลชุดเดียวกันใน Server Render และ Client Render
+  // แล้วค่อยสุ่มหลังหน้าเว็บ Mount เพื่อป้องกัน Hydration Error
+  const [recommendedArtists, setRecommendedArtists] =
+    useState<Artist[]>(artists.slice(0, 6));
 
-  const [imageErrors, setImageErrors] = useState<
-    Record<string, boolean>
-  >({});
+  const [recommendedSongs, setRecommendedSongs] =
+    useState<Song[]>(songs.slice(0, 12));
 
+  const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   const [toast, setToast] = useState("");
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
 
-  const matchedArtists = useMemo(() => {
-    const searchText = normalize(query);
+  useEffect(() => {
+    setRecommendedArtists(getRandomArtists(artists, 6));
+    setRecommendedSongs(getRandomSongs(songs, 12));
+  }, []);
 
-    if (!searchText) {
-      return [];
+  const searchText = normalize(query);
+  const hasQuery = searchText.length > 0;
+
+  const matchedArtists = useMemo(() => {
+    if (filter === "songs") return [];
+
+    if (hasQuery) {
+      return artists.filter((artist) =>
+        normalize(artist.name).includes(searchText)
+      );
     }
 
-    return artists.filter((artist) =>
-      normalize(artist.name).includes(searchText)
-    );
-  }, [query]);
+    if (filter === "artists") {
+      return recommendedArtists.slice(0, 2);
+    }
+
+    return recommendedArtists;
+  }, [searchText, hasQuery, filter, recommendedArtists]);
 
   const matchedArtistIds = useMemo(
     () => new Set(matchedArtists.map((artist) => artist.id)),
@@ -201,16 +315,14 @@ export default function SearchPage() {
   );
 
   const filteredSongs = useMemo(() => {
-    const searchText = normalize(query);
+    if (filter === "artists") return [];
 
-    if (!searchText) {
+    if (!hasQuery) {
       return recommendedSongs;
     }
 
     return songs.filter((song) => {
-      const titleMatches = normalize(
-        getSongTitle(song)
-      ).includes(searchText);
+      const titleMatches = normalize(getSongTitle(song)).includes(searchText);
 
       const artistMatches = getArtistIds(song).some((id) => {
         const artist = getArtistById(id);
@@ -223,35 +335,31 @@ export default function SearchPage() {
 
       return titleMatches || artistMatches;
     });
-  }, [query, matchedArtistIds, recommendedSongs]);
+  }, [filter, hasQuery, searchText, matchedArtistIds, recommendedSongs]);
+
+  function showToast(message: string, duration = 2000) {
+    setToast(message);
+    window.setTimeout(() => setToast(""), duration);
+  }
 
   async function copySongTitle(title: string) {
     try {
       await navigator.clipboard.writeText(title);
-
-      setToast("คัดลอกชื่อเพลงแล้ว");
-
-      window.setTimeout(() => {
-        setToast("");
-      }, 2000);
+      showToast("คัดลอกชื่อเพลงแล้ว");
     } catch {
-      setToast("คัดลอกไม่สำเร็จ กรุณาลองอีกครั้ง");
-
-      window.setTimeout(() => {
-        setToast("");
-      }, 2500);
+      showToast("คัดลอกไม่สำเร็จ กรุณาลองอีกครั้ง", 2500);
     }
   }
 
   function clearSearch() {
     setQuery("");
+    setFilter("all");
     setActiveMenu(null);
   }
 
   function handlePlaySong(song: Song) {
     if (!song.id) {
-      setToast("ไม่พบรหัสเพลง");
-      window.setTimeout(() => setToast(""), 2000);
+      showToast("ไม่พบรหัสเพลง");
       return;
     }
 
@@ -259,39 +367,57 @@ export default function SearchPage() {
     setActiveMenu(null);
   }
 
-  // เพิ่มเพลงเข้าคิวโดยไม่เปลี่ยนเพลงที่กำลังเล่น
   function handleAddToQueue(song: Song) {
     if (!song.id) {
-      setToast("ไม่พบรหัสเพลง");
-      window.setTimeout(() => setToast(""), 2000);
+      showToast("ไม่พบรหัสเพลง");
       return;
     }
 
     addToQueue(song.id);
-    setToast("เพิ่มเพลงเข้าคิวแล้ว");
     setActiveMenu(null);
-
-    window.setTimeout(() => setToast(""), 2000);
+    showToast("เพิ่มเพลงเข้าคิวแล้ว");
   }
 
+  // สุ่มเฉพาะศิลปิน ไม่เปลี่ยนรายการเพลง
+  function refreshArtistRecommendations() {
+    setRecommendedArtists(getRandomArtists(artists, 6));
+    setActiveMenu(null);
+  }
+
+  // สุ่มเฉพาะเพลง ไม่เปลี่ยนรายการศิลปิน
+  function refreshSongRecommendations() {
+    setRecommendedSongs(getRandomSongs(songs, 12));
+    setActiveMenu(null);
+  }
+
+  const showSearchResults = hasQuery;
+  const showAllArtistsLink = !showSearchResults;
+  const showAllSongsLink = !showSearchResults;
+
   return (
-    <main className="min-h-screen bg-[#0d0b12] text-[#f5f3ff]">
-      {/* Top bar */}
-      <header className="fixed inset-x-0 top-0 z-30 border-b border-[#302a3b] bg-[#13101b]/95 px-4 py-4 backdrop-blur-xl sm:px-6 md:left-60 md:px-10">
+    <main className="relative min-h-screen overflow-x-clip bg-[#0b0911] text-[#f7f4ff]">
+      {/* แสงพื้นหลัง */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-56 left-1/2 h-[520px] w-[900px] -translate-x-1/2 rounded-full bg-violet-700/[0.12] blur-[130px]"
+      />
+
+      {/* Search bar */}
+      <header className="sticky top-0 z-50 -mx-4 mb-6 border-b border-white/[0.055] bg-[#0b0911]/85 px-4 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.12)] backdrop-blur-2xl sm:-mx-6 sm:px-6 md:-mx-10 md:px-10">
         <div className="mx-auto max-w-6xl">
-          <div className="flex min-w-0 items-center gap-3 rounded-xl border border-[#302a3b] bg-[#191522] px-4 transition focus-within:border-[#8b5cf6]">
-            <SearchIcon className="h-5 w-5 shrink-0 text-[#a1a1aa]" />
+          <div className="mx-auto flex h-12 max-w-2xl items-center gap-3 rounded-full border border-white/[0.09] bg-[#17131f]/90 px-4 shadow-[0_8px_30px_rgba(0,0,0,0.16)] transition focus-within:border-violet-400/60 focus-within:ring-4 focus-within:ring-violet-500/[0.08]">
+            <SearchIcon className="h-[18px] w-[18px] shrink-0 text-zinc-400" />
 
             <input
-              type="text"
+              type="search"
               value={query}
               onChange={(event) => {
                 setQuery(event.target.value);
                 setActiveMenu(null);
               }}
-              placeholder="ค้นหาชื่อเพลงหรือศิลปิน..."
-              aria-label="ค้นหาชื่อเพลงหรือศิลปิน"
-              className="h-12 min-w-0 flex-1 bg-transparent text-sm text-white outline-none placeholder:text-[#777180] sm:text-base"
+              placeholder="ค้นหาเพลง ศิลปิน หรืออัลบั้ม"
+              aria-label="ค้นหาเพลง ศิลปิน หรืออัลบั้ม"
+              className="h-full min-w-0 flex-1 bg-transparent text-sm text-white outline-none placeholder:text-zinc-500 [appearance:textfield] [&::-webkit-search-cancel-button]:hidden"
             />
 
             {query.length > 0 && (
@@ -299,14 +425,14 @@ export default function SearchPage() {
                 type="button"
                 onClick={clearSearch}
                 aria-label="ล้างคำค้นหา"
-                className="shrink-0 rounded-full p-2 text-[#a1a1aa] transition hover:bg-[#302a3b] hover:text-white"
+                className="rounded-full p-1.5 text-zinc-400 transition hover:bg-white/10 hover:text-white"
               >
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  className="h-5 w-5"
+                  className="h-4 w-4"
                   aria-hidden="true"
                 >
                   <path d="m18 6-12 12M6 6l12 12" />
@@ -317,307 +443,312 @@ export default function SearchPage() {
         </div>
       </header>
 
-      {/* Main content */}
-      <div className="px-4 pb-32 pt-28 sm:px-6 md:px-10">
+      <div className="relative z-10 px-4 pb-32 pt-2 sm:px-6 md:px-10">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-8">
-            <p className="mb-2 text-sm font-medium tracking-[0.2em] text-[#a78bfa]">
-              FIND YOUR NEXT FAVORITE
-            </p>
+          {/* Hero: แสดงทุกแท็บเมื่อยังไม่ได้ค้นหา */}
+          {!hasQuery && (
+            <section className="group relative mb-9 min-h-[190px] overflow-hidden rounded-[26px] border border-white/[0.09] bg-[#17102e] shadow-[0_24px_80px_rgba(55,25,105,0.18)] sm:min-h-[230px]">
+              <img
+                src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1800&q=85"
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover object-center"
+                loading="eager"
+              />
 
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              ค้นหาเพลง
-            </h1>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#10091f] via-[#190d32]/90 to-[#291044]/35" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#10091d]/70 via-transparent to-transparent" />
 
-            <p className="mt-2 text-sm text-[#a1a1aa] sm:text-base">
-              ค้นหาเพลงหรือศิลปินที่คุณชื่นชอบ
-            </p>
-          </div>
+              <div className="relative z-10 flex min-h-[190px] items-center px-6 py-7 sm:min-h-[230px] sm:px-10">
+                <div className="max-w-2xl">
+                  <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-violet-200/15 bg-violet-200/[0.08] px-3 py-1.5 text-[11px] font-semibold tracking-[0.16em] text-violet-100">
+                    <MusicIcon className="h-4 w-4" />
+                    <span>MUSIC PLATFORM</span>
+                  </div>
 
-          {/* Artist results */}
-          {matchedArtists.length > 0 && (
-            <section className="mb-10">
-              <div className="mb-4 flex items-end justify-between gap-3">
-                <h2 className="text-xl font-bold">ศิลปิน</h2>
+                  <h1 className="max-w-xl text-[27px] font-bold leading-[1.2] tracking-tight sm:text-4xl">
+                    เพลงที่ใช่ อยู่ใกล้แค่ปลายนิ้ว
+                  </h1>
 
-                <span className="text-sm text-[#a1a1aa]">
-                  {matchedArtists.length} ศิลปิน
-                </span>
-              </div>
+                  <p className="mt-3 max-w-lg text-sm leading-6 text-violet-100/75 sm:text-[15px]">
+                    ค้นพบเพลงและศิลปินที่คุณชื่นชอบในที่เดียว
+                  </p>
 
-              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
-                {matchedArtists.map((artist) => {
-                  const imageKey = `artist-${artist.id}`;
-                  const artistCover = getArtistCover(artist);
-
-                  return (
-                    <Link
-                      key={artist.id}
-                      href={`/artists/${encodeURIComponent(artist.id)}?returnTo=%2Fsearch`}
-                      onClick={() => {
-                        sessionStorage.setItem(
-                          "artistDetailReturnTo",
-                          window.location.pathname + window.location.search
-                        );
-                      }}
-                      className="group block min-w-0 rounded-2xl border border-[#302a3b] bg-[#191522] p-3 text-left transition hover:bg-[#252033]"
-                    >
-                      <div className="relative mb-3 aspect-square w-full overflow-hidden rounded-xl bg-[#252033]">
-                        {artistCover && !imageErrors[imageKey] ? (
-                          <img
-                            src={artistCover}
-                            alt={artist.name}
-                            loading="lazy"
-                            onError={() =>
-                              setImageErrors((previous) => ({
-                                ...previous,
-                                [imageKey]: true,
-                              }))
-                            }
-                            className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-                          />
-                        ) : (
-                          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#35234f] to-[#191522]">
-                            <svg
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="1.5"
-                              className="h-12 w-12 text-[#a78bfa]"
-                              aria-hidden="true"
-                            >
-                              <circle cx="12" cy="8" r="4" />
-                              <path d="M4 21a8 8 0 0 1 16 0" />
-                            </svg>
-                          </div>
-                        )}
-                      </div>
-
-                      <p className="truncate font-semibold">
-                        {artist.name}
-                      </p>
-
-                      <p className="mt-1 text-xs text-[#a1a1aa]">
-                        ศิลปิน
-                      </p>
-                    </Link>
-                  );
-                })}
+                  <div className="mt-4 flex items-center gap-2 text-xs text-fuchsia-100/75">
+                    <span className="h-1.5 w-1.5 rounded-full bg-fuchsia-400 shadow-[0_0_10px_#e879f9]" />
+                    ค้นพบเพลงใหม่ที่เข้ากับอารมณ์ของคุณ
+                  </div>
+                </div>
               </div>
             </section>
           )}
 
-          {/* Song results */}
-          <section>
-            <div className="mb-4 flex items-end justify-between gap-3">
-              <div>
-                <h2 className="text-xl font-bold">
-                  {query ? "ผลการค้นหาเพลง" : "เพลงแนะนำ"}
-                </h2>
+          {/* Filter tabs */}
+          <div className="mb-8 flex flex-wrap items-center gap-2">
+            {(
+              [
+                { id: "all", label: "ทั้งหมด" },
+                { id: "songs", label: "เพลง" },
+                { id: "artists", label: "ศิลปิน" },
+              ] as const
+            ).map((item) => {
+              const selected = filter === item.id;
 
-                <p className="mt-1 text-sm text-[#a1a1aa]">
-                  {query
-                    ? `ผลลัพธ์สำหรับ “${query}”`
-                    : "ลองค้นหาเพลงหรือศิลปินที่คุณชอบ"}
-                </p>
-              </div>
+              return (
+                <button
+                  key={item.id}
+                  type="button"
+                  onClick={() => {
+                    setFilter(item.id);
+                    setActiveMenu(null);
+                  }}
+                  aria-pressed={selected}
+                  className={`rounded-full px-5 py-2.5 text-sm font-medium transition ${selected
+                    ? "bg-violet-500 text-white shadow-[0_5px_22px_rgba(139,92,246,0.22)]"
+                    : "border border-white/[0.08] bg-white/[0.035] text-zinc-400 hover:border-violet-300/30 hover:bg-white/[0.07] hover:text-white"
+                    }`}
+                >
+                  {item.label}
+                </button>
+              );
+            })}
+          </div>
 
-              <div className="flex shrink-0 items-center gap-3">
-                <span className="text-sm text-[#a1a1aa]">
-                  {filteredSongs.length} เพลง
-                </span>
+          {/* Artist results */}
+          {filter !== "songs" && (
+            <section className="mb-10">
+              <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
+                <div>
+                  <h2 className="text-xl font-bold tracking-tight sm:text-2xl">
+                    {hasQuery
+                      ? "ศิลปินที่ตรงกับการค้นหา"
+                      : "ศิลปินที่คุณอาจรู้จัก"}
+                  </h2>
 
-                {!query.trim() && (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setRecommendedSongs(getRandomSongs(songs, 12));
-                      setActiveMenu(null);
-                    }}
-                    className="inline-flex items-center gap-2 rounded-full border border-[#45365f] bg-[#252033] px-3 py-2 text-xs font-semibold text-[#c4b5fd] transition hover:border-[#8b5cf6] hover:bg-[#352b4a] sm:text-sm"
-                    aria-label="สุ่มเพลงแนะนำใหม่"
-                    title="สุ่มเพลงแนะนำใหม่"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      className="h-4 w-4"
-                      aria-hidden="true"
+                  <p className="mt-1 text-sm text-zinc-500">
+                    {hasQuery
+                      ? "เลือกศิลปินเพื่อดูรายละเอียดและผลงาน"
+                      : filter === "artists"
+                        ? "ลองทำความรู้จักกับศิลปินแนะนำ"
+                        : "ศิลปินที่คัดมาให้คุณสำรวจต่อได้ทันที"}
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-3">
+                  {/* <span className="shrink-0 text-xs text-zinc-500">
+                    {matchedArtists.length} รายการ
+                  </span> */}
+
+                  {/* ลำดับปุ่ม: สุ่มใหม่ ก่อนแสดงทั้งหมด */}
+                  {!hasQuery && (filter === "all" || filter === "artists") && (
+                    <button
+                      type="button"
+                      onClick={refreshArtistRecommendations}
+                      className="inline-flex items-center gap-2 rounded-full border border-[#45365f] bg-[#252033] px-3 py-2 text-xs font-semibold text-violet-300 transition hover:border-violet-400 hover:bg-[#352b4a] sm:text-sm"
+                      aria-label="สุ่มศิลปินแนะนำใหม่"
                     >
-                      <path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5" />
-                    </svg>
+                      <ShuffleIcon />
+                      สุ่มใหม่
+                    </button>
+                  )}
 
-                    <span>สุ่มใหม่</span>
-                  </button>
-                )}
+                  {showAllArtistsLink && (
+                    <Link
+                      href="/artists"
+                      className="rounded-full border border-white/[0.09] px-3 py-2 text-xs font-semibold text-violet-300 transition hover:border-violet-400/50 hover:bg-violet-400/[0.08] sm:text-sm"
+                    >
+                      แสดงทั้งหมด
+                    </Link>
+                  )}
+                </div>
               </div>
-            </div>
 
-            {filteredSongs.length > 0 ? (
-              <div className="overflow-visible rounded-2xl border border-[#302a3b] bg-[#191522]">
-                {filteredSongs.map((song, index) => {
-                  const key = getSongKey(song, index);
-                  const imageKey = `song-${key}`;
-                  const title = getSongTitle(song);
-                  const artistIds = getArtistIds(song);
-                  const firstArtist = getArtistById(artistIds[0]);
-                  const cover = getCover(song);
+              {matchedArtists.length > 0 ? (
+                <div className="grid grid-cols-2 gap-x-4 gap-y-7 sm:grid-cols-3 sm:gap-x-5 lg:grid-cols-4 xl:grid-cols-5">
+                  {matchedArtists.map((artist, index) => {
+                    const imageKey = `artist-${artist.id}`;
 
-                  return (
-                    <div
-                      key={key}
-                      role="button"
-                      tabIndex={0}
-                      aria-label={`เล่นเพลง ${title}`}
-                      onClick={() => handlePlaySong(song)}
-                      onKeyDown={(event) => {
-                        if (
-                          event.target === event.currentTarget &&
-                          (event.key === "Enter" || event.key === " ")
-                        ) {
-                          event.preventDefault();
-                          handlePlaySong(song);
+                    return (
+                      <ArtistCard
+                        key={artist.id}
+                        artist={artist}
+                        index={index}
+                        imageFailed={Boolean(imageErrors[imageKey])}
+                        onImageError={() =>
+                          setImageErrors((previous) => ({
+                            ...previous,
+                            [imageKey]: true,
+                          }))
                         }
-                      }}
-                      className={`group flex min-w-0 cursor-pointer items-center gap-3 px-3 py-3 transition hover:bg-[#252033] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#8b5cf6] sm:gap-4 sm:px-5 ${
-                        index !== filteredSongs.length - 1
-                          ? "border-b border-[#302a3b]"
-                          : ""
-                      }`}
-                    >
-                      {/* Song cover */}
-                      <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg bg-[#252033] sm:h-14 sm:w-14">
-                        {cover && !imageErrors[imageKey] ? (
-                          <img
-                            src={cover}
-                            alt={title}
-                            loading="lazy"
-                            onError={() =>
-                              setImageErrors((previous) => ({
-                                ...previous,
-                                [imageKey]: true,
-                              }))
-                            }
-                            className="h-full w-full object-cover"
-                          />
-                        ) : (
-                          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#35234f] to-[#191522]">
-                            <MusicIcon className="h-6 w-6 text-[#a78bfa]" />
-                          </div>
-                        )}
-                      </div>
+                      />
+                    );
+                  })}
+                </div>
+              ) : (
+                <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] px-5 py-10 text-center">
+                  <ArtistIcon className="mx-auto h-10 w-10 text-zinc-500" />
+                  <h3 className="mt-4 text-lg font-semibold text-white">
+                    ไม่พบศิลปิน
+                  </h3>
+                  <p className="mt-2 text-sm text-zinc-500">
+                    ลองค้นหาด้วยชื่อศิลปินอื่น
+                  </p>
+                </div>
+              )}
+            </section>
+          )}
 
-                      {/* Song title and artist */}
-                      <div className="min-w-0 flex-1">
-                        <p
-                          className="truncate text-sm font-semibold text-[#f5f3ff] sm:text-base"
-                          title={title}
-                        >
-                          {title}
-                        </p>
+          {/* Song results */}
+          {filter !== "artists" && (
+            <section>
+              <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
+                <div>
+                  <h2 className="text-xl font-bold tracking-tight sm:text-2xl">
+                    {hasQuery ? "เพลงที่ตรงกับการค้นหา" : "เพลงแนะนำ"}
+                  </h2>
 
-                        <p
-                          className="mt-1 truncate text-xs text-[#a1a1aa] sm:text-sm"
-                          title={getArtistName(song)}
-                        >
-                          {getArtistName(song)}
-                        </p>
-                      </div>
+                  <p className="mt-1 text-sm text-zinc-500">
+                    {hasQuery
+                      ? `ผลลัพธ์สำหรับ “${query.trim()}”`
+                      : "เลือกเพลงเพื่อเล่น หรือเพิ่มเข้าในคิว"}
+                  </p>
+                </div>
 
-                      {/* Three-dot menu */}
-                      <div
-                        className="relative shrink-0"
-                        onClick={(event) => event.stopPropagation()}
-                        onKeyDown={(event) => event.stopPropagation()}
+                <div className="flex shrink-0 items-center gap-3">
+                  {hasQuery && (
+                    <span className="text-xs text-zinc-500">
+                      {filteredSongs.length} เพลง
+                    </span>
+                  )}
+
+                  {!hasQuery && (
+                    <>
+                      {/* ลำดับปุ่ม: สุ่มใหม่ ก่อนแสดงทั้งหมด */}
+                      <button
+                        type="button"
+                        onClick={refreshSongRecommendations}
+                        className="inline-flex items-center gap-2 rounded-full border border-[#45365f] bg-[#252033] px-3 py-2 text-xs font-semibold text-violet-300 transition hover:border-violet-400 hover:bg-[#352b4a] sm:text-sm"
+                        aria-label="สุ่มเพลงแนะนำใหม่"
                       >
-                        <button
-                          type="button"
-                          onClick={() =>
-                            setActiveMenu((current) =>
-                              current === key ? null : key
-                            )
-                          }
-                          aria-label={`ตัวเลือกเพิ่มเติมสำหรับเพลง ${title}`}
-                          aria-expanded={activeMenu === key}
-                          className="rounded-full p-2 text-[#a1a1aa] transition hover:bg-[#352b4a] hover:text-white"
+                        <ShuffleIcon />
+                        สุ่มใหม่
+                      </button>
+
+                      {showAllSongsLink && (
+                        <Link
+                          href="/songs"
+                          className="rounded-full border border-white/[0.09] px-3 py-2 text-xs font-semibold text-violet-300 transition hover:border-violet-400/50 hover:bg-violet-400/[0.08] sm:text-sm"
                         >
-                          <svg
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                            className="h-5 w-5"
-                            aria-hidden="true"
+                          แสดงทั้งหมด
+                        </Link>
+                      )}
+                    </>
+                  )}
+                </div>
+              </div>
+
+              {filteredSongs.length > 0 ? (
+                <div className="overflow-visible rounded-[22px] border border-white/[0.075] bg-[#13101a]/95 shadow-[0_18px_55px_rgba(0,0,0,0.16)]">
+                  {filteredSongs.map((song, index) => {
+                    const key = getSongKey(song, index);
+                    const imageKey = `song-${key}`;
+                    const title = getSongTitle(song);
+                    const artistIds = getArtistIds(song);
+                    const firstArtist = getArtistById(artistIds[0]);
+                    const cover = getSongCover(song);
+
+                    return (
+                      <div
+                        key={key}
+                        role="button"
+                        tabIndex={0}
+                        aria-label={`เล่นเพลง ${title}`}
+                        onClick={() => handlePlaySong(song)}
+                        onKeyDown={(event) => {
+                          if (
+                            event.target === event.currentTarget &&
+                            (event.key === "Enter" || event.key === " ")
+                          ) {
+                            event.preventDefault();
+                            handlePlaySong(song);
+                          }
+                        }}
+                        className={`group flex min-w-0 cursor-pointer items-center gap-3 px-3.5 py-3.5 transition duration-200 hover:bg-violet-400/[0.055] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-violet-500 sm:gap-4 sm:px-5 ${index !== filteredSongs.length - 1
+                          ? "border-b border-white/[0.055]"
+                          : ""
+                          }`}
+                      >
+                        <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl bg-[#252033] ring-1 ring-white/[0.08] shadow-md sm:h-[54px] sm:w-[54px]">
+                          {cover && !imageErrors[imageKey] ? (
+                            <img
+                              src={cover}
+                              alt={title}
+                              loading="lazy"
+                              onError={() =>
+                                setImageErrors((previous) => ({
+                                  ...previous,
+                                  [imageKey]: true,
+                                }))
+                              }
+                              className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
+                          ) : (
+                            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#35234f] to-[#191522]">
+                              <MusicIcon className="h-6 w-6 text-violet-300" />
+                            </div>
+                          )}
+                        </div>
+
+                        <div className="min-w-0 flex-1">
+                          <p
+                            className="truncate text-sm font-medium text-zinc-100 transition-colors group-hover:text-white"
+                            title={title}
                           >
-                            <circle cx="5" cy="12" r="1.8" />
-                            <circle cx="12" cy="12" r="1.8" />
-                            <circle cx="19" cy="12" r="1.8" />
-                          </svg>
-                        </button>
+                            {title}
+                          </p>
 
-                        {activeMenu === key && (
-                          <div className="absolute right-0 top-full z-30 mt-2 w-48 overflow-hidden rounded-xl border border-[#302a3b] bg-[#191522] py-1 shadow-xl">
-                            {/* เพิ่มเข้าคิว */}
-                            <button
-                              type="button"
-                              onClick={() => handleAddToQueue(song)}
-                              className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#f5f3ff] transition hover:bg-[#302a3b]"
+                          <p
+                            className="mt-1 truncate text-xs text-zinc-400"
+                            title={getArtistName(song)}
+                          >
+                            {getArtistName(song)}
+                          </p>
+                        </div>
+
+                        {/* Three-dot menu */}
+                        <div
+                          className="relative shrink-0"
+                          onClick={(event) => event.stopPropagation()}
+                          onKeyDown={(event) => event.stopPropagation()}
+                        >
+                          <button
+                            type="button"
+                            onClick={() =>
+                              setActiveMenu((current) =>
+                                current === key ? null : key
+                              )
+                            }
+                            aria-label={`ตัวเลือกเพิ่มเติมสำหรับเพลง ${title}`}
+                            aria-expanded={activeMenu === key}
+                            className="rounded-full p-2 text-zinc-400 transition hover:bg-[#352b4a] hover:text-white"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                              className="h-5 w-5"
+                              aria-hidden="true"
                             >
-                              <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="1.8"
-                                className="h-4 w-4 shrink-0"
-                                aria-hidden="true"
-                              >
-                                <path d="M9 6h12M9 12h12M9 18h12" />
-                                <path d="M3 6h.01M3 12h.01M3 18h.01" />
-                                <path d="M17 15v6m-3-3h6" />
-                              </svg>
+                              <circle cx="5" cy="12" r="1.8" />
+                              <circle cx="12" cy="12" r="1.8" />
+                              <circle cx="19" cy="12" r="1.8" />
+                            </svg>
+                          </button>
 
-                              เพิ่มเข้าคิว
-                            </button>
-
-                            {/* คัดลอกชื่อเพลง */}
-                            <button
-                              type="button"
-                              onClick={() => {
-                                void copySongTitle(title);
-                                setActiveMenu(null);
-                              }}
-                              className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#f5f3ff] transition hover:bg-[#302a3b]"
-                            >
-                              <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="1.8"
-                                className="h-4 w-4 shrink-0"
-                                aria-hidden="true"
-                              >
-                                <rect
-                                  x="8"
-                                  y="8"
-                                  width="12"
-                                  height="12"
-                                  rx="2"
-                                />
-                                <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" />
-                              </svg>
-
-                              คัดลอกชื่อเพลง
-                            </button>
-
-                            {/* ดูเพลงของศิลปิน */}
-                            {firstArtist?.name && (
+                          {activeMenu === key && (
+                            <div className="absolute right-0 top-full z-30 mt-2 w-48 overflow-hidden rounded-xl border border-[#302a3b] bg-[#191522] py-1 shadow-xl">
                               <button
                                 type="button"
-                                onClick={() => {
-                                  setQuery(firstArtist.name);
-                                  setActiveMenu(null);
-                                }}
-                                className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-[#f5f3ff] transition hover:bg-[#302a3b]"
+                                onClick={() => handleAddToQueue(song)}
+                                className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-violet-50 transition hover:bg-[#302a3b]"
                               >
                                 <svg
                                   viewBox="0 0 24 24"
@@ -627,53 +758,98 @@ export default function SearchPage() {
                                   className="h-4 w-4 shrink-0"
                                   aria-hidden="true"
                                 >
-                                  <circle cx="12" cy="8" r="4" />
-                                  <path d="M4 21a8 8 0 0 1 16 0" />
+                                  <path d="M9 6h12M9 12h12M9 18h12" />
+                                  <path d="M3 6h.01M3 12h.01M3 18h.01" />
+                                  <path d="M17 15v6m-3-3h6" />
                                 </svg>
-
-                                ดูเพลงของศิลปิน
+                                เพิ่มเข้าคิว
                               </button>
-                            )}
-                          </div>
-                        )}
+
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  void copySongTitle(title);
+                                  setActiveMenu(null);
+                                }}
+                                className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-violet-50 transition hover:bg-[#302a3b]"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeWidth="1.8"
+                                  className="h-4 w-4 shrink-0"
+                                  aria-hidden="true"
+                                >
+                                  <rect
+                                    x="8"
+                                    y="8"
+                                    width="12"
+                                    height="12"
+                                    rx="2"
+                                  />
+                                  <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" />
+                                </svg>
+                                คัดลอกชื่อเพลง
+                              </button>
+
+                              {firstArtist && (
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    setQuery(firstArtist.name);
+                                    setFilter("all");
+                                    setActiveMenu(null);
+                                  }}
+                                  className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-violet-50 transition hover:bg-[#302a3b]"
+                                >
+                                  <ArtistIcon className="h-4 w-4 shrink-0" />
+                                  ดูเพลงของศิลปิน
+                                </button>
+                              )}
+                            </div>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
-              </div>
-            ) : (
-              <div className="rounded-2xl border border-[#302a3b] bg-[#191522] px-5 py-14 text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#252033]">
-                  <SearchIcon className="h-8 w-8 text-[#a78bfa]" />
+                    );
+                  })}
                 </div>
+              ) : (
+                <div className="rounded-2xl border border-white/[0.07] bg-[#191522] px-5 py-14 text-center">
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#252033]">
+                    <SearchIcon className="h-8 w-8 text-violet-300" />
+                  </div>
 
-                <h3 className="text-lg font-semibold">
-                  ไม่พบเพลงที่ค้นหา
-                </h3>
+                  <h3 className="text-lg font-semibold">
+                    {hasQuery ? "ไม่พบเพลงที่ค้นหา" : "ยังไม่มีเพลงแนะนำ"}
+                  </h3>
 
-                <p className="mt-2 text-sm text-[#a1a1aa]">
-                  ลองค้นหาด้วยชื่อเพลงหรือชื่อศิลปินอื่น
-                </p>
+                  <p className="mt-2 text-sm text-zinc-500">
+                    {hasQuery
+                      ? "ลองค้นหาด้วยชื่อเพลงหรือชื่อศิลปินอื่น"
+                      : "ตรวจสอบข้อมูลเพลงในแค็ตตาล็อก"}
+                  </p>
 
-                <button
-                  type="button"
-                  onClick={clearSearch}
-                  className="mt-5 rounded-full bg-[#8b5cf6] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#a78bfa]"
-                >
-                  ดูเพลงทั้งหมด
-                </button>
-              </div>
-            )}
-          </section>
+                  {hasQuery && (
+                    <button
+                      type="button"
+                      onClick={clearSearch}
+                      className="mt-5 rounded-full bg-violet-500 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-violet-400"
+                    >
+                      ดูเพลงทั้งหมด
+                    </button>
+                  )}
+                </div>
+              )}
+            </section>
+          )}
 
-          {/* Footer */}
-          <footer className="mt-10 border-t border-[#302a3b] pt-5 text-center text-xs text-[#777180]">
-            Moodify — Discover music that matches you.
+          <footer className="mt-10 border-t border-white/[0.07] pt-5 text-center text-xs text-zinc-600">
+            Music Platform — Discover your next favorite song.
           </footer>
         </div>
       </div>
 
-      {/* Copy notification */}
       {toast && (
         <div
           role="status"
@@ -682,6 +858,30 @@ export default function SearchPage() {
           {toast}
         </div>
       )}
+
+      <style jsx>{`
+        .artist-card {
+          animation: artist-enter 0.45s ease-out both;
+        }
+
+        @keyframes artist-enter {
+          from {
+            opacity: 0;
+            transform: translateY(8px);
+          }
+
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .artist-card {
+            animation: none;
+          }
+        }
+      `}</style>
     </main>
   );
 }

@@ -147,7 +147,7 @@ export function getPlaybackSource(
     videoId:
       provider === "youtube"
         ? providerData?.video_id?.trim() ||
-          getYouTubeVideoId(url)
+        getYouTubeVideoId(url)
         : null,
   };
 }
