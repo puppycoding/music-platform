@@ -3,6 +3,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useMusicPlayer } from "../../components/music-player/providers/MusicPlayerProvider";
 import catalog from "../../data/music-catalog";
 
@@ -227,7 +228,7 @@ function ArtistCard({
       className="artist-card group block min-w-0 rounded-2xl outline-none focus-visible:ring-2 focus-visible:ring-violet-400"
       style={{ animationDelay: `${Math.min(index, 10) * 45}ms` }}
     >
-      <div className="relative aspect-square overflow-hidden rounded-2xl border border-white/[0.07] bg-[#191421] shadow-[0_8px_28px_rgba(0,0,0,0.18)] transition duration-500 group-hover:-translate-y-1 group-hover:border-violet-300/30 group-hover:shadow-[0_16px_36px_rgba(124,58,237,0.14)]">
+      <div className="relative aspect-square overflow-hidden rounded-2xl bg-[#191421] shadow-[0_8px_28px_rgba(0,0,0,0.18)] transition duration-500 group-hover:-translate-y-1 group-hover:shadow-[0_16px_36px_rgba(124,58,237,0.14)]">
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#49305d] via-[#292033] to-[#131019]">
           <span className="text-5xl font-bold tracking-tight text-white/25 sm:text-6xl">
             {getInitials(artist.name)}
@@ -235,8 +236,11 @@ function ArtistCard({
         </div>
 
         {imageUrl && !imageFailed && (
-          <img
+          <Image
             src={imageUrl}
+            fill
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 240px"
+            unoptimized={!imageUrl.startsWith("/")}
             alt={artist.name}
             loading={index < 6 ? "eager" : "lazy"}
             decoding="async"

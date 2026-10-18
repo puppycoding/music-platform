@@ -1,6 +1,9 @@
+
 {
   "schema_version": "1.0.0",
   "catalog_title": "Music Catalog — YouTube Only",
+  "language": "th",
+  "created_at": "2026-10-12",
   "artists": [
     {
       "id": "artist_guncharlie",
@@ -8,8 +11,8 @@
       "country": "TH",
       "spotify_artist_id": "1qveov8f3HXFhDIWtFO5tG",
       "spotify_url": "https://open.spotify.com/artist/1qveov8f3HXFhDIWtFO5tG",
-      "image_url": "https://i.ytimg.com/vi/I7iu2twr9v4/hqdefault.jpg",
-      "image_status": "representative_track_thumbnail_not_verified_artist_photo"
+      "image_url": "/images/artists/guncharlie.jpg",
+      "image_status": "local_image_pending"
     }
   ]
 }

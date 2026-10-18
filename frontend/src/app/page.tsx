@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import catalog from "../data/music-catalog";
 import { useMusicPlayer } from "../components/music-player/providers/MusicPlayerProvider";
 
@@ -378,14 +379,17 @@ function ArtistCard({
       className="group flex min-w-0 flex-col items-center rounded-xl border border-white/[0.08] bg-[#15111e] p-3 transition duration-300 hover:-translate-y-0.5 hover:border-violet-400/40 hover:bg-[#1b1528] hover:shadow-lg hover:shadow-violet-950/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 sm:rounded-2xl sm:p-4"
       aria-label={`ดูรายละเอียดศิลปิน ${artist.name}`}
     >
-      <div className="relative mb-3 aspect-square w-full max-w-28 overflow-hidden rounded-full bg-gradient-to-br from-violet-500/30 via-purple-900 to-[#171220] ring-1 ring-white/10 transition duration-300 group-hover:ring-2 group-hover:ring-violet-300/60 sm:max-w-32">
+      <div className="relative mb-3 aspect-square w-full max-w-28 overflow-hidden rounded-full bg-gradient-to-br from-violet-500/30 via-purple-900 to-[#171220] transition duration-300 sm:max-w-32">
         <div className="flex h-full w-full items-center justify-center text-3xl font-bold text-violet-200">
           {artist.name.charAt(0)}
         </div>
 
         {artist.image_url && !imageError && (
-          <img
+          <Image
             src={artist.image_url}
+            fill
+            sizes="(max-width: 640px) 112px, 128px"
+            unoptimized={!artist.image_url.startsWith("/")}
             alt={`รูปศิลปิน ${artist.name}`}
             loading="lazy"
             onError={() => setImageError(true)}

@@ -5,18 +5,50 @@
   "created_at": "2026-10-12",
   "albums": [
     {
-      "id": "album_tmd_city",
-      "title": "This City Won't Be Lonely Anymore",
+      "id": "album_tmd_iii",
+      "title": "III",
       "artist_ids": [
         "artist_three_man_down"
       ],
-      "release_year": 2021,
+      "release_year": 2025,
       "album_type": "album",
-      "cover_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/28/34/7c283465-65c8-e63c-3cb0-5122910f2abc/888332916769.jpg/1200x1200bb.jpg",
+      "cover_url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b665b01883c990a870e2a99c",
       "providers": {
         "spotify": {
-          "album_id": "2CW683T46NKuomRUrqv00W",
-          "url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+          "album_id": "59hXVrRW78L0BTtrZ1pn9M",
+          "url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": "https://music.apple.com/us/album/iii/1814806436"
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+III+album",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+III+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M",
+        "https://music.apple.com/us/album/iii/1814806436"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+    },
+    {
+      "id": "album_tmd_live_impact_2023",
+      "title": "Three Man Down Live At Impact Arena 2023",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2024,
+      "album_type": "live_album",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0242130ada81ef967d582c5dbd",
+      "providers": {
+        "spotify": {
+          "album_id": "1ix9nzxG6yuWAxRlpXRWDQ",
+          "url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
         },
         "apple_music": {
           "album_id": null,
@@ -24,17 +56,16 @@
         },
         "youtube": {
           "playlist_id": null,
-          "url": "https://www.youtube.com/results?search_query=This+City+Won%27t+Be+Lonely+Anymore+Three+Man+Down+album",
-          "search_url": "https://www.youtube.com/results?search_query=This+City+Won%27t+Be+Lonely+Anymore+Three+Man+Down+album",
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+Live+At+Impact+Arena+2023",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+Live+At+Impact+Arena+2023",
           "link_type": "search"
         }
       },
       "source_urls": [
-        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W",
-        "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937"
+        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
       ],
-      "metadata_status": "artwork_url_added_source_linked",
-      "cover_source_url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937"
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
     },
     {
       "id": "album_tmd_28",
@@ -44,11 +75,11 @@
       ],
       "release_year": 2023,
       "album_type": "album",
-      "cover_url": "https://mpics-cdn-acc.mgronline.com/pics/Images/566000007146702.JPEG",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02fea72153cc7b319fb5116bd0",
       "providers": {
         "spotify": {
-          "album_id": "43Z6Hv2xoIKNUR7ELaDx8Y",
-          "url": "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y"
+          "album_id": "1YcOzE3Tgv9KPpCxgYy6uw",
+          "url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
         },
         "apple_music": {
           "album_id": null,
@@ -62,25 +93,180 @@
         }
       },
       "source_urls": [
-        "https://open.spotify.com/album/43Z6Hv2xoIKNUR7ELaDx8Y",
-        "https://mgronline.com/entertainment/detail/9660000070378"
+        "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
       ],
-      "metadata_status": "artwork_url_added_source_linked",
-      "cover_source_url": "https://mgronline.com/entertainment/detail/9660000070378"
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
     },
     {
-      "id": "album_tmd_iii",
-      "title": "III",
+      "id": "album_tmd_city",
+      "title": "This City Won't Be Lonely Anymore",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2021,
+      "album_type": "album",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e022bff7ebac2ac29d107d284e7",
+      "providers": {
+        "spotify": {
+          "album_id": "2CW683T46NKuomRUrqv00W",
+          "url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937"
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=This+City+Won%27t+Be+Lonely+Anymore+Three+Man+Down+album",
+          "search_url": "https://www.youtube.com/results?search_query=This+City+Won%27t+Be+Lonely+Anymore+Three+Man+Down+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W",
+        "https://music.apple.com/us/album/this-city-wont-be-lonely-anymore/1792750937"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+    },
+    {
+      "id": "single_tmd_mai_khoei_dai_la",
+      "title": "ไม่เคยได้ลา (Original Soundtrack From \"เทอม 4\")",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2026,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02e0e1221774bfc0236707f6d3",
+      "providers": {
+        "spotify": {
+          "album_id": "4m3g6yCxmXxz31OTmgLefR",
+          "url": "https://open.spotify.com/album/4m3g6yCxmXxz31OTmgLefR"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ไม่เคยได้ลา",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ไม่เคยได้ลา",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/4m3g6yCxmXxz31OTmgLefR"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/4m3g6yCxmXxz31OTmgLefR"
+    },
+    {
+      "id": "single_tmd_hetphon",
+      "title": "เหตุผล (feat. whateve)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2026,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02878e8c3854971f33da3d33b4",
+      "providers": {
+        "spotify": {
+          "album_id": "6mdtFQaLaLklgBbQI4A8ia",
+          "url": "https://open.spotify.com/album/6mdtFQaLaLklgBbQI4A8ia"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+เหตุผล+whateve",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+เหตุผล+whateve",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/6mdtFQaLaLklgBbQI4A8ia"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/6mdtFQaLaLklgBbQI4A8ia"
+    },
+    {
+      "id": "ep_tmd_city_alternate_versions",
+      "title": "ข้างกัน (City) [Alternate Versions]",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2026,
+      "album_type": "ep",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02cf3b533a92238d7a8f962e18",
+      "providers": {
+        "spotify": {
+          "album_id": "5isZlrK8kNYmav4pLBVZEU",
+          "url": "https://open.spotify.com/album/5isZlrK8kNYmav4pLBVZEU"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ข้างกัน+City+Alternate+Versions",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ข้างกัน+City+Alternate+Versions",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/5isZlrK8kNYmav4pLBVZEU"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/5isZlrK8kNYmav4pLBVZEU"
+    },
+    {
+      "id": "single_tmd_phuean_sanit_platonic_love",
+      "title": "เพื่อนสนิท (Platonic Love) [feat. PEEMWASU OF BUS]",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2026,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029f4825e62a0aa0f3d437c2d4",
+      "providers": {
+        "spotify": {
+          "album_id": "26P69L852w82osraPlizaB",
+          "url": "https://open.spotify.com/album/26P69L852w82osraPlizaB"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+เพื่อนสนิท+PEEMWASU",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+เพื่อนสนิท+PEEMWASU",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/26P69L852w82osraPlizaB"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/26P69L852w82osraPlizaB"
+    },
+    {
+      "id": "single_tmd_roem_mai",
+      "title": "เริ่มใหม่",
       "artist_ids": [
         "artist_three_man_down"
       ],
       "release_year": 2025,
-      "album_type": "album",
-      "cover_url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/17/23/f8/1723f883-4443-0706-274f-7457922d5d53/cover.jpg/1200x1200bb.jpg",
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02989d5d97534bbe84651943b5",
       "providers": {
         "spotify": {
-          "album_id": "59hXVrRW78L0BTtrZ1pn9M",
-          "url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+          "album_id": "5NAkGig4ajWDazmU0sA0Xn",
+          "url": "https://open.spotify.com/album/5NAkGig4ajWDazmU0sA0Xn"
         },
         "apple_music": {
           "album_id": null,
@@ -88,31 +274,30 @@
         },
         "youtube": {
           "playlist_id": null,
-          "url": "https://www.youtube.com/results?search_query=III+Three+Man+Down+album",
-          "search_url": "https://www.youtube.com/results?search_query=III+Three+Man+Down+album",
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+เริ่มใหม่",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+เริ่มใหม่",
           "link_type": "search"
         }
       },
       "source_urls": [
-        "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M",
-        "https://music.apple.com/us/album/iii/1814806436"
+        "https://open.spotify.com/album/5NAkGig4ajWDazmU0sA0Xn"
       ],
-      "metadata_status": "artwork_url_added_source_linked",
-      "cover_source_url": "https://music.apple.com/us/album/iii/1814806436"
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/5NAkGig4ajWDazmU0sA0Xn"
     },
     {
-      "id": "album_tmd_other_singles",
-      "title": "Other singles and soundtrack releases",
+      "id": "single_tmd_luek_long_pai",
+      "title": "ลึกลงไป",
       "artist_ids": [
         "artist_three_man_down"
       ],
-      "release_year": null,
-      "album_type": "single_collection",
-      "cover_url": "https://i.ytimg.com/vi/XTWJFGF-Ev4/hqdefault.jpg",
+      "release_year": 2025,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e022870e487ca072cee5af518dd",
       "providers": {
         "spotify": {
-          "album_id": "1qAOsY7jv9GFTv4HoVof5P",
-          "url": "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P"
+          "album_id": "6npo5IowLtc1RcHxKu5bxL",
+          "url": "https://open.spotify.com/album/6npo5IowLtc1RcHxKu5bxL"
         },
         "apple_music": {
           "album_id": null,
@@ -120,16 +305,1163 @@
         },
         "youtube": {
           "playlist_id": null,
-          "url": "https://www.youtube.com/results?search_query=Other+singles+and+soundtrack+releases+Three+Man+Down+album",
-          "search_url": "https://www.youtube.com/results?search_query=Other+singles+and+soundtrack+releases+Three+Man+Down+album",
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ลึกลงไป",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ลึกลงไป",
           "link_type": "search"
         }
       },
       "source_urls": [
-        "https://open.spotify.com/artist/1qAOsY7jv9GFTv4HoVof5P"
+        "https://open.spotify.com/album/6npo5IowLtc1RcHxKu5bxL"
       ],
-      "metadata_status": "partial_verify_artwork_and_release_metadata",
-      "cover_status": "representative_track_thumbnail_not_verified_album_artwork"
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/6npo5IowLtc1RcHxKu5bxL"
+    },
+    {
+      "id": "single_tmd_yom_thoi",
+      "title": "ยอมถอย",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2025,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e027ae5bd075fee6a84c6550cef",
+      "providers": {
+        "spotify": {
+          "album_id": "2h420jptxny3RWTyrdTxrI",
+          "url": "https://open.spotify.com/album/2h420jptxny3RWTyrdTxrI"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ยอมถอย",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ยอมถอย",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/2h420jptxny3RWTyrdTxrI"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/2h420jptxny3RWTyrdTxrI"
+    },
+    {
+      "id": "single_tmd_rak_krai_mai_wai",
+      "title": "รักใครไม่ไหว",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2025,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02cc92e1c91b136059b0a0d7d7",
+      "providers": {
+        "spotify": {
+          "album_id": "0m2tnO0TVcf6tfiYVofY59",
+          "url": "https://open.spotify.com/album/0m2tnO0TVcf6tfiYVofY59"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+รักใครไม่ไหว",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+รักใครไม่ไหว",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/0m2tnO0TVcf6tfiYVofY59"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/0m2tnO0TVcf6tfiYVofY59"
+    },
+    {
+      "id": "single_tmd_kho_thot_thi_tิดต่อ_pai",
+      "title": "ขอโทษที่ติดต่อไป (feat. Nap The Nap)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2025,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d0ded98d10da8a1ceabd38d6",
+      "providers": {
+        "spotify": {
+          "album_id": "7duI9Nj9qF85fbCeak1J4W",
+          "url": "https://open.spotify.com/album/7duI9Nj9qF85fbCeak1J4W"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ขอโทษที่ติดต่อไป+Nap+The+Nap",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ขอโทษที่ติดต่อไป+Nap+The+Nap",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/7duI9Nj9qF85fbCeak1J4W"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/7duI9Nj9qF85fbCeak1J4W"
+    },
+    {
+      "id": "single_tmd_phleng_rak",
+      "title": "เพลงรัก",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2024,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028179ebd753b664e3e5530cf0",
+      "providers": {
+        "spotify": {
+          "album_id": "3VL7QhNU2t3kSagMo0VXAR",
+          "url": "https://open.spotify.com/album/3VL7QhNU2t3kSagMo0VXAR"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+เพลงรัก",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+เพลงรัก",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/3VL7QhNU2t3kSagMo0VXAR"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/3VL7QhNU2t3kSagMo0VXAR"
+    },
+    {
+      "id": "single_tmd_sa_hai_sut",
+      "title": "ซ่าให้สุด",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2024,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02539bbc71f99ad2f975bbf69a",
+      "providers": {
+        "spotify": {
+          "album_id": "6JUqvMmiteYVkxwR8Ablq7",
+          "url": "https://open.spotify.com/album/6JUqvMmiteYVkxwR8Ablq7"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ซ่าให้สุด",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ซ่าให้สุด",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/6JUqvMmiteYVkxwR8Ablq7"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/6JUqvMmiteYVkxwR8Ablq7"
+    },
+    {
+      "id": "single_tmd_mai_hai_pai",
+      "title": "ไม่ให้ไป",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2024,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f76bb0317f3667eb109c560a",
+      "providers": {
+        "spotify": {
+          "album_id": "28dy93d5fLZFNkBKpuhtpQ",
+          "url": "https://open.spotify.com/album/28dy93d5fLZFNkBKpuhtpQ"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ไม่ให้ไป",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ไม่ให้ไป",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/28dy93d5fLZFNkBKpuhtpQ"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/28dy93d5fLZFNkBKpuhtpQ"
+    },
+    {
+      "id": "single_tmd_pai_duai_kan_na",
+      "title": "ไปด้วยกันนะ",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2024,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027501be79ab34cb306b63df58",
+      "providers": {
+        "spotify": {
+          "album_id": "7z5T0AiJ46jHVoT4JUKlTw",
+          "url": "https://open.spotify.com/album/7z5T0AiJ46jHVoT4JUKlTw"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ไปด้วยกันนะ",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ไปด้วยกันนะ",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/7z5T0AiJ46jHVoT4JUKlTw"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/7z5T0AiJ46jHVoT4JUKlTw"
+    },
+    {
+      "id": "single_tmd_khwam_rak_tham_hai_khon_ta_bot",
+      "title": "ความรักทำให้คนตาบอด (ซนซน 40 ปี GMM GRAMMY)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2023,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ab5242fa7416a9514e48fac3",
+      "providers": {
+        "spotify": {
+          "album_id": "2JiG4kprHCT2IVbVEk9GqC",
+          "url": "https://open.spotify.com/album/2JiG4kprHCT2IVbVEk9GqC"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ความรักทำให้คนตาบอด+ซนซน",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ความรักทำให้คนตาบอด+ซนซน",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/2JiG4kprHCT2IVbVEk9GqC"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/2JiG4kprHCT2IVbVEk9GqC"
+    },
+    {
+      "id": "single_tmd_mao",
+      "title": "เมา",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2023,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024f0a5477bdb7cc15de705673",
+      "providers": {
+        "spotify": {
+          "album_id": "2Y3DIJ6pUx9YkV8blesucC",
+          "url": "https://open.spotify.com/album/2Y3DIJ6pUx9YkV8blesucC"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+เมา",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+เมา",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/2Y3DIJ6pUx9YkV8blesucC"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/2Y3DIJ6pUx9YkV8blesucC"
+    },
+    {
+      "id": "single_tmd_poet_tua_khao",
+      "title": "เปิดตัวเขา",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2023,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e027da8c000a370abbb52d4e93d",
+      "providers": {
+        "spotify": {
+          "album_id": "1ebj18DUuS6Nyor19XoGob",
+          "url": "https://open.spotify.com/album/1ebj18DUuS6Nyor19XoGob"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+เปิดตัวเขา",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+เปิดตัวเขา",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/1ebj18DUuS6Nyor19XoGob"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/1ebj18DUuS6Nyor19XoGob"
+    },
+    {
+      "id": "single_tmd_mai_yak_hai_thoe_mai_sabai",
+      "title": "ไม่อยากให้เธอไม่สบาย",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2023,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ad8b9ec34f45e88723870b1a",
+      "providers": {
+        "spotify": {
+          "album_id": "0KjUaEz4G5z2SORXJ9FzUg",
+          "url": "https://open.spotify.com/album/0KjUaEz4G5z2SORXJ9FzUg"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ไม่อยากให้เธอไม่สบาย",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ไม่อยากให้เธอไม่สบาย",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/0KjUaEz4G5z2SORXJ9FzUg"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/0KjUaEz4G5z2SORXJ9FzUg"
+    },
+    {
+      "id": "single_tmd_dek_koen_pai",
+      "title": "เด็กเกินไป",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2023,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e023d169f8eda09e2570c8ee9f5",
+      "providers": {
+        "spotify": {
+          "album_id": "4DqBlFpKTfEwyjmjY6ns9W",
+          "url": "https://open.spotify.com/album/4DqBlFpKTfEwyjmjY6ns9W"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+เด็กเกินไป",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+เด็กเกินไป",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/4DqBlFpKTfEwyjmjY6ns9W"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/4DqBlFpKTfEwyjmjY6ns9W"
+    },
+    {
+      "id": "single_tmd_nai_bok_loek_laew",
+      "title": "ไหนบอกเลิกแล้ว (In My Bed)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2023,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028bee6406024c14fc4ab3046b",
+      "providers": {
+        "spotify": {
+          "album_id": "3PJHkk7y2KHuf2elvuwXrS",
+          "url": "https://open.spotify.com/album/3PJHkk7y2KHuf2elvuwXrS"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ไหนบอกเลิกแล้ว",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ไหนบอกเลิกแล้ว",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/3PJHkk7y2KHuf2elvuwXrS"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/3PJHkk7y2KHuf2elvuwXrS"
+    },
+    {
+      "id": "single_tmd_nong",
+      "title": "น้อง (Nong) [feat. UrboyTJ]",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2023,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0238071f448a9d710b69aadc2b",
+      "providers": {
+        "spotify": {
+          "album_id": "1mAboC2rOQTkM3OxdVGP0s",
+          "url": "https://open.spotify.com/album/1mAboC2rOQTkM3OxdVGP0s"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+น้อง+UrboyTJ",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+น้อง+UrboyTJ",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/1mAboC2rOQTkM3OxdVGP0s"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/1mAboC2rOQTkM3OxdVGP0s"
+    },
+    {
+      "id": "single_tmd_ploi_hai_wela",
+      "title": "ปล่อยให้เวลา (Broken Clock)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2022,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029ce59399433d53405a0f5dac",
+      "providers": {
+        "spotify": {
+          "album_id": "1nHkmufoFGvhC8BaAz8agN",
+          "url": "https://open.spotify.com/album/1nHkmufoFGvhC8BaAz8agN"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ปล่อยให้เวลา",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ปล่อยให้เวลา",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/1nHkmufoFGvhC8BaAz8agN"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/1nHkmufoFGvhC8BaAz8agN"
+    },
+    {
+      "id": "single_tmd_yut_hua_jai",
+      "title": "หยุดหัวใจ (เพลงประกอบซีรีย์ \"รักนาย My Ride\")",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2022,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02dded05b5ec784a5bb41ce731",
+      "providers": {
+        "spotify": {
+          "album_id": "3UIqhMh7CBxcylQRLJ8uLN",
+          "url": "https://open.spotify.com/album/3UIqhMh7CBxcylQRLJ8uLN"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+หยุดหัวใจ+My+Ride",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+หยุดหัวใจ+My+Ride",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/3UIqhMh7CBxcylQRLJ8uLN"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/3UIqhMh7CBxcylQRLJ8uLN"
+    },
+    {
+      "id": "single_tmd_ik_mai_nan_nan_khae_nai",
+      "title": "อีกไม่นาน นานแค่ไหน (feat. พระมหาไพรวัลย์)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2021,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024aa01eea3e56a67bd43be018",
+      "providers": {
+        "spotify": {
+          "album_id": "4bPRwpur2wVqvxX6NWqHVh",
+          "url": "https://open.spotify.com/album/4bPRwpur2wVqvxX6NWqHVh"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+อีกไม่นาน+นานแค่ไหน",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+อีกไม่นาน+นานแค่ไหน",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/4bPRwpur2wVqvxX6NWqHVh"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/4bPRwpur2wVqvxX6NWqHVh"
+    },
+    {
+      "id": "single_tmd_wan_koet_chan_pi_ni",
+      "title": "วันเกิดฉันปีนี้ (HBD to me)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2021,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e027408c0eb8d89b4e8496a6ee0",
+      "providers": {
+        "spotify": {
+          "album_id": "09UJqu4YtsVZBMQ2OCFZiN",
+          "url": "https://open.spotify.com/album/09UJqu4YtsVZBMQ2OCFZiN"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+วันเกิดฉันปีนี้",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+วันเกิดฉันปีนี้",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/09UJqu4YtsVZBMQ2OCFZiN"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/09UJqu4YtsVZBMQ2OCFZiN"
+    },
+    {
+      "id": "single_tmd_yu_nai_sai",
+      "title": "อยู่ในสาย",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2021,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0216cd53dec7c39e7a3e2bf697",
+      "providers": {
+        "spotify": {
+          "album_id": "5qXRcoFjQHiEiTFDTcKsoo",
+          "url": "https://open.spotify.com/album/5qXRcoFjQHiEiTFDTcKsoo"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+อยู่ในสาย",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+อยู่ในสาย",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/5qXRcoFjQHiEiTFDTcKsoo"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/5qXRcoFjQHiEiTFDTcKsoo"
+    },
+    {
+      "id": "single_tmd_dao_mai_keng",
+      "title": "เดาไม่เก่ง",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2021,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02c9d1b9726d0ff4e51f17c012",
+      "providers": {
+        "spotify": {
+          "album_id": "6Hi3j93J1ab4HFKoHd5BGG",
+          "url": "https://open.spotify.com/album/6Hi3j93J1ab4HFKoHd5BGG"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+เดาไม่เก่ง",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+เดาไม่เก่ง",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/6Hi3j93J1ab4HFKoHd5BGG"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/6Hi3j93J1ab4HFKoHd5BGG"
+    },
+    {
+      "id": "single_tmd_tha_thoe_rak_chan_ching",
+      "title": "ถ้าเธอรักฉันจริง",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2020,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028fcb8661fe9f19ab95f1ad5b",
+      "providers": {
+        "spotify": {
+          "album_id": "1qSxbcfTQplNcUSmIgTo63",
+          "url": "https://open.spotify.com/album/1qSxbcfTQplNcUSmIgTo63"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ถ้าเธอรักฉันจริง",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ถ้าเธอรักฉันจริง",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/1qSxbcfTQplNcUSmIgTo63"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/1qSxbcfTQplNcUSmIgTo63"
+    },
+    {
+      "id": "single_tmd_yak_fang",
+      "title": "อยากฟัง",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2020,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02e5066e4b0ac312bd965094b5",
+      "providers": {
+        "spotify": {
+          "album_id": "0LuB4N3QJVS7havnVSEak7",
+          "url": "https://open.spotify.com/album/0LuB4N3QJVS7havnVSEak7"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+อยากฟัง",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+อยากฟัง",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/0LuB4N3QJVS7havnVSEak7"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/0LuB4N3QJVS7havnVSEak7"
+    },
+    {
+      "id": "single_tmd_kot_thoe_khuen_ni",
+      "title": "กอดเธอคืนนี้",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2020,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f2d3f9fee505a33c53d71293",
+      "providers": {
+        "spotify": {
+          "album_id": "7MF3TFTDcmdkYo12KJvJdP",
+          "url": "https://open.spotify.com/album/7MF3TFTDcmdkYo12KJvJdP"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+กอดเธอคืนนี้",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+กอดเธอคืนนี้",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/7MF3TFTDcmdkYo12KJvJdP"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/7MF3TFTDcmdkYo12KJvJdP"
+    },
+    {
+      "id": "single_tmd_khang_kan_city",
+      "title": "ข้างกัน (City) [feat. ออม TELEx TELEXs]",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2020,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02948d98792f0b5ea0ad7781d2",
+      "providers": {
+        "spotify": {
+          "album_id": "5z57MZuxys8GOXr8NiqBL4",
+          "url": "https://open.spotify.com/album/5z57MZuxys8GOXr8NiqBL4"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ข้างกัน+City",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ข้างกัน+City",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/5z57MZuxys8GOXr8NiqBL4"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/5z57MZuxys8GOXr8NiqBL4"
+    },
+    {
+      "id": "single_tmd_non_mai_lap_remake",
+      "title": "นอนไม่หลับ (THE REMAKE)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2020,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e021185aad590094218e266971c",
+      "providers": {
+        "spotify": {
+          "album_id": "7vob00SkQDD5fnL8KQ9VOD",
+          "url": "https://open.spotify.com/album/7vob00SkQDD5fnL8KQ9VOD"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+นอนไม่หลับ+THE+REMAKE",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+นอนไม่หลับ+THE+REMAKE",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/7vob00SkQDD5fnL8KQ9VOD"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/7vob00SkQDD5fnL8KQ9VOD"
+    },
+    {
+      "id": "single_tmd_khuk_khao",
+      "title": "คุกเข่า (เพลงประกอบซีรีส์ \"Hook รักหมัดหนัก\")",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2020,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e020e92735a466020002150515f",
+      "providers": {
+        "spotify": {
+          "album_id": "0SaLr64PPPKqyy0BXsQ09Z",
+          "url": "https://open.spotify.com/album/0SaLr64PPPKqyy0BXsQ09Z"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+คุกเข่า+Hook",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+คุกเข่า+Hook",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/0SaLr64PPPKqyy0BXsQ09Z"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/0SaLr64PPPKqyy0BXsQ09Z"
+    },
+    {
+      "id": "single_tmd_fan_thueng_fan_khao",
+      "title": "ฝันถึงแฟนเก่า",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2020,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02bf5e055c3a13bcee44058bbd",
+      "providers": {
+        "spotify": {
+          "album_id": "7d5CVlBEIqWJXO0lvFOQDf",
+          "url": "https://open.spotify.com/album/7d5CVlBEIqWJXO0lvFOQDf"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ฝันถึงแฟนเก่า",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ฝันถึงแฟนเก่า",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/7d5CVlBEIqWJXO0lvFOQDf"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/7d5CVlBEIqWJXO0lvFOQDf"
+    },
+    {
+      "id": "single_tmd_khwam_khitthueng_thi_chan_dai_khoei_song_pai",
+      "title": "ความคิดถึงที่ฉันได้เคยส่งไปในคืนที่ฝนโปรยลงมา",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2020,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02da4023e9882ddc41bf9fcb78",
+      "providers": {
+        "spotify": {
+          "album_id": "50pRPHus7A9jVHodOneAL5",
+          "url": "https://open.spotify.com/album/50pRPHus7A9jVHodOneAL5"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ความคิดถึงที่ฉันได้เคยส่งไปในคืนที่ฝนโปรยลงมา",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ความคิดถึงที่ฉันได้เคยส่งไปในคืนที่ฝนโปรยลงมา",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/50pRPHus7A9jVHodOneAL5"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/50pRPHus7A9jVHodOneAL5"
+    },
+    {
+      "id": "single_tmd_lueak_khon_thi_khao_rak_rao",
+      "title": "เลือกคนที่เขารักเรา",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2020,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e026f33cf43684a194961254a4d",
+      "providers": {
+        "spotify": {
+          "album_id": "7g2so5guge6q55fMBksdgY",
+          "url": "https://open.spotify.com/album/7g2so5guge6q55fMBksdgY"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+เลือกคนที่เขารักเรา",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+เลือกคนที่เขารักเรา",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/7g2so5guge6q55fMBksdgY"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/7g2so5guge6q55fMBksdgY"
+    },
+    {
+      "id": "single_tmd_fon_tok_mai",
+      "title": "ฝนตกไหม",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2019,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ff702b13d848b1b16a6625b3",
+      "providers": {
+        "spotify": {
+          "album_id": "0wXyMirCCUwDx04BUuTIHy",
+          "url": "https://open.spotify.com/album/0wXyMirCCUwDx04BUuTIHy"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ฝนตกไหม",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ฝนตกไหม",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/0wXyMirCCUwDx04BUuTIHy"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/0wXyMirCCUwDx04BUuTIHy"
+    },
+    {
+      "id": "single_tmd_pai_thoe_thoe",
+      "title": "ไปเถอะเธอ",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2019,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02a238d42b4b1eb3897477d54e",
+      "providers": {
+        "spotify": {
+          "album_id": "29EOuDTq84httddS1G6fW2",
+          "url": "https://open.spotify.com/album/29EOuDTq84httddS1G6fW2"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ไปเถอะเธอ",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ไปเถอะเธอ",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/29EOuDTq84httddS1G6fW2"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/29EOuDTq84httddS1G6fW2"
+    },
+    {
+      "id": "single_tmd_team_ro_thoe",
+      "title": "ทีมรอเธอ",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2019,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028700d218d23cd9bbf1062be7",
+      "providers": {
+        "spotify": {
+          "album_id": "6BWT4mIK9BCrsBsygdRpRW",
+          "url": "https://open.spotify.com/album/6BWT4mIK9BCrsBsygdRpRW"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ทีมรอเธอ",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ทีมรอเธอ",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/6BWT4mIK9BCrsBsygdRpRW"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/6BWT4mIK9BCrsBsygdRpRW"
+    },
+    {
+      "id": "single_tmd_ton_mai_dai_choe",
+      "title": "ตอนไม่ได้เจอ",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2019,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0201c08e9c1c937eed3de0e50b",
+      "providers": {
+        "spotify": {
+          "album_id": "5LnEn10N1vDwn8QKIOUxfK",
+          "url": "https://open.spotify.com/album/5LnEn10N1vDwn8QKIOUxfK"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ตอนไม่ได้เจอ",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ตอนไม่ได้เจอ",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/5LnEn10N1vDwn8QKIOUxfK"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/5LnEn10N1vDwn8QKIOUxfK"
+    },
+    {
+      "id": "single_tmd_phan_ta",
+      "title": "ผ่านตา",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2018,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e021e5b7518d94b0d8cd54e2401",
+      "providers": {
+        "spotify": {
+          "album_id": "59NLZPEE1Q3RS0cy1ijBPR",
+          "url": "https://open.spotify.com/album/59NLZPEE1Q3RS0cy1ijBPR"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ผ่านตา",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ผ่านตา",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/59NLZPEE1Q3RS0cy1ijBPR"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/59NLZPEE1Q3RS0cy1ijBPR"
+    },
+    {
+      "id": "single_tmd_khong_thi_thoe_mai_tongkan",
+      "title": "ของที่เธอไม่ต้องการ",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2016,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02da42d0a028a91fe59d44e451",
+      "providers": {
+        "spotify": {
+          "album_id": "659axlfiwWff34J5WHra3F",
+          "url": "https://open.spotify.com/album/659axlfiwWff34J5WHra3F"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ของที่เธอไม่ต้องการ",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ของที่เธอไม่ต้องการ",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/659axlfiwWff34J5WHra3F"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/659axlfiwWff34J5WHra3F"
+    },
+    {
+      "id": "single_tmd_khwam_rak_thi_di_thi_sut_live",
+      "title": "ความรักที่ดีที่สุด (Live)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2016,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02a288990cfccd268508b4210b",
+      "providers": {
+        "spotify": {
+          "album_id": "7rwWj0Vilc1ascwlYFjK7n",
+          "url": "https://open.spotify.com/album/7rwWj0Vilc1ascwlYFjK7n"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+ความรักที่ดีที่สุด+Live",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+ความรักที่ดีที่สุด+Live",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/7rwWj0Vilc1ascwlYFjK7n"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/7rwWj0Vilc1ascwlYFjK7n"
+    },
+    {
+      "id": "single_tmd_hey_josh",
+      "title": "Hey Josh! (พรุ่งนี้ต้องลืมเธอ)",
+      "artist_ids": [
+        "artist_three_man_down"
+      ],
+      "release_year": 2016,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02418bb113d3ca03a48d15dabd",
+      "providers": {
+        "spotify": {
+          "album_id": "5Lt9MheLfY1RVNZF2xfIUW",
+          "url": "https://open.spotify.com/album/5Lt9MheLfY1RVNZF2xfIUW"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=Three+Man+Down+Hey+Josh+พรุ่งนี้ต้องลืมเธอ",
+          "search_url": "https://www.youtube.com/results?search_query=Three+Man+Down+Hey+Josh+พรุ่งนี้ต้องลืมเธอ",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/5Lt9MheLfY1RVNZF2xfIUW"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": "https://open.spotify.com/album/5Lt9MheLfY1RVNZF2xfIUW"
     }
   ]
 }

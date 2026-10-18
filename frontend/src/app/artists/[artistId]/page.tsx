@@ -2,6 +2,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useParams } from "next/navigation";
 import catalog from "../../../data/music-catalog";
 
@@ -16,6 +17,8 @@ type Album = {
     id: string;
     title: string;
     artist_ids?: string[];
+    artist_id?: string;
+    artistId?: string;
     release_year?: number | null;
     album_type?: string;
     cover_url?: string | null;
@@ -36,9 +39,15 @@ export default function ArtistDetailPage() {
         (item) => item.id === artistId
     );
 
-    const albums = (musicCatalog.albums ?? []).filter((album) =>
-        album.artist_ids?.includes(artistId)
-    );
+    const albums = (musicCatalog.albums ?? []).filter((album) => {
+        const artistIds = [
+            ...(album.artist_ids ?? []),
+            ...(album.artist_id ? [album.artist_id] : []),
+            ...(album.artistId ? [album.artistId] : []),
+        ];
+
+        return artistIds.includes(artistId);
+    });
 
     if (!artist) {
         return (
@@ -88,14 +97,16 @@ export default function ArtistDetailPage() {
             <div className="relative mx-auto max-w-[1440px] px-4 pb-28 pt-6 sm:px-6 sm:pt-8 lg:px-10">
                 {/* Artist profile */}
                 <section className="relative overflow-hidden rounded-3xl border border-white/[0.07] bg-[#15121c]">
-                    {/* Background image effect */}
                     {artist.image_url && (
                         <div
                             aria-hidden="true"
                             className="pointer-events-none absolute inset-0"
                         >
-                            <img
+                            <Image
                                 src={artist.image_url}
+                                fill
+                                sizes="(max-width: 1440px) 100vw, 1440px"
+                                unoptimized={!artist.image_url.startsWith("/")}
                                 alt=""
                                 className="h-full w-full scale-110 object-cover opacity-[0.08] blur-3xl"
                                 onError={(event) => {
@@ -107,9 +118,8 @@ export default function ArtistDetailPage() {
                     )}
 
                     <div className="relative flex flex-col gap-6 p-5 sm:p-7 md:flex-row md:items-center md:gap-8 lg:gap-10 lg:p-9">
-                        {/* Artist image */}
                         <div className="relative mx-auto w-full max-w-[210px] shrink-0 sm:max-w-[240px] md:mx-0 md:w-[220px] lg:w-[250px]">
-                            <div className="aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-[#38234f] via-[#21172d] to-[#100d16]">
+                            <div className="relative aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-[#38234f] via-[#21172d] to-[#100d16]">
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <span className="text-8xl font-black text-white/15">
                                         {artist.name.slice(0, 1).toUpperCase()}
@@ -117,10 +127,13 @@ export default function ArtistDetailPage() {
                                 </div>
 
                                 {artist.image_url && (
-                                    <img
+                                    <Image
                                         src={artist.image_url}
+                                        fill
+                                        sizes="(max-width: 640px) 210px, (max-width: 768px) 240px, 250px"
+                                        unoptimized={!artist.image_url.startsWith("/")}
                                         alt={artist.name}
-                                        className="relative z-10 h-full w-full object-cover"
+                                        className="z-10 object-cover"
                                         onError={(event) => {
                                             event.currentTarget.style.display = "none";
                                         }}
@@ -129,7 +142,6 @@ export default function ArtistDetailPage() {
                             </div>
                         </div>
 
-                        {/* Artist information */}
                         <div className="min-w-0 flex-1 text-center md:text-left">
                             <p className="text-xs font-semibold tracking-[0.18em] text-violet-300">
                                 ARTIST PROFILE
@@ -264,7 +276,6 @@ export default function ArtistDetailPage() {
                                     )}/albums/${encodeURIComponent(album.id)}`}
                                     className="group min-w-0 rounded-2xl border border-white/[0.07] bg-[#15121c] p-3.5 transition duration-200 hover:border-violet-500/35 hover:bg-[#1a1523] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 sm:p-4"
                                 >
-                                    {/* Album cover */}
                                     <div className="relative aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-[#38234f] via-[#21172d] to-[#100d16]">
                                         {album.cover_url ? (
                                             <img
@@ -287,7 +298,6 @@ export default function ArtistDetailPage() {
                                         <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white/[0.06]" />
                                     </div>
 
-                                    {/* Album information */}
                                     <div className="px-1 pb-1 pt-4">
                                         <h3
                                             className="truncate text-base font-semibold text-zinc-100 transition-colors group-hover:text-violet-300"

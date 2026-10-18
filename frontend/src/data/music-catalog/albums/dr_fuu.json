@@ -1,3 +1,4 @@
+
 {
   "schema_version": "1.0.0",
   "catalog_title": "Music Catalog — YouTube Only",
@@ -5,14 +6,70 @@
   "created_at": "2026-10-12",
   "albums": [
     {
+      "id": "album_drfuu_ruam_hit",
+      "title": "รวมฮิต Dr.Fuu",
+      "artist_ids": ["artist_drfuu"],
+      "release_year": 2027,
+      "album_type": "album",
+      "cover_url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0240f8cf3f09579662cf6ae051",
+      "providers": {
+        "spotify": {
+          "album_id": "5gzUvbwUY8LInhJOpH60p8",
+          "url": "https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=รวมฮิต+Dr.Fuu+album",
+          "search_url": "https://www.youtube.com/results?search_query=รวมฮิต+Dr.Fuu+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": null
+    },
+    {
+      "id": "album_drfuu_jai_luea_luea",
+      "title": "ใจเหลือเหลือ",
+      "artist_ids": ["artist_drfuu"],
+      "release_year": 2008,
+      "album_type": "album",
+      "cover_url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02bc6833fe0c8989d7a901e36e",
+      "providers": {
+        "spotify": {
+          "album_id": "7gAW3bjEQxPvBcsxiz3Fin",
+          "url": "https://open.spotify.com/album/7gAW3bjEQxPvBcsxiz3Fin"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=ใจเหลือเหลือ+Dr.Fuu+album",
+          "search_url": "https://www.youtube.com/results?search_query=ใจเหลือเหลือ+Dr.Fuu+album",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/7gAW3bjEQxPvBcsxiz3Fin"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": null
+    },
+    {
       "id": "album_drfuu_duangdao",
       "title": "ดวงดาวแห่งรัก",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "release_year": null,
+      "artist_ids": ["artist_drfuu"],
+      "release_year": 1992,
       "album_type": "album",
-      "cover_url": "https://is4-ssl.mzstatic.com/image/thumb/Music2/v4/65/0c/d6/650cd643-dab2-ef03-7cb8-34435e2d9809/Ep_Mail_Single_-_Dr.Fuu_2400x2400.jpg/1200x1200bf-60.jpg",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ac534903a3f46c4abc8ea09a",
       "providers": {
         "spotify": {
           "album_id": "7ifKK5iq8nQTslaTqd1Ywo",
@@ -24,8 +81,8 @@
         },
         "youtube": {
           "playlist_id": null,
-          "url": "https://www.youtube.com/results?search_query=%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81+Dr.Fuu+album",
-          "search_url": "https://www.youtube.com/results?search_query=%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81+Dr.Fuu+album",
+          "url": "https://www.youtube.com/results?search_query=ดวงดาวแห่งรัก+Dr.Fuu+album",
+          "search_url": "https://www.youtube.com/results?search_query=ดวงดาวแห่งรัก+Dr.Fuu+album",
           "link_type": "search"
         }
       },
@@ -33,21 +90,19 @@
         "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
       ],
       "metadata_status": "artwork_url_added_source_linked",
-      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984"
+      "cover_source_url": "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
     },
     {
-      "id": "album_drfuu_other",
-      "title": "Other singles and popular songs",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "release_year": null,
-      "album_type": "single_collection",
-      "cover_url": "https://i.ytimg.com/vi/UHu3tb0lQKs/maxresdefault.jpg",
+      "id": "album_drfuu_make_friends_5",
+      "title": "Dr.Fuu Make Friends 5",
+      "artist_ids": ["artist_drfuu"],
+      "release_year": 2024,
+      "album_type": "album",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b0792bb98a33a203d3c5fb62",
       "providers": {
         "spotify": {
-          "album_id": "37i9dQZF1DZ06evO38mS34",
-          "url": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
+          "album_id": "1HATXESrqvatDWECOOhvXT",
+          "url": "https://open.spotify.com/album/1HATXESrqvatDWECOOhvXT"
         },
         "apple_music": {
           "album_id": null,
@@ -55,17 +110,190 @@
         },
         "youtube": {
           "playlist_id": null,
-          "url": "https://www.youtube.com/results?search_query=Other+singles+and+popular+songs+Dr.Fuu+album",
-          "search_url": "https://www.youtube.com/results?search_query=Other+singles+and+popular+songs+Dr.Fuu+album",
+          "url": "https://www.youtube.com/results?search_query=Dr.Fuu+Make+Friends+5+album",
+          "search_url": "https://www.youtube.com/results?search_query=Dr.Fuu+Make+Friends+5+album",
           "link_type": "search"
         }
       },
       "source_urls": [
-        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34",
-        "https://www.youtube.com/watch?v=UHu3tb0lQKs"
+        "https://open.spotify.com/album/1HATXESrqvatDWECOOhvXT"
       ],
-      "metadata_status": "artwork_url_added_source_linked",
-      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs"
+      "metadata_status": "source_linked",
+      "cover_source_url": null
+    },
+    {
+      "id": "single_drfuu_mai_chai_thewada",
+      "title": "ไม่ใช่เทวดา",
+      "artist_ids": ["artist_drfuu"],
+      "release_year": 2004,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0299f2b42ad60b059ad87d8a9f",
+      "providers": {
+        "spotify": {
+          "album_id": "3jl57grpEYE7ZSkESUQg0N",
+          "url": "https://open.spotify.com/album/3jl57grpEYE7ZSkESUQg0N"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=ไม่ใช่เทวดา+Dr.Fuu",
+          "search_url": "https://www.youtube.com/results?search_query=ไม่ใช่เทวดา+Dr.Fuu",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/3jl57grpEYE7ZSkESUQg0N"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": null
+    },
+    {
+      "id": "single_drfuu_rak_thoe_kwa_krai",
+      "title": "รักเธอกว่าใคร",
+      "artist_ids": ["artist_drfuu"],
+      "release_year": 2023,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02a9eb007c869fa1bb3e91f4b9",
+      "providers": {
+        "spotify": {
+          "album_id": "5U0QAwGtF32aoEaXLiCXnr",
+          "url": "https://open.spotify.com/album/5U0QAwGtF32aoEaXLiCXnr"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=รักเธอกว่าใคร+Dr.Fuu",
+          "search_url": "https://www.youtube.com/results?search_query=รักเธอกว่าใคร+Dr.Fuu",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/5U0QAwGtF32aoEaXLiCXnr"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": null
+    },
+    {
+      "id": "single_drfuu_mae_dok",
+      "title": "แม่ดอก",
+      "artist_ids": ["artist_drfuu"],
+      "release_year": 2022,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e026420f2431d5b191ff6462f62",
+      "providers": {
+        "spotify": {
+          "album_id": "1BWyEAfcZ89UfQbYCJiS9R",
+          "url": "https://open.spotify.com/album/1BWyEAfcZ89UfQbYCJiS9R"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=แม่ดอก+Dr.Fuu",
+          "search_url": "https://www.youtube.com/results?search_query=แม่ดอก+Dr.Fuu",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/1BWyEAfcZ89UfQbYCJiS9R"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": null
+    },
+    {
+      "id": "single_drfuu_arai_ko_dai",
+      "title": "อะไรก็ได้ (Anything)",
+      "artist_ids": ["artist_drfuu"],
+      "release_year": 2022,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02efcc88f8e87801c2c0da2a9f",
+      "providers": {
+        "spotify": {
+          "album_id": "2NYynj86HffCKmv6KfY9bT",
+          "url": "https://open.spotify.com/album/2NYynj86HffCKmv6KfY9bT"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "url": "https://www.youtube.com/results?search_query=อะไรก็ได้+Anything+Dr.Fuu",
+          "search_url": "https://www.youtube.com/results?search_query=อะไรก็ได้+Anything+Dr.Fuu",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/2NYynj86HffCKmv6KfY9bT"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": null
+    },
+    {
+      "id": "single_drfuu_degree",
+      "title": "ดีกรี",
+      "artist_ids": ["artist_drfuu"],
+      "release_year": 2018,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0264397dd236d2349484677640",
+      "providers": {
+        "spotify": {
+          "album_id": "6q8c445af05R1YVShGr2wX",
+          "url": "https://open.spotify.com/album/6q8c445af05R1YVShGr2wX"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "search_url": "https://www.youtube.com/results?search_query=ดีกรี+Dr.Fuu",
+          "url": "https://www.youtube.com/results?search_query=ดีกรี+Dr.Fuu",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/6q8c445af05R1YVShGr2wX"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": null
+    },
+    {
+      "id": "single_drfuu_khrang_chue_phi_noi",
+      "title": "ครางชื่อพี่หน่อย",
+      "artist_ids": ["artist_drfuu"],
+      "release_year": 2018,
+      "album_type": "single",
+      "cover_url": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02e4f572b5a9f1b20b119aa667",
+      "providers": {
+        "spotify": {
+          "album_id": "3EaCWOrAQbqHBM5Tv8Z777",
+          "url": "https://open.spotify.com/album/3EaCWOrAQbqHBM5Tv8Z777"
+        },
+        "apple_music": {
+          "album_id": null,
+          "url": null
+        },
+        "youtube": {
+          "playlist_id": null,
+          "search_url": "https://www.youtube.com/results?search_query=ครางชื่อพี่หน่อย+Dr.Fuu",
+          "url": "https://www.youtube.com/results?search_query=ครางชื่อพี่หน่อย+Dr.Fuu",
+          "link_type": "search"
+        }
+      },
+      "source_urls": [
+        "https://open.spotify.com/album/3EaCWOrAQbqHBM5Tv8Z777"
+      ],
+      "metadata_status": "source_linked",
+      "cover_source_url": null
     }
   ]
 }

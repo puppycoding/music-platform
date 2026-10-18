@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import catalog from "../../data/music-catalog";
 
 type Artist = {
@@ -152,7 +153,7 @@ function ArtistCard({
         animationDelay: `${Math.min(index, 12) * 55}ms`,
       }}
     >
-      <div className="artist-artwork relative aspect-square overflow-hidden rounded-2xl border border-white/[0.07] bg-[#191321] shadow-[0_8px_28px_rgba(0,0,0,0.18)] transition-all duration-500 group-hover:-translate-y-1 group-hover:border-violet-300/30 group-hover:shadow-[0_16px_36px_rgba(124,58,237,0.14)]">
+      <div className="artist-artwork relative aspect-square overflow-hidden rounded-2xl bg-[#191321] shadow-[0_8px_28px_rgba(0,0,0,0.18)] transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-[0_16px_36px_rgba(124,58,237,0.14)]">
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#382747] via-[#201a2c] to-[#100e16]">
           <div className="absolute -left-10 -top-10 h-36 w-36 rounded-full bg-violet-500/20 blur-3xl" />
           <div className="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-fuchsia-500/10 blur-3xl" />
@@ -163,8 +164,11 @@ function ArtistCard({
         </div>
 
         {imageUrl && !imageFailed && (
-          <img
+          <Image
             src={imageUrl}
+            fill
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 240px"
+            unoptimized={!imageUrl.startsWith("/")}
             alt={artist.name}
             loading={index < 8 ? "eager" : "lazy"}
             decoding="async"
@@ -174,8 +178,6 @@ function ArtistCard({
         )}
 
         <div className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-b from-black/[0.03] via-transparent to-black/50" />
-
-        <div className="pointer-events-none absolute inset-0 z-[3] rounded-2xl ring-1 ring-inset ring-white/[0.04] transition-all duration-500 group-hover:ring-violet-200/25" />
 
         <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[4] p-3.5 sm:p-4">
           <span className="inline-flex items-center rounded-full border border-white/15 bg-black/25 px-2.5 py-1 text-[9px] font-medium tracking-[0.16em] text-white/80 backdrop-blur-md">

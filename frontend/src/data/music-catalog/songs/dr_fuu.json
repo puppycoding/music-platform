@@ -1,389 +1,87 @@
+
 {
   "schema_version": "1.0.0",
   "catalog_title": "Music Catalog — YouTube Only",
   "language": "th",
-  "created_at": "2026-10-12",
+  "created_at": "2026-10-18",
   "songs": [
     {
       "id": "dr_fuu_001",
-      "title": "ปลาทอง",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_duangdao",
-      "cover_url": "https://i.ytimg.com/vi/FLoWTjcZrs8/hqdefault.jpg",
+      "title": "ใจเหลือเหลือ",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/uiQjESJ2Hcc/hqdefault.jpg",
       "moods": [],
-      "duration_seconds": 249,
+      "duration_seconds": null,
       "status": "draft",
       "providers": {
         "youtube": {
-          "video_id": "FLoWTjcZrs8",
-          "url": "https://www.youtube.com/watch?v=FLoWTjcZrs8",
+          "video_id": "uiQjESJ2Hcc",
+          "url": "https://www.youtube.com/watch?v=uiQjESJ2Hcc",
           "link_type": "video"
         }
       },
       "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
-      "listen_url": "https://www.youtube.com/watch?v=FLoWTjcZrs8",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=uiQjESJ2Hcc",
+      "listen_url": "https://www.youtube.com/watch?v=uiQjESJ2Hcc",
       "listen_provider": "youtube",
       "cover_status": "youtube_video_thumbnail"
     },
     {
       "id": "dr_fuu_002",
-      "title": "โรคกลัวฝน",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_duangdao",
-      "cover_url": "https://i.ytimg.com/vi/LsEfAla0J0I/hqdefault.jpg",
+      "title": "พูดแล้วอยากจะร้องไห้",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/_4mLDF0uNgQ/hqdefault.jpg",
       "moods": [],
-      "duration_seconds": 259,
+      "duration_seconds": null,
       "status": "draft",
       "providers": {
         "youtube": {
-          "video_id": "LsEfAla0J0I",
-          "url": "https://www.youtube.com/watch?v=LsEfAla0J0I",
-          "link_type": "video",
-          "verification": "title_artist_match",
-          "video_kind": "official_music_video",
-          "channel": "RSMUSIC-X"
+          "video_id": "_4mLDF0uNgQ",
+          "url": "https://www.youtube.com/watch?v=_4mLDF0uNgQ",
+          "link_type": "video"
         }
       },
       "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
-      ],
-      "metadata_status": "direct_youtube_link_verified",
-      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
-      "listen_url": "https://www.youtube.com/watch?v=LsEfAla0J0I",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=_4mLDF0uNgQ",
+      "listen_url": "https://www.youtube.com/watch?v=_4mLDF0uNgQ",
       "listen_provider": "youtube",
       "cover_status": "youtube_video_thumbnail"
     },
     {
       "id": "dr_fuu_003",
-      "title": "ดวงดาวแห่งรัก",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_duangdao",
-      "cover_url": "https://i.ytimg.com/vi/jpmYW8swW58/hqdefault.jpg",
+      "title": "โรคกลัวฝน",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/mb5djNzLoMI/hqdefault.jpg",
       "moods": [],
-      "duration_seconds": 319,
+      "duration_seconds": null,
       "status": "draft",
       "providers": {
         "youtube": {
-          "video_id": "jpmYW8swW58",
-          "url": "https://www.youtube.com/watch?v=jpmYW8swW58",
-          "link_type": "video",
-          "verification": "title_artist_match",
-          "verification_note": "Dr.Fuu - ดวงดาวแห่งรัก"
+          "video_id": "mb5djNzLoMI",
+          "url": "https://www.youtube.com/watch?v=mb5djNzLoMI",
+          "link_type": "video"
         }
       },
       "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
-      ],
-      "metadata_status": "direct_youtube_link_verified",
-      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
-      "listen_url": "https://www.youtube.com/watch?v=jpmYW8swW58",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=mb5djNzLoMI",
+      "listen_url": "https://www.youtube.com/watch?v=mb5djNzLoMI",
       "listen_provider": "youtube",
       "cover_status": "youtube_video_thumbnail"
     },
     {
       "id": "dr_fuu_004",
-      "title": "เจ็บแลกรัก",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_duangdao",
-      "cover_url": "https://i.ytimg.com/vi/gawU9-yiD8I/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": 263,
-      "status": "draft",
-      "providers": {
-        "youtube": {
-          "video_id": "gawU9-yiD8I",
-          "url": "https://www.youtube.com/watch?v=gawU9-yiD8I",
-          "link_type": "video"
-        }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
-      "listen_url": "https://www.youtube.com/watch?v=gawU9-yiD8I",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
-    },
-    {
-      "id": "dr_fuu_005",
-      "title": "พักใจชั่วคราว",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_duangdao",
-      "cover_url": "https://i.ytimg.com/vi/CtRa7W1Q480/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": 303,
-      "status": "draft",
-      "providers": {
-        "youtube": {
-          "video_id": "CtRa7W1Q480",
-          "url": "https://www.youtube.com/watch?v=CtRa7W1Q480",
-          "link_type": "video"
-        }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
-      "listen_url": "https://www.youtube.com/watch?v=CtRa7W1Q480",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
-    },
-    {
-      "id": "dr_fuu_006",
-      "title": "พูดแล้วอยากจะร้องไห้",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_duangdao",
-      "cover_url": "https://i.ytimg.com/vi/1ZmnS8qSP7E/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": 269,
-      "status": "draft",
-      "providers": {
-        "youtube": {
-          "video_id": "1ZmnS8qSP7E",
-          "url": "https://www.youtube.com/watch?v=1ZmnS8qSP7E",
-          "link_type": "video",
-          "verification": "title_artist_match",
-          "verification_note": "Dr.Fuu - พูดแล้วอยากจะร้องไห้"
-        }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
-      ],
-      "metadata_status": "direct_youtube_link_verified",
-      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
-      "listen_url": "https://www.youtube.com/watch?v=1ZmnS8qSP7E",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
-    },
-    {
-      "id": "dr_fuu_007",
-      "title": "คำทำนาย",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_duangdao",
-      "cover_url": "https://i.ytimg.com/vi/7QgNAE1IqXU/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": 283,
-      "status": "draft",
-      "providers": {
-        "youtube": {
-          "video_id": "7QgNAE1IqXU",
-          "url": "https://www.youtube.com/watch?v=7QgNAE1IqXU",
-          "link_type": "video"
-        }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
-      "listen_url": "https://www.youtube.com/watch?v=7QgNAE1IqXU",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
-    },
-    {
-      "id": "dr_fuu_008",
-      "title": "เจตนาไม่ดี",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_duangdao",
-      "cover_url": "https://i.ytimg.com/vi/5zTYLWnST14/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": 275,
-      "status": "draft",
-      "providers": {
-        "youtube": {
-          "video_id": "5zTYLWnST14",
-          "url": "https://www.youtube.com/watch?v=5zTYLWnST14",
-          "link_type": "video"
-        }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
-      "listen_url": "https://www.youtube.com/watch?v=5zTYLWnST14",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
-    },
-    {
-      "id": "dr_fuu_009",
-      "title": "รักหรือไม่รัก",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_duangdao",
-      "cover_url": "https://i.ytimg.com/vi/zN2pUIgVHaQ/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": 223,
-      "status": "draft",
-      "providers": {
-        "youtube": {
-          "video_id": "zN2pUIgVHaQ",
-          "url": "https://www.youtube.com/watch?v=zN2pUIgVHaQ",
-          "link_type": "video"
-        }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
-      "listen_url": "https://www.youtube.com/watch?v=zN2pUIgVHaQ",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
-    },
-    {
-      "id": "dr_fuu_010",
-      "title": "ที่สุดในสามโลก",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_duangdao",
-      "cover_url": "https://i.ytimg.com/vi/9eTSTATUI9w/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": 238,
-      "status": "draft",
-      "providers": {
-        "youtube": {
-          "video_id": "9eTSTATUI9w",
-          "url": "https://www.youtube.com/watch?v=9eTSTATUI9w",
-          "link_type": "video"
-        }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/tm/album/ดวงดาวแห่งรัก-single/616004984",
-      "listen_url": "https://www.youtube.com/watch?v=9eTSTATUI9w",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
-    },
-    {
-      "id": "dr_fuu_011",
-      "title": "ใจเหลือเหลือ",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_other",
-      "cover_url": "https://i.ytimg.com/vi/UHu3tb0lQKs/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
-      "providers": {
-        "youtube": {
-          "video_id": "UHu3tb0lQKs",
-          "url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
-          "link_type": "video",
-          "verification": "title_artist_match",
-          "verification_note": "Dr.Fuu - ใจเหลือเหลือ"
-        }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
-      ],
-      "metadata_status": "direct_youtube_link_verified",
-      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
-      "listen_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
-    },
-    {
-      "id": "dr_fuu_012",
-      "title": "ลบ",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_other",
-      "cover_url": "https://i.ytimg.com/vi/5HhEOfhVSB8/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
-      "providers": {
-        "youtube": {
-          "video_id": "5HhEOfhVSB8",
-          "url": "https://www.youtube.com/watch?v=5HhEOfhVSB8",
-          "link_type": "video"
-        }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
-      "listen_url": "https://www.youtube.com/watch?v=5HhEOfhVSB8",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
-    },
-    {
-      "id": "dr_fuu_013",
-      "title": "เมื่อไหร่จะรัก",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_other",
-      "cover_url": "https://i.ytimg.com/vi/7OGTEKszT4A/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
-      "providers": {
-        "youtube": {
-          "video_id": "7OGTEKszT4A",
-          "url": "https://www.youtube.com/watch?v=7OGTEKszT4A",
-          "link_type": "video"
-        }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
-      "listen_url": "https://www.youtube.com/watch?v=7OGTEKszT4A",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
-    },
-    {
-      "id": "dr_fuu_014",
       "title": "คู่ชีวิต",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_other",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/YOAdahFqxnc/hqdefault.jpg",
       "moods": [],
       "duration_seconds": null,
@@ -396,22 +94,426 @@
         }
       },
       "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=YOAdahFqxnc",
       "listen_url": "https://www.youtube.com/watch?v=YOAdahFqxnc",
       "listen_provider": "youtube",
       "cover_status": "youtube_video_thumbnail"
     },
     {
-      "id": "dr_fuu_015",
+      "id": "dr_fuu_005",
+      "title": "ปลาทอง",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/K1Nin3PXMPI/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "K1Nin3PXMPI",
+          "url": "https://www.youtube.com/watch?v=K1Nin3PXMPI",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=K1Nin3PXMPI",
+      "listen_url": "https://www.youtube.com/watch?v=K1Nin3PXMPI",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_006",
       "title": "เธอไม่เคยเป็นแฟนเก่า",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_other",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/gUYuomtgP4g/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "gUYuomtgP4g",
+          "url": "https://www.youtube.com/watch?v=gUYuomtgP4g",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=gUYuomtgP4g",
+      "listen_url": "https://www.youtube.com/watch?v=gUYuomtgP4g",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_007",
+      "title": "ที่สุดในสามโลก",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/9eTSTATUI9w/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "9eTSTATUI9w",
+          "url": "https://www.youtube.com/watch?v=9eTSTATUI9w",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=9eTSTATUI9w",
+      "listen_url": "https://www.youtube.com/watch?v=9eTSTATUI9w",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_008",
+      "title": "คำทำนาย",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/dy7idyx-aWc/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "dy7idyx-aWc",
+          "url": "https://www.youtube.com/watch?v=dy7idyx-aWc",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=dy7idyx-aWc",
+      "listen_url": "https://www.youtube.com/watch?v=dy7idyx-aWc",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_009",
+      "title": "แพ้คนห่างไกล",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/AQI9dPUerbM/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "AQI9dPUerbM",
+          "url": "https://www.youtube.com/watch?v=AQI9dPUerbM",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=AQI9dPUerbM",
+      "listen_url": "https://www.youtube.com/watch?v=AQI9dPUerbM",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_010",
+      "title": "เหลือแค่ส้วมที่ใช้ร่วมกัน",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/Lo45O4LR2hk/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Lo45O4LR2hk",
+          "url": "https://www.youtube.com/watch?v=Lo45O4LR2hk",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=Lo45O4LR2hk",
+      "listen_url": "https://www.youtube.com/watch?v=Lo45O4LR2hk",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_011",
+      "title": "ปลาทูนึ่ง",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/paz0r_ludPw/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "paz0r_ludPw",
+          "url": "https://www.youtube.com/watch?v=paz0r_ludPw",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=paz0r_ludPw",
+      "listen_url": "https://www.youtube.com/watch?v=paz0r_ludPw",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_012",
+      "title": "ดวงดาวแห่งรัก",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/E3jWocp4Q6g/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "E3jWocp4Q6g",
+          "url": "https://www.youtube.com/watch?v=E3jWocp4Q6g",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=E3jWocp4Q6g",
+      "listen_url": "https://www.youtube.com/watch?v=E3jWocp4Q6g",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_013",
+      "title": "เจตนาไม่ดี",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/fDmMCInq0dI/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "fDmMCInq0dI",
+          "url": "https://www.youtube.com/watch?v=fDmMCInq0dI",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=fDmMCInq0dI",
+      "listen_url": "https://www.youtube.com/watch?v=fDmMCInq0dI",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_014",
+      "title": "เจ็บแลกรัก",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/Bzky_lFqDck/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Bzky_lFqDck",
+          "url": "https://www.youtube.com/watch?v=Bzky_lFqDck",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=Bzky_lFqDck",
+      "listen_url": "https://www.youtube.com/watch?v=Bzky_lFqDck",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_015",
+      "title": "เลียนแบบเธอ",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/2C3UnZLOXss/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "2C3UnZLOXss",
+          "url": "https://www.youtube.com/watch?v=2C3UnZLOXss",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=2C3UnZLOXss",
+      "listen_url": "https://www.youtube.com/watch?v=2C3UnZLOXss",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_016",
+      "title": "สินค้าตัวอย่าง",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/qIVXaA5SQls/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "qIVXaA5SQls",
+          "url": "https://www.youtube.com/watch?v=qIVXaA5SQls",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=qIVXaA5SQls",
+      "listen_url": "https://www.youtube.com/watch?v=qIVXaA5SQls",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_017",
+      "title": "เมื่อไหร่จะรัก",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/3Ubo16flsQA/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "3Ubo16flsQA",
+          "url": "https://www.youtube.com/watch?v=3Ubo16flsQA",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=3Ubo16flsQA",
+      "listen_url": "https://www.youtube.com/watch?v=3Ubo16flsQA",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_018",
+      "title": "ไม่ใช่เทวดา",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/yigFJAGhp5M/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "yigFJAGhp5M",
+          "url": "https://www.youtube.com/watch?v=yigFJAGhp5M",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=yigFJAGhp5M",
+      "listen_url": "https://www.youtube.com/watch?v=yigFJAGhp5M",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_019",
+      "title": "รักหรือไม่รัก",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/r5JLH2YKrwU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "r5JLH2YKrwU",
+          "url": "https://www.youtube.com/watch?v=r5JLH2YKrwU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=r5JLH2YKrwU",
+      "listen_url": "https://www.youtube.com/watch?v=r5JLH2YKrwU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_020",
+      "title": "สะใจไม่ลง",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_ruam_hit",
+      "cover_url": "https://i.ytimg.com/vi/0Bu0FkM1hxU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "0Bu0FkM1hxU",
+          "url": "https://www.youtube.com/watch?v=0Bu0FkM1hxU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5gzUvbwUY8LInhJOpH60p8"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=0Bu0FkM1hxU",
+      "listen_url": "https://www.youtube.com/watch?v=0Bu0FkM1hxU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_021",
+      "title": "ใจเหลือเหลือ",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_jai_luea_luea",
+      "cover_url": "https://i.ytimg.com/vi/V57MJQZlGqc/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "V57MJQZlGqc",
+          "url": "https://www.youtube.com/watch?v=V57MJQZlGqc",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7gAW3bjEQxPvBcsxiz3Fin"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=V57MJQZlGqc",
+      "listen_url": "https://www.youtube.com/watch?v=V57MJQZlGqc",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_022",
+      "title": "เธอไม่เคยเป็นแฟนเก่า",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_jai_luea_luea",
       "cover_url": "https://i.ytimg.com/vi/euZX5k9pato/hqdefault.jpg",
       "moods": [],
       "duration_seconds": null,
@@ -424,22 +526,714 @@
         }
       },
       "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
+      "source_urls": ["https://open.spotify.com/album/7gAW3bjEQxPvBcsxiz3Fin"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=euZX5k9pato",
       "listen_url": "https://www.youtube.com/watch?v=euZX5k9pato",
       "listen_provider": "youtube",
       "cover_status": "youtube_video_thumbnail"
     },
     {
-      "id": "dr_fuu_016",
+      "id": "dr_fuu_023",
+      "title": "ปลาทูนึ่ง",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_jai_luea_luea",
+      "cover_url": "https://i.ytimg.com/vi/vQ3PWlDVQvk/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "vQ3PWlDVQvk",
+          "url": "https://www.youtube.com/watch?v=vQ3PWlDVQvk",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7gAW3bjEQxPvBcsxiz3Fin"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=vQ3PWlDVQvk",
+      "listen_url": "https://www.youtube.com/watch?v=vQ3PWlDVQvk",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_024",
+      "title": "สะใจไม่ลง",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_jai_luea_luea",
+      "cover_url": "https://i.ytimg.com/vi/oh1MNe_ZZ48/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "oh1MNe_ZZ48",
+          "url": "https://www.youtube.com/watch?v=oh1MNe_ZZ48",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7gAW3bjEQxPvBcsxiz3Fin"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=oh1MNe_ZZ48",
+      "listen_url": "https://www.youtube.com/watch?v=oh1MNe_ZZ48",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_025",
+      "title": "เหลือแค่ส้วมที่ใช้ร่วมกัน",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_jai_luea_luea",
+      "cover_url": "https://i.ytimg.com/vi/t0B06Vqw7dg/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "t0B06Vqw7dg",
+          "url": "https://www.youtube.com/watch?v=t0B06Vqw7dg",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7gAW3bjEQxPvBcsxiz3Fin"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=t0B06Vqw7dg",
+      "listen_url": "https://www.youtube.com/watch?v=t0B06Vqw7dg",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_026",
+      "title": "สินค้าตัวอย่าง",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_jai_luea_luea",
+      "cover_url": "https://i.ytimg.com/vi/k4HLt03RqlU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "k4HLt03RqlU",
+          "url": "https://www.youtube.com/watch?v=k4HLt03RqlU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7gAW3bjEQxPvBcsxiz3Fin"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=k4HLt03RqlU",
+      "listen_url": "https://www.youtube.com/watch?v=k4HLt03RqlU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_027",
+      "title": "คู่ชีวิต",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_jai_luea_luea",
+      "cover_url": "https://i.ytimg.com/vi/YOAdahFqxnc/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "YOAdahFqxnc",
+          "url": "https://www.youtube.com/watch?v=YOAdahFqxnc",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7gAW3bjEQxPvBcsxiz3Fin"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=YOAdahFqxnc",
+      "listen_url": "https://www.youtube.com/watch?v=YOAdahFqxnc",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_028",
+      "title": "ไม่ต้องระแวงแค่ต้องระวัง",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_jai_luea_luea",
+      "cover_url": "https://i.ytimg.com/vi/MvFIKgeKjr8/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "MvFIKgeKjr8",
+          "url": "https://www.youtube.com/watch?v=MvFIKgeKjr8",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7gAW3bjEQxPvBcsxiz3Fin"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=MvFIKgeKjr8",
+      "listen_url": "https://www.youtube.com/watch?v=MvFIKgeKjr8",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_029",
+      "title": "แพ้คนห่างไกล",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_jai_luea_luea",
+      "cover_url": "https://i.ytimg.com/vi/6OWgyI6Yuk8/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "6OWgyI6Yuk8",
+          "url": "https://www.youtube.com/watch?v=6OWgyI6Yuk8",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7gAW3bjEQxPvBcsxiz3Fin"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=6OWgyI6Yuk8",
+      "listen_url": "https://www.youtube.com/watch?v=6OWgyI6Yuk8",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_030",
+      "title": "แม้วันเปลี่ยน",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_jai_luea_luea",
+      "cover_url": "https://i.ytimg.com/vi/GG_OxW5o5tU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "GG_OxW5o5tU",
+          "url": "https://www.youtube.com/watch?v=GG_OxW5o5tU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7gAW3bjEQxPvBcsxiz3Fin"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=GG_OxW5o5tU",
+      "listen_url": "https://www.youtube.com/watch?v=GG_OxW5o5tU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_031",
+      "title": "ปลาทอง",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/FLoWTjcZrs8/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "FLoWTjcZrs8",
+          "url": "https://www.youtube.com/watch?v=FLoWTjcZrs8",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=FLoWTjcZrs8",
+      "listen_url": "https://www.youtube.com/watch?v=FLoWTjcZrs8",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_032",
+      "title": "โรคกลัวฝน",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/UgPMjhgPLcI/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "UgPMjhgPLcI",
+          "url": "https://www.youtube.com/watch?v=UgPMjhgPLcI",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=UgPMjhgPLcI",
+      "listen_url": "https://www.youtube.com/watch?v=UgPMjhgPLcI",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_033",
+      "title": "ดวงดาวแห่งรัก",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/y3cK2dpzj7g/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "y3cK2dpzj7g",
+          "url": "https://www.youtube.com/watch?v=y3cK2dpzj7g",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=y3cK2dpzj7g",
+      "listen_url": "https://www.youtube.com/watch?v=y3cK2dpzj7g",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_034",
+      "title": "เจ็บแลกรัก",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/gawU9-yiD8I/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "gawU9-yiD8I",
+          "url": "https://www.youtube.com/watch?v=gawU9-yiD8I",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=gawU9-yiD8I",
+      "listen_url": "https://www.youtube.com/watch?v=gawU9-yiD8I",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_035",
+      "title": "พักใจชั่วคราว",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/EHoU3LyVlIA/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "EHoU3LyVlIA",
+          "url": "https://www.youtube.com/watch?v=EHoU3LyVlIA",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=EHoU3LyVlIA",
+      "listen_url": "https://www.youtube.com/watch?v=EHoU3LyVlIA",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_036",
+      "title": "พูดแล้วอยากจะร้องไห้",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/nT_4pkMtYZw/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "nT_4pkMtYZw",
+          "url": "https://www.youtube.com/watch?v=nT_4pkMtYZw",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=nT_4pkMtYZw",
+      "listen_url": "https://www.youtube.com/watch?v=nT_4pkMtYZw",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_037",
+      "title": "คำทำนาย",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/7QgNAE1IqXU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "7QgNAE1IqXU",
+          "url": "https://www.youtube.com/watch?v=7QgNAE1IqXU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=7QgNAE1IqXU",
+      "listen_url": "https://www.youtube.com/watch?v=7QgNAE1IqXU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_038",
+      "title": "เจตนาไม่ดี",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/5zTYLWnST14/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "5zTYLWnST14",
+          "url": "https://www.youtube.com/watch?v=5zTYLWnST14",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=5zTYLWnST14",
+      "listen_url": "https://www.youtube.com/watch?v=5zTYLWnST14",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_039",
+      "title": "รักหรือไม่รัก",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/zN2pUIgVHaQ/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "zN2pUIgVHaQ",
+          "url": "https://www.youtube.com/watch?v=zN2pUIgVHaQ",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=zN2pUIgVHaQ",
+      "listen_url": "https://www.youtube.com/watch?v=zN2pUIgVHaQ",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_040",
+      "title": "ที่สุดในสามโลก",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_duangdao",
+      "cover_url": "https://i.ytimg.com/vi/9eTSTATUI9w/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "9eTSTATUI9w",
+          "url": "https://www.youtube.com/watch?v=9eTSTATUI9w",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/7ifKK5iq8nQTslaTqd1Ywo"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=9eTSTATUI9w",
+      "listen_url": "https://www.youtube.com/watch?v=9eTSTATUI9w",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_041",
+      "title": "โรงลิเก (Re-Arrange)",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_make_friends_5",
+      "cover_url": "https://i.ytimg.com/vi/Alt3epeHIZ4/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Alt3epeHIZ4",
+          "url": "https://www.youtube.com/watch?v=Alt3epeHIZ4",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/1HATXESrqvatDWECOOhvXT"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=Alt3epeHIZ4",
+      "listen_url": "https://www.youtube.com/watch?v=Alt3epeHIZ4",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_042",
+      "title": "ลบ",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_make_friends_5",
+      "cover_url": "https://i.ytimg.com/vi/7F7KTxVIlAI/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "7F7KTxVIlAI",
+          "url": "https://www.youtube.com/watch?v=7F7KTxVIlAI",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/1HATXESrqvatDWECOOhvXT"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=7F7KTxVIlAI",
+      "listen_url": "https://www.youtube.com/watch?v=7F7KTxVIlAI",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_043",
+      "title": "ไม่คุ้มเสี่ยง",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_make_friends_5",
+      "cover_url": "https://i.ytimg.com/vi/WZ2HYnTiKWg/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "WZ2HYnTiKWg",
+          "url": "https://www.youtube.com/watch?v=WZ2HYnTiKWg",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/1HATXESrqvatDWECOOhvXT"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=WZ2HYnTiKWg",
+      "listen_url": "https://www.youtube.com/watch?v=WZ2HYnTiKWg",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_044",
+      "title": "รางวัลของคนรักจริง",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_make_friends_5",
+      "cover_url": "https://i.ytimg.com/vi/QGsVmCb6uPY/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "QGsVmCb6uPY",
+          "url": "https://www.youtube.com/watch?v=QGsVmCb6uPY",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/1HATXESrqvatDWECOOhvXT"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=QGsVmCb6uPY",
+      "listen_url": "https://www.youtube.com/watch?v=QGsVmCb6uPY",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_045",
+      "title": "สบตา",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_make_friends_5",
+      "cover_url": "https://i.ytimg.com/vi/qlH-XPQDUdM/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "qlH-XPQDUdM",
+          "url": "https://www.youtube.com/watch?v=qlH-XPQDUdM",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/1HATXESrqvatDWECOOhvXT"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=qlH-XPQDUdM",
+      "listen_url": "https://www.youtube.com/watch?v=qlH-XPQDUdM",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_046",
+      "title": "มีใครบ้างไหม",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_make_friends_5",
+      "cover_url": "https://i.ytimg.com/vi/p5tJq00P9IU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "p5tJq00P9IU",
+          "url": "https://www.youtube.com/watch?v=p5tJq00P9IU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/1HATXESrqvatDWECOOhvXT"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=p5tJq00P9IU",
+      "listen_url": "https://www.youtube.com/watch?v=p5tJq00P9IU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_047",
+      "title": "ขึ้นคาน (Re-Arrange)",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_make_friends_5",
+      "cover_url": "https://i.ytimg.com/vi/cThuIOINWcU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "cThuIOINWcU",
+          "url": "https://www.youtube.com/watch?v=cThuIOINWcU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/1HATXESrqvatDWECOOhvXT"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=cThuIOINWcU",
+      "listen_url": "https://www.youtube.com/watch?v=cThuIOINWcU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_048",
+      "title": "ฝังใจ",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "album_drfuu_make_friends_5",
+      "cover_url": "https://i.ytimg.com/vi/-dFbrDKqkuc/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "-dFbrDKqkuc",
+          "url": "https://www.youtube.com/watch?v=-dFbrDKqkuc",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/1HATXESrqvatDWECOOhvXT"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=-dFbrDKqkuc",
+      "listen_url": "https://www.youtube.com/watch?v=-dFbrDKqkuc",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_049",
+      "title": "เลียนแบบเธอ",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "single_drfuu_mai_chai_thewada",
+      "cover_url": "https://i.ytimg.com/vi/rGT0IPCK-8o/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "rGT0IPCK-8o",
+          "url": "https://www.youtube.com/watch?v=rGT0IPCK-8o",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/3jl57grpEYE7ZSkESUQg0N"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=rGT0IPCK-8o",
+      "listen_url": "https://www.youtube.com/watch?v=rGT0IPCK-8o",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_050",
+      "title": "อยากเป็นคนคุ้นเคย",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "single_drfuu_mai_chai_thewada",
+      "cover_url": "https://i.ytimg.com/vi/bS1eeV7jhCY/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "bS1eeV7jhCY",
+          "url": "https://www.youtube.com/watch?v=bS1eeV7jhCY",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/3jl57grpEYE7ZSkESUQg0N"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=bS1eeV7jhCY",
+      "listen_url": "https://www.youtube.com/watch?v=bS1eeV7jhCY",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_051",
+      "title": "เมื่อไหร่จะรัก",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "single_drfuu_mai_chai_thewada",
+      "cover_url": "https://i.ytimg.com/vi/HqaqvTZowwU/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "HqaqvTZowwU",
+          "url": "https://www.youtube.com/watch?v=HqaqvTZowwU",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/3jl57grpEYE7ZSkESUQg0N"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=HqaqvTZowwU",
+      "listen_url": "https://www.youtube.com/watch?v=HqaqvTZowwU",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_052",
       "title": "ไม่ใช่เทวดา",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_other",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "single_drfuu_mai_chai_thewada",
       "cover_url": "https://i.ytimg.com/vi/dad0pGJPxS0/hqdefault.jpg",
       "moods": [],
       "duration_seconds": null,
@@ -452,40 +1246,178 @@
         }
       },
       "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
+      "source_urls": ["https://open.spotify.com/album/3jl57grpEYE7ZSkESUQg0N"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=dad0pGJPxS0",
       "listen_url": "https://www.youtube.com/watch?v=dad0pGJPxS0",
       "listen_provider": "youtube",
       "cover_status": "youtube_video_thumbnail"
     },
     {
-      "id": "dr_fuu_017",
-      "title": "รักแท้แพ้ไม่รัก",
-      "artist_ids": [
-        "artist_drfuu"
-      ],
-      "album_id": "album_drfuu_other",
-      "cover_url": "https://i.ytimg.com/vi/56_14equ0es/hqdefault.jpg",
+      "id": "dr_fuu_053",
+      "title": "รับไม่ไหว",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "single_drfuu_mai_chai_thewada",
+      "cover_url": "https://i.ytimg.com/vi/pxwAovQOOgQ/hqdefault.jpg",
       "moods": [],
       "duration_seconds": null,
       "status": "draft",
       "providers": {
         "youtube": {
-          "video_id": "56_14equ0es",
-          "url": "https://www.youtube.com/watch?v=56_14equ0es",
+          "video_id": "pxwAovQOOgQ",
+          "url": "https://www.youtube.com/watch?v=pxwAovQOOgQ",
           "link_type": "video"
         }
       },
       "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO38mS34"
-      ],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://www.youtube.com/watch?v=UHu3tb0lQKs",
-      "listen_url": "https://www.youtube.com/watch?v=56_14equ0es",
+      "source_urls": ["https://open.spotify.com/album/3jl57grpEYE7ZSkESUQg0N"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=pxwAovQOOgQ",
+      "listen_url": "https://www.youtube.com/watch?v=pxwAovQOOgQ",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_054",
+      "title": "รักเธอกว่าใคร",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "single_drfuu_rak_thoe_kwa_krai",
+      "cover_url": "https://i.ytimg.com/vi/DxUG5CfWoD4/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "DxUG5CfWoD4",
+          "url": "https://www.youtube.com/watch?v=DxUG5CfWoD4",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/5U0QAwGtF32aoEaXLiCXnr"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=DxUG5CfWoD4",
+      "listen_url": "https://www.youtube.com/watch?v=DxUG5CfWoD4",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_055",
+      "title": "แม่ดอก",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "single_drfuu_mae_dok",
+      "cover_url": "https://i.ytimg.com/vi/qYdIqxOh33Q/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "qYdIqxOh33Q",
+          "url": "https://www.youtube.com/watch?v=qYdIqxOh33Q",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/1BWyEAfcZ89UfQbYCJiS9R"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=qYdIqxOh33Q",
+      "listen_url": "https://www.youtube.com/watch?v=qYdIqxOh33Q",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_056",
+      "title": "อะไรก็ได้ (Anything)",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "single_drfuu_arai_ko_dai",
+      "cover_url": "https://i.ytimg.com/vi/byiMBWt1jZE/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "byiMBWt1jZE",
+          "url": "https://www.youtube.com/watch?v=byiMBWt1jZE",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/2NYynj86HffCKmv6KfY9bT"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=byiMBWt1jZE",
+      "listen_url": "https://www.youtube.com/watch?v=byiMBWt1jZE",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_057",
+      "title": "ดีกรี",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "single_drfuu_degree",
+      "cover_url": "https://i.ytimg.com/vi/Mdwz1zj87_g/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "Mdwz1zj87_g",
+          "url": "https://www.youtube.com/watch?v=Mdwz1zj87_g",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/6q8c445af05R1YVShGr2wX"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=Mdwz1zj87_g",
+      "listen_url": "https://www.youtube.com/watch?v=Mdwz1zj87_g",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_058",
+      "title": "ครางชื่อพี่หน่อย feat. จูน อัยญาดา",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "single_drfuu_khrang_chue_phi_noi",
+      "cover_url": "https://i.ytimg.com/vi/qtes60P7-cE/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "qtes60P7-cE",
+          "url": "https://www.youtube.com/watch?v=qtes60P7-cE",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/3EaCWOrAQbqHBM5Tv8Z777"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=qtes60P7-cE",
+      "listen_url": "https://www.youtube.com/watch?v=qtes60P7-cE",
+      "listen_provider": "youtube",
+      "cover_status": "youtube_video_thumbnail"
+    },
+    {
+      "id": "dr_fuu_059",
+      "title": "ครางชื่อพี่หน่อย feat. บัว กมลทิพย์",
+      "artist_ids": ["dr_fuu"],
+      "album_id": "single_drfuu_khrang_chue_phi_noi",
+      "cover_url": "https://i.ytimg.com/vi/7USjZfs7jdQ/hqdefault.jpg",
+      "moods": [],
+      "duration_seconds": null,
+      "status": "draft",
+      "providers": {
+        "youtube": {
+          "video_id": "7USjZfs7jdQ",
+          "url": "https://www.youtube.com/watch?v=7USjZfs7jdQ",
+          "link_type": "video"
+        }
+      },
+      "source_type": "release_tracklist",
+      "source_urls": ["https://open.spotify.com/album/3EaCWOrAQbqHBM5Tv8Z777"],
+      "metadata_status": "user_provided_link_needs_review",
+      "cover_source_url": "https://www.youtube.com/watch?v=7USjZfs7jdQ",
+      "listen_url": "https://www.youtube.com/watch?v=7USjZfs7jdQ",
       "listen_provider": "youtube",
       "cover_status": "youtube_video_thumbnail"
     }

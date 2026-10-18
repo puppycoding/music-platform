@@ -1,3 +1,4 @@
+
 {
   "schema_version": "1.0.0",
   "catalog_title": "Music Catalog — YouTube Only",
@@ -10,8 +11,8 @@
       "country": "TH",
       "spotify_artist_id": null,
       "spotify_url": null,
-      "image_url": "https://i.ytimg.com/vi/Hc4OrO4LRWw/hqdefault.jpg",
-      "image_status": "representative_track_thumbnail_not_verified_artist_photo"
+      "image_url": "/images/artists/purpeech.webp",
+      "image_status": "local_image_pending"
     }
   ]
 }
