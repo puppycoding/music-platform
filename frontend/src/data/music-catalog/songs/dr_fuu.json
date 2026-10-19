@@ -8,7 +8,7 @@
     {
       "id": "dr_fuu_001",
       "title": "ใจเหลือเหลือ",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/uiQjESJ2Hcc/hqdefault.jpg",
       "moods": [],
@@ -32,7 +32,7 @@
     {
       "id": "dr_fuu_002",
       "title": "พูดแล้วอยากจะร้องไห้",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/_4mLDF0uNgQ/hqdefault.jpg",
       "moods": [],
@@ -56,7 +56,7 @@
     {
       "id": "dr_fuu_003",
       "title": "โรคกลัวฝน",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/mb5djNzLoMI/hqdefault.jpg",
       "moods": [],
@@ -80,7 +80,7 @@
     {
       "id": "dr_fuu_004",
       "title": "คู่ชีวิต",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/YOAdahFqxnc/hqdefault.jpg",
       "moods": [],
@@ -104,7 +104,7 @@
     {
       "id": "dr_fuu_005",
       "title": "ปลาทอง",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/K1Nin3PXMPI/hqdefault.jpg",
       "moods": [],
@@ -128,7 +128,7 @@
     {
       "id": "dr_fuu_006",
       "title": "เธอไม่เคยเป็นแฟนเก่า",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/gUYuomtgP4g/hqdefault.jpg",
       "moods": [],
@@ -152,7 +152,7 @@
     {
       "id": "dr_fuu_007",
       "title": "ที่สุดในสามโลก",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/9eTSTATUI9w/hqdefault.jpg",
       "moods": [],
@@ -176,7 +176,7 @@
     {
       "id": "dr_fuu_008",
       "title": "คำทำนาย",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/dy7idyx-aWc/hqdefault.jpg",
       "moods": [],
@@ -200,7 +200,7 @@
     {
       "id": "dr_fuu_009",
       "title": "แพ้คนห่างไกล",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/AQI9dPUerbM/hqdefault.jpg",
       "moods": [],
@@ -224,7 +224,7 @@
     {
       "id": "dr_fuu_010",
       "title": "เหลือแค่ส้วมที่ใช้ร่วมกัน",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/Lo45O4LR2hk/hqdefault.jpg",
       "moods": [],
@@ -248,7 +248,7 @@
     {
       "id": "dr_fuu_011",
       "title": "ปลาทูนึ่ง",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/paz0r_ludPw/hqdefault.jpg",
       "moods": [],
@@ -272,7 +272,7 @@
     {
       "id": "dr_fuu_012",
       "title": "ดวงดาวแห่งรัก",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/E3jWocp4Q6g/hqdefault.jpg",
       "moods": [],
@@ -296,7 +296,7 @@
     {
       "id": "dr_fuu_013",
       "title": "เจตนาไม่ดี",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/fDmMCInq0dI/hqdefault.jpg",
       "moods": [],
@@ -320,7 +320,7 @@
     {
       "id": "dr_fuu_014",
       "title": "เจ็บแลกรัก",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/Bzky_lFqDck/hqdefault.jpg",
       "moods": [],
@@ -344,7 +344,7 @@
     {
       "id": "dr_fuu_015",
       "title": "เลียนแบบเธอ",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/2C3UnZLOXss/hqdefault.jpg",
       "moods": [],
@@ -368,7 +368,7 @@
     {
       "id": "dr_fuu_016",
       "title": "สินค้าตัวอย่าง",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/qIVXaA5SQls/hqdefault.jpg",
       "moods": [],
@@ -392,7 +392,7 @@
     {
       "id": "dr_fuu_017",
       "title": "เมื่อไหร่จะรัก",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/3Ubo16flsQA/hqdefault.jpg",
       "moods": [],
@@ -416,7 +416,7 @@
     {
       "id": "dr_fuu_018",
       "title": "ไม่ใช่เทวดา",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/yigFJAGhp5M/hqdefault.jpg",
       "moods": [],
@@ -440,7 +440,7 @@
     {
       "id": "dr_fuu_019",
       "title": "รักหรือไม่รัก",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/r5JLH2YKrwU/hqdefault.jpg",
       "moods": [],
@@ -464,7 +464,7 @@
     {
       "id": "dr_fuu_020",
       "title": "สะใจไม่ลง",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_ruam_hit",
       "cover_url": "https://i.ytimg.com/vi/0Bu0FkM1hxU/hqdefault.jpg",
       "moods": [],
@@ -488,7 +488,7 @@
     {
       "id": "dr_fuu_021",
       "title": "ใจเหลือเหลือ",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_jai_luea_luea",
       "cover_url": "https://i.ytimg.com/vi/V57MJQZlGqc/hqdefault.jpg",
       "moods": [],
@@ -512,7 +512,7 @@
     {
       "id": "dr_fuu_022",
       "title": "เธอไม่เคยเป็นแฟนเก่า",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_jai_luea_luea",
       "cover_url": "https://i.ytimg.com/vi/euZX5k9pato/hqdefault.jpg",
       "moods": [],
@@ -536,7 +536,7 @@
     {
       "id": "dr_fuu_023",
       "title": "ปลาทูนึ่ง",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_jai_luea_luea",
       "cover_url": "https://i.ytimg.com/vi/vQ3PWlDVQvk/hqdefault.jpg",
       "moods": [],
@@ -560,7 +560,7 @@
     {
       "id": "dr_fuu_024",
       "title": "สะใจไม่ลง",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_jai_luea_luea",
       "cover_url": "https://i.ytimg.com/vi/oh1MNe_ZZ48/hqdefault.jpg",
       "moods": [],
@@ -584,7 +584,7 @@
     {
       "id": "dr_fuu_025",
       "title": "เหลือแค่ส้วมที่ใช้ร่วมกัน",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_jai_luea_luea",
       "cover_url": "https://i.ytimg.com/vi/t0B06Vqw7dg/hqdefault.jpg",
       "moods": [],
@@ -608,7 +608,7 @@
     {
       "id": "dr_fuu_026",
       "title": "สินค้าตัวอย่าง",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_jai_luea_luea",
       "cover_url": "https://i.ytimg.com/vi/k4HLt03RqlU/hqdefault.jpg",
       "moods": [],
@@ -632,7 +632,7 @@
     {
       "id": "dr_fuu_027",
       "title": "คู่ชีวิต",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_jai_luea_luea",
       "cover_url": "https://i.ytimg.com/vi/YOAdahFqxnc/hqdefault.jpg",
       "moods": [],
@@ -656,7 +656,7 @@
     {
       "id": "dr_fuu_028",
       "title": "ไม่ต้องระแวงแค่ต้องระวัง",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_jai_luea_luea",
       "cover_url": "https://i.ytimg.com/vi/MvFIKgeKjr8/hqdefault.jpg",
       "moods": [],
@@ -680,7 +680,7 @@
     {
       "id": "dr_fuu_029",
       "title": "แพ้คนห่างไกล",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_jai_luea_luea",
       "cover_url": "https://i.ytimg.com/vi/6OWgyI6Yuk8/hqdefault.jpg",
       "moods": [],
@@ -704,7 +704,7 @@
     {
       "id": "dr_fuu_030",
       "title": "แม้วันเปลี่ยน",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_jai_luea_luea",
       "cover_url": "https://i.ytimg.com/vi/GG_OxW5o5tU/hqdefault.jpg",
       "moods": [],
@@ -728,7 +728,7 @@
     {
       "id": "dr_fuu_031",
       "title": "ปลาทอง",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_duangdao",
       "cover_url": "https://i.ytimg.com/vi/FLoWTjcZrs8/hqdefault.jpg",
       "moods": [],
@@ -752,7 +752,7 @@
     {
       "id": "dr_fuu_032",
       "title": "โรคกลัวฝน",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_duangdao",
       "cover_url": "https://i.ytimg.com/vi/UgPMjhgPLcI/hqdefault.jpg",
       "moods": [],
@@ -776,7 +776,7 @@
     {
       "id": "dr_fuu_033",
       "title": "ดวงดาวแห่งรัก",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_duangdao",
       "cover_url": "https://i.ytimg.com/vi/y3cK2dpzj7g/hqdefault.jpg",
       "moods": [],
@@ -800,7 +800,7 @@
     {
       "id": "dr_fuu_034",
       "title": "เจ็บแลกรัก",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_duangdao",
       "cover_url": "https://i.ytimg.com/vi/gawU9-yiD8I/hqdefault.jpg",
       "moods": [],
@@ -824,7 +824,7 @@
     {
       "id": "dr_fuu_035",
       "title": "พักใจชั่วคราว",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_duangdao",
       "cover_url": "https://i.ytimg.com/vi/EHoU3LyVlIA/hqdefault.jpg",
       "moods": [],
@@ -848,7 +848,7 @@
     {
       "id": "dr_fuu_036",
       "title": "พูดแล้วอยากจะร้องไห้",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_duangdao",
       "cover_url": "https://i.ytimg.com/vi/nT_4pkMtYZw/hqdefault.jpg",
       "moods": [],
@@ -872,7 +872,7 @@
     {
       "id": "dr_fuu_037",
       "title": "คำทำนาย",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_duangdao",
       "cover_url": "https://i.ytimg.com/vi/7QgNAE1IqXU/hqdefault.jpg",
       "moods": [],
@@ -896,7 +896,7 @@
     {
       "id": "dr_fuu_038",
       "title": "เจตนาไม่ดี",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_duangdao",
       "cover_url": "https://i.ytimg.com/vi/5zTYLWnST14/hqdefault.jpg",
       "moods": [],
@@ -920,7 +920,7 @@
     {
       "id": "dr_fuu_039",
       "title": "รักหรือไม่รัก",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_duangdao",
       "cover_url": "https://i.ytimg.com/vi/zN2pUIgVHaQ/hqdefault.jpg",
       "moods": [],
@@ -944,7 +944,7 @@
     {
       "id": "dr_fuu_040",
       "title": "ที่สุดในสามโลก",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_duangdao",
       "cover_url": "https://i.ytimg.com/vi/9eTSTATUI9w/hqdefault.jpg",
       "moods": [],
@@ -968,7 +968,7 @@
     {
       "id": "dr_fuu_041",
       "title": "โรงลิเก (Re-Arrange)",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_make_friends_5",
       "cover_url": "https://i.ytimg.com/vi/Alt3epeHIZ4/hqdefault.jpg",
       "moods": [],
@@ -992,7 +992,7 @@
     {
       "id": "dr_fuu_042",
       "title": "ลบ",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_make_friends_5",
       "cover_url": "https://i.ytimg.com/vi/7F7KTxVIlAI/hqdefault.jpg",
       "moods": [],
@@ -1016,7 +1016,7 @@
     {
       "id": "dr_fuu_043",
       "title": "ไม่คุ้มเสี่ยง",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_make_friends_5",
       "cover_url": "https://i.ytimg.com/vi/WZ2HYnTiKWg/hqdefault.jpg",
       "moods": [],
@@ -1040,7 +1040,7 @@
     {
       "id": "dr_fuu_044",
       "title": "รางวัลของคนรักจริง",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_make_friends_5",
       "cover_url": "https://i.ytimg.com/vi/QGsVmCb6uPY/hqdefault.jpg",
       "moods": [],
@@ -1064,7 +1064,7 @@
     {
       "id": "dr_fuu_045",
       "title": "สบตา",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_make_friends_5",
       "cover_url": "https://i.ytimg.com/vi/qlH-XPQDUdM/hqdefault.jpg",
       "moods": [],
@@ -1088,7 +1088,7 @@
     {
       "id": "dr_fuu_046",
       "title": "มีใครบ้างไหม",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_make_friends_5",
       "cover_url": "https://i.ytimg.com/vi/p5tJq00P9IU/hqdefault.jpg",
       "moods": [],
@@ -1112,7 +1112,7 @@
     {
       "id": "dr_fuu_047",
       "title": "ขึ้นคาน (Re-Arrange)",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_make_friends_5",
       "cover_url": "https://i.ytimg.com/vi/cThuIOINWcU/hqdefault.jpg",
       "moods": [],
@@ -1136,7 +1136,7 @@
     {
       "id": "dr_fuu_048",
       "title": "ฝังใจ",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "album_drfuu_make_friends_5",
       "cover_url": "https://i.ytimg.com/vi/-dFbrDKqkuc/hqdefault.jpg",
       "moods": [],
@@ -1160,7 +1160,7 @@
     {
       "id": "dr_fuu_049",
       "title": "เลียนแบบเธอ",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "single_drfuu_mai_chai_thewada",
       "cover_url": "https://i.ytimg.com/vi/rGT0IPCK-8o/hqdefault.jpg",
       "moods": [],
@@ -1184,7 +1184,7 @@
     {
       "id": "dr_fuu_050",
       "title": "อยากเป็นคนคุ้นเคย",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "single_drfuu_mai_chai_thewada",
       "cover_url": "https://i.ytimg.com/vi/bS1eeV7jhCY/hqdefault.jpg",
       "moods": [],
@@ -1208,7 +1208,7 @@
     {
       "id": "dr_fuu_051",
       "title": "เมื่อไหร่จะรัก",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "single_drfuu_mai_chai_thewada",
       "cover_url": "https://i.ytimg.com/vi/HqaqvTZowwU/hqdefault.jpg",
       "moods": [],
@@ -1232,7 +1232,7 @@
     {
       "id": "dr_fuu_052",
       "title": "ไม่ใช่เทวดา",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "single_drfuu_mai_chai_thewada",
       "cover_url": "https://i.ytimg.com/vi/dad0pGJPxS0/hqdefault.jpg",
       "moods": [],
@@ -1256,7 +1256,7 @@
     {
       "id": "dr_fuu_053",
       "title": "รับไม่ไหว",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "single_drfuu_mai_chai_thewada",
       "cover_url": "https://i.ytimg.com/vi/pxwAovQOOgQ/hqdefault.jpg",
       "moods": [],
@@ -1280,7 +1280,7 @@
     {
       "id": "dr_fuu_054",
       "title": "รักเธอกว่าใคร",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "single_drfuu_rak_thoe_kwa_krai",
       "cover_url": "https://i.ytimg.com/vi/DxUG5CfWoD4/hqdefault.jpg",
       "moods": [],
@@ -1304,7 +1304,7 @@
     {
       "id": "dr_fuu_055",
       "title": "แม่ดอก",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "single_drfuu_mae_dok",
       "cover_url": "https://i.ytimg.com/vi/qYdIqxOh33Q/hqdefault.jpg",
       "moods": [],
@@ -1328,7 +1328,7 @@
     {
       "id": "dr_fuu_056",
       "title": "อะไรก็ได้ (Anything)",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "single_drfuu_arai_ko_dai",
       "cover_url": "https://i.ytimg.com/vi/byiMBWt1jZE/hqdefault.jpg",
       "moods": [],
@@ -1352,7 +1352,7 @@
     {
       "id": "dr_fuu_057",
       "title": "ดีกรี",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "single_drfuu_degree",
       "cover_url": "https://i.ytimg.com/vi/Mdwz1zj87_g/hqdefault.jpg",
       "moods": [],
@@ -1376,7 +1376,7 @@
     {
       "id": "dr_fuu_058",
       "title": "ครางชื่อพี่หน่อย feat. จูน อัยญาดา",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "single_drfuu_khrang_chue_phi_noi",
       "cover_url": "https://i.ytimg.com/vi/qtes60P7-cE/hqdefault.jpg",
       "moods": [],
@@ -1400,7 +1400,7 @@
     {
       "id": "dr_fuu_059",
       "title": "ครางชื่อพี่หน่อย feat. บัว กมลทิพย์",
-      "artist_ids": ["dr_fuu"],
+      "artist_ids": ["artist_drfuu"],
       "album_id": "single_drfuu_khrang_chue_phi_noi",
       "cover_url": "https://i.ytimg.com/vi/7USjZfs7jdQ/hqdefault.jpg",
       "moods": [],

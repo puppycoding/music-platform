@@ -3,12 +3,15 @@
 import {
   createContext,
   useCallback,
+  useEffect,
   useContext,
   useMemo,
   useRef,
   useState,
   type ReactNode,
 } from "react";
+
+import { fillPlayingNext } from "../services/playing-next";
 
 import catalog from "../../../data/music-catalog";
 import { getSongYouTubeVideoId } from "../services/player-service";
@@ -66,7 +69,10 @@ function normalizeSong(song: RawSong): MusicTrack {
     title: song.title,
     artistName,
     coverUrl: song.cover_url ?? song.image_url ?? null,
-    durationSeconds: song.duration_seconds ?? 0,
+    durationSeconds:
+      typeof song.duration_seconds === "number" &&
+      Number.isFinite(song.duration_seconds) && song.duration_seconds > 0
+        ? song.duration_seconds : null,
     videoId: getSongYouTubeVideoId(song),
   };
 }
@@ -105,6 +111,15 @@ export default function MusicPlayerProvider({
 
   const [queue, setQueue] = useState<QueueItem[]>([]);
 
+  const [playingNext, setPlayingNext] = useState<MusicTrack[]>([]);
+  const playingNextRef = useRef<MusicTrack[]>([]);
+  const seenSongsRef = useRef(new Set<string>());
+  const [repeatOne, setRepeatOne] = useState(false);
+  const repeatOneRef = useRef(false);
+  const toggleRepeat = useCallback(() => {
+    repeatOneRef.current = !repeatOneRef.current;
+    setRepeatOne(repeatOneRef.current);
+  }, []);
   const queueRef = useRef<QueueItem[]>([]);
   const queueCounterRef = useRef(0);
 
@@ -122,10 +137,34 @@ export default function MusicPlayerProvider({
   // ป้องกันการเพิ่มประวัติซ้ำเมื่อย้อนกลับไปเพลงก่อนหน้า
   const isNavigatingHistoryRef = useRef(false);
 
-  // อัปเดต refs ให้เป็นข้อมูลล่าสุด
-  currentSongRef.current = currentSong;
-  isPlayingRef.current = isPlaying;
-  queueRef.current = queue;
+  const updatePlayingNext = useCallback((currentId?: string) => {
+    const next = fillPlayingNext(
+      playingNextRef.current, allSongs, currentId, seenSongsRef.current,
+      undefined, new Set(queueRef.current.map(item => item.song.id)),
+    );
+    playingNextRef.current = next;
+    setPlayingNext(next);
+  }, []);
+
+  // Compute both lists first, then publish refs synchronously before rendering.
+  // Next/ended callbacks can only observe the complete queue transaction.
+  const commitQueue = useCallback((nextQueue: QueueItem[]) => {
+    const next = fillPlayingNext(
+      playingNextRef.current, allSongs, currentSongRef.current?.id,
+      seenSongsRef.current, undefined,
+      new Set(nextQueue.map(item => item.song.id)),
+    );
+    queueRef.current = nextQueue;
+    playingNextRef.current = next;
+    setQueue(nextQueue);
+    setPlayingNext(next);
+  }, []);
+
+  useEffect(() => {
+    // Defer random initialization until after hydration, independently of the panel.
+    const timer = setTimeout(() => updatePlayingNext(currentSongRef.current?.id), 0);
+    return () => clearTimeout(timer);
+  }, [updatePlayingNext]);
 
   // เล่นเพลงที่เลือกจากคลังเพลง
   const playSong = useCallback(
@@ -171,6 +210,7 @@ export default function MusicPlayerProvider({
 
       currentSongRef.current = song;
       setCurrentSong(song);
+      updatePlayingNext(song.id);
 
       setCurrentTime(0);
       setDuration(0);
@@ -186,7 +226,7 @@ export default function MusicPlayerProvider({
         pendingVideoIdRef.current = null;
       }
     },
-    [playerReady],
+    [playerReady, updatePlayingNext],
   );
 
   // เพิ่มเพลงเข้าคิว
@@ -210,9 +250,16 @@ export default function MusicPlayerProvider({
 
     const nextQueue = [...queueRef.current, item];
 
-    queueRef.current = nextQueue;
-    setQueue(nextQueue);
-  }, []);
+    commitQueue(nextQueue);
+  }, [commitQueue]);
+
+  const movePlayingNextToQueue = useCallback((songId: string) => {
+    // The first call removes the song from the live list; stale/double clicks
+    // cannot append it again, even before React has rendered the new state.
+    if (!playingNextRef.current.some(song => song.id === songId)) return;
+    if (queueRef.current.some(item => item.song.id === songId)) return;
+    addToQueue(songId);
+  }, [addToQueue]);
 
   // นำเพลงออกจากคิว
   const removeFromQueue = useCallback((queueId: string) => {
@@ -220,9 +267,8 @@ export default function MusicPlayerProvider({
       (item) => item.queueId !== queueId,
     );
 
-    queueRef.current = nextQueue;
-    setQueue(nextQueue);
-  }, []);
+    commitQueue(nextQueue);
+  }, [commitQueue]);
 
   // จัดลำดับเพลงในคิวใหม่
   const reorderQueue = useCallback(
@@ -271,43 +317,21 @@ export default function MusicPlayerProvider({
     [playSong],
   );
 
-  // สุ่มเพลงจากคลัง โดยเลือกเฉพาะเพลงที่มี YouTube ID
-  const playRandomSong = useCallback(() => {
-    const playableSongs = allSongs.filter(
-      (song) => Boolean(song.videoId),
-    );
-
-    if (playableSongs.length === 0) {
-      console.warn("ไม่มีเพลงที่สามารถเล่นได้ในคลัง");
-
-      setIsPlaying(false);
-      isPlayingRef.current = false;
-      pendingVideoIdRef.current = null;
-
-      setCurrentTime(0);
-      setDuration(0);
-
-      return;
-    }
-
-    const currentSongId = currentSongRef.current?.id;
-
-    // ถ้ามีเพลงอื่นให้เลือก จะไม่สุ่มเพลงปัจจุบันซ้ำทันที
-    const otherSongs = playableSongs.filter(
-      (song) => song.id !== currentSongId,
-    );
-
-    const candidates =
-      otherSongs.length > 0 ? otherSongs : playableSongs;
-
-    const randomIndex = Math.floor(
-      Math.random() * candidates.length,
-    );
-
-    playSong(candidates[randomIndex].id);
+  // Selecting a later recommendation skips preceding recommendations.
+  const playPlayingNext = useCallback((songId: string) => {
+    const index = playingNextRef.current.findIndex(song => song.id === songId);
+    if (index < 0) return;
+    playingNextRef.current = playingNextRef.current.slice(index + 1);
+    playSong(songId);
   }, [playSong]);
 
-  // เล่นเพลงถัดไป: ใช้คิวก่อน หากคิวว่างให้สุ่ม
+  // Shuffle keeps its original one-click playback behavior, using the shared list.
+  const playRandomSong = useCallback(() => {
+    const next = playingNextRef.current[0];
+    if (next) playPlayingNext(next.id);
+  }, [playPlayingNext]);
+
+  // เล่นเพลงถัดไป: ใช้คิวก่อน แล้วใช้รายการเดียวกับที่แสดงใน Playing Next
   const playNext = useCallback(() => {
     while (queueRef.current.length > 0) {
       const [nextItem, ...remainingQueue] = queueRef.current;
@@ -321,8 +345,15 @@ export default function MusicPlayerProvider({
       }
     }
 
-    playRandomSong();
-  }, [playSong, playRandomSong]);
+    const next = playingNextRef.current[0];
+    if (next) {
+      playPlayingNext(next.id);
+    } else {
+      setIsPlaying(false);
+      isPlayingRef.current = false;
+      pendingVideoIdRef.current = null;
+    }
+  }, [playSong, playPlayingNext]);
 
   // ย้อนกลับตามประวัติการเล่นจริง
   const playPrevious = useCallback(() => {
@@ -370,19 +401,8 @@ export default function MusicPlayerProvider({
 
     // ยังไม่ได้เลือกเพลง
     if (!current) {
-      const nextItem = queueRef.current[0];
+      playNext();
 
-      // ถ้ามีเพลงในคิว ให้เล่นเพลงแรก
-      if (nextItem) {
-        const remainingQueue = queueRef.current.slice(1);
-
-        queueRef.current = remainingQueue;
-        setQueue(remainingQueue);
-
-        playSong(nextItem.song.id);
-      }
-
-      // ถ้าไม่มีเพลงและไม่มีคิว ไม่ทำอะไร
       return;
     }
 
@@ -409,7 +429,7 @@ export default function MusicPlayerProvider({
       setIsPlaying(true);
       isPlayingRef.current = true;
     }
-  }, [playerReady, playSong]);
+  }, [playerReady, playNext]);
 
   // ปรับระดับเสียง
   const setVolume = useCallback((nextVolume: number) => {
@@ -482,13 +502,17 @@ export default function MusicPlayerProvider({
         setCurrentTime(0);
         setDuration(0);
 
-        playNext();
+        if (repeatOneRef.current && currentSongRef.current) {
+          playSong(currentSongRef.current.id);
+        } else {
+          playNext();
+        }
       } else if (state === "error") {
         setIsPlaying(false);
         isPlayingRef.current = false;
       }
     },
-    [playNext],
+    [playNext, playSong],
   );
 
   // จัดการข้อผิดพลาดจาก YouTube Player
@@ -509,6 +533,12 @@ export default function MusicPlayerProvider({
   const value = useMemo(
     () => ({
       songs: allSongs,
+      playingNext,
+      playPlayingNext,
+      movePlayingNextToQueue,
+      playRandomSong,
+      repeatOne,
+      toggleRepeat,
       currentSong,
       isPlaying,
       volume,
@@ -527,6 +557,12 @@ export default function MusicPlayerProvider({
       setVolume,
     }),
     [
+      playingNext,
+      playPlayingNext,
+      movePlayingNextToQueue,
+      playRandomSong,
+      repeatOne,
+      toggleRepeat,
       currentSong,
       isPlaying,
       volume,

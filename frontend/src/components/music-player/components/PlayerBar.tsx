@@ -112,7 +112,9 @@ export default function PlayerBar() {
     currentTime,
     duration,
     seekTo,
-    playSong,
+    playRandomSong,
+    repeatOne,
+    toggleRepeat,
     togglePlay,
     playNext,
     playPrevious,
@@ -127,20 +129,6 @@ export default function PlayerBar() {
     totalDuration > 0
       ? Math.min(100, (displayedTime / totalDuration) * 100)
       : 0;
-
-  function shuffleSong() {
-    const playableSongs = songs.filter(
-      (song) =>
-        Boolean(song.videoId) && song.id !== currentSong?.id,
-    );
-
-    if (playableSongs.length === 0) return;
-
-    const randomSong =
-      playableSongs[Math.floor(Math.random() * playableSongs.length)];
-
-    playSong(randomSong.id);
-  }
 
   function finishSeeking() {
     if (!isSeeking) return;
@@ -222,7 +210,7 @@ export default function PlayerBar() {
                       song.id !== currentSong.id,
                   )
                 }
-                onClick={shuffleSong}
+                onClick={playRandomSong}
                 className="hidden transition-colors hover:text-violet-300 disabled:opacity-25 sm:block"
               >
                 <ShuffleIcon />
@@ -263,9 +251,10 @@ export default function PlayerBar() {
               <button
                 type="button"
                 aria-label="เล่นซ้ำ"
-                title="เล่นซ้ำยังไม่เปิดใช้งาน"
-                disabled
-                className="hidden opacity-25 sm:block"
+                title={repeatOne ? "ปิดเล่นซ้ำเพลงนี้" : "เล่นซ้ำเพลงนี้"}
+                aria-pressed={repeatOne}
+                onClick={toggleRepeat}
+                className={`hidden sm:block ${repeatOne ? "text-violet-300" : "hover:text-violet-300"}`}
               >
                 <RepeatIcon />
               </button>

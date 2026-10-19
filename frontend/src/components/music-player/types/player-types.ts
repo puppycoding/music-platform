@@ -53,7 +53,7 @@ export type MusicTrack = {
   title: string;
   artistName: string;
   coverUrl: string | null;
-  durationSeconds: number;
+  durationSeconds: number | null;
   videoId: string | null;
 };
 
@@ -88,6 +88,12 @@ export type MusicPlayerContextValue = {
   isPlaying: boolean;
   volume: number;
   queue: QueueItem[];
+  playingNext: MusicTrack[];
+  playPlayingNext: (songId: string) => void;
+  movePlayingNextToQueue: (songId: string) => void;
+  playRandomSong: () => void;
+  repeatOne: boolean;
+  toggleRepeat: () => void;
 
   /** เวลาปัจจุบันของเพลง หน่วยวินาที */
   currentTime: number;

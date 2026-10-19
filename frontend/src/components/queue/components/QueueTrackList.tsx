@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import TrackActions from "./TrackActions";
 import { useMusicPlayer } from "../../music-player/providers/MusicPlayerProvider";
 import type { QueueItem } from "../../music-player/types/player-types";
 
@@ -81,22 +82,6 @@ function SongCover({
   );
 }
 
-function MoreIcon() {
-  return (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <circle cx="5" cy="12" r="1.7" />
-      <circle cx="12" cy="12" r="1.7" />
-      <circle cx="19" cy="12" r="1.7" />
-    </svg>
-  );
-}
-
 function PlayIcon() {
   return (
     <svg
@@ -130,40 +115,6 @@ function DragIcon() {
   );
 }
 
-function RemoveIcon() {
-  return (
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.7"
-      aria-hidden="true"
-    >
-      <path d="M4 7h16" />
-      <path d="M10 11v6M14 11v6" />
-      <path d="m6 7 1 14h10l1-14" />
-      <path d="M9 7V4h6v3" />
-    </svg>
-  );
-}
-
-function formatDuration(seconds?: number | null) {
-  if (
-    typeof seconds !== "number" ||
-    !Number.isFinite(seconds)
-  ) {
-    return "--:--";
-  }
-
-  const safeSeconds = Math.max(0, Math.floor(seconds));
-  const minutes = Math.floor(safeSeconds / 60);
-  const remainingSeconds = safeSeconds % 60;
-
-  return `${minutes}:${String(remainingSeconds).padStart(2, "0")}`;
-}
-
 export default function QueueTrackList({
   queue,
   playQueueItem,
@@ -176,9 +127,6 @@ export default function QueueTrackList({
     useState<string | null>(null);
 
   const [dragOverQueueId, setDragOverQueueId] =
-    useState<string | null>(null);
-
-  const [activeMenu, setActiveMenu] =
     useState<string | null>(null);
 
   function handlePlay(queueId: string) {
@@ -282,11 +230,10 @@ export default function QueueTrackList({
 
   return (
     <div className="flex flex-col space-y-0.5">
-      {queue.map((item) => {
+      {queue.map((item, index) => {
         const song = item.song;
         const queueId = item.queueId;
 
-        const menuOpen = activeMenu === queueId;
         const isDragging = draggedQueueId === queueId;
         const isDragOver = dragOverQueueId === queueId;
 
@@ -324,10 +271,6 @@ export default function QueueTrackList({
               onPlay={() => handlePlay(queueId)}
               onRemove={() => {
                 removeFromQueue(queueId);
-
-                if (activeMenu === queueId) {
-                  setActiveMenu(null);
-                }
               }}
             />
 
@@ -346,62 +289,15 @@ export default function QueueTrackList({
               </span>
             </button>
 
-            {/* เวลาเพลง เปลี่ยนเป็นปุ่มสามจุดเมื่อ hover */}
-            <div className="relative ml-auto flex w-10 shrink-0 items-center justify-end">
-              <span
-                className={`text-[11px] tabular-nums text-white/40 transition-opacity ${menuOpen
-                    ? "pointer-events-none absolute opacity-0"
-                    : "group-hover:pointer-events-none group-hover:opacity-0 group-focus-within:pointer-events-none group-focus-within:opacity-0"
-                  }`}
-              >
-                {formatDuration(song.durationSeconds)}
-              </span>
-
-              <button
-                type="button"
-                onClick={(event) => {
-                  event.stopPropagation();
-
-                  setActiveMenu(
-                    menuOpen ? null : queueId,
-                  );
-                }}
-                className={`absolute right-0 flex h-8 w-8 items-center justify-center rounded-full text-white/65 transition-all hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 ${menuOpen
-                    ? "pointer-events-auto opacity-100"
-                    : "pointer-events-none opacity-0 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100"
-                  }`}
-                aria-label={`ตัวเลือกเพิ่มเติมสำหรับ ${song.title}`}
-                aria-expanded={menuOpen}
-              >
-                <MoreIcon />
-              </button>
-
-              {/* เมนูนำเพลงออกจากคิว */}
-              {menuOpen && (
-                <>
-                  <button
-                    type="button"
-                    aria-label="ปิดเมนู"
-                    className="fixed inset-0 z-40 cursor-default"
-                    onClick={() => setActiveMenu(null)}
-                  />
-
-                  <div className="absolute right-0 top-9 z-50 w-44 overflow-hidden rounded-xl border border-white/10 bg-[#242424] p-1.5 shadow-2xl shadow-black/40">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        removeFromQueue(queueId);
-                        setActiveMenu(null);
-                      }}
-                      className="flex w-full items-center gap-2.5 rounded-lg px-3 py-2.5 text-left text-xs text-white/80 transition-colors hover:bg-white/[0.08] hover:text-white"
-                    >
-                      <RemoveIcon />
-                      นำออกจากคิว
-                    </button>
-                  </div>
-                </>
-              )}
-            </div>
+            <TrackActions
+              title={song.title}
+              durationSeconds={song.durationSeconds}
+              actions={[
+                { label: "เลื่อนขึ้น", disabled: index === 0, onSelect: () => reorderQueue(index, index - 1) },
+                { label: "เลื่อนลง", disabled: index === queue.length - 1, onSelect: () => reorderQueue(index, index + 1) },
+                { label: "นำออกจากคิว", onSelect: () => removeFromQueue(queueId) },
+              ]}
+            />
           </div>
         );
       })}

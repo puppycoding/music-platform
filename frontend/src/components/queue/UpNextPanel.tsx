@@ -4,6 +4,7 @@
 import { useState } from "react";
 import { useMusicPlayer } from "../music-player/providers/MusicPlayerProvider";
 import QueueTrackList from "./components/QueueTrackList";
+import TrackActions from "./components/TrackActions";
 
 type UpNextPanelProps = {
   isOpen: boolean;
@@ -61,6 +62,9 @@ export default function UpNextPanel({
     currentSong,
     isPlaying,
     queue,
+    playingNext,
+    playPlayingNext,
+    movePlayingNextToQueue,
     playQueueItem,
     removeFromQueue,
   } = useMusicPlayer();
@@ -84,6 +88,7 @@ export default function UpNextPanel({
       <aside
         aria-label="รายการเพลงถัดไป"
         aria-hidden={!isOpen}
+        inert={!isOpen}
         className={`fixed bottom-0 right-0 top-0 z-[80] flex w-[min(92vw,400px)] flex-col border-l border-white/[0.07] bg-[#14141a] text-white transition-transform duration-250 ease-out md:bottom-20 ${isOpen
           ? "translate-x-0"
           : "pointer-events-none translate-x-full"
@@ -112,6 +117,7 @@ export default function UpNextPanel({
           {currentSong ? (
             <div className="flex items-center gap-3 rounded-xl bg-[#22212a] p-3">
               <SongCover
+                key={currentSong.id}
                 src={currentSong.coverUrl}
                 title={currentSong.title}
                 className="h-16 w-16 rounded-lg"
@@ -163,41 +169,54 @@ export default function UpNextPanel({
         </section>
 
 
-        {/* Queue section heading */}
-        <div className="flex shrink-0 items-center gap-4 px-5 pb-3 pt-1">
-          <h3 className="shrink-0 text-sm font-medium text-white/60">
-            เพลงถัดไป
-          </h3>
-          <div className="h-px flex-1 bg-white/[0.09]" />
-        </div>
-
-        {/* Scrollable queue */}
-        <div className="queue-scroll min-h-0 flex-1 overflow-y-auto overscroll-contain px-3 pb-4">
-          {queue.length > 0 ? (
-            <QueueTrackList
-              queue={queue}
-              playQueueItem={(queueId) => {
-                playQueueItem(queueId);
-                onToggle();
-              }}
-              removeFromQueue={removeFromQueue}
-              onPlay={onToggle}
-            />
-          ) : (
-            <div className="flex flex-col items-center px-5 py-12 text-center">
-              <div className="mb-3 text-3xl text-white/25">
-                ♫
-              </div>
-              <p className="text-sm text-white/65">
-                ไม่มีเพลงถัดไป
-              </p>
-              <p className="mt-2 text-xs leading-5 text-white/35">
-                เพิ่มเพลงจากเมนูจุดสามจุด
-                <br />
-                เพื่อเพิ่มเพลงลงในคิว
-              </p>
+        <div key={isOpen ? "open" : "closed"} className="queue-scroll min-h-0 flex-1 overflow-y-auto overscroll-contain px-3 pb-4">
+          <section aria-label="คิว" className="mb-5">
+            <h3 className="flex items-center justify-between border-t border-white/10 px-2 py-3 text-sm font-semibold">
+              คิว <span className="text-xs font-normal text-white/40">{queue.length} เพลง</span>
+            </h3>
+            {queue.length > 0 && (
+              <QueueTrackList
+                queue={queue}
+                playQueueItem={playQueueItem}
+                removeFromQueue={removeFromQueue}
+                onPlay={onToggle}
+              />
+            )}
+          </section>
+          <section aria-label="เล่นต่อ">
+            <h3 className="flex items-center justify-between border-t border-white/10 px-2 py-3 text-sm font-semibold">
+              เล่นต่อ <span className="text-xs font-normal text-[#c5a0ff]">สุ่มอัตโนมัติ · {playingNext.length} เพลง</span>
+            </h3>
+            <div className="space-y-0.5">
+              {playingNext.map((song, index) => (
+                <div key={song.id} className="group relative flex w-full items-center gap-3 rounded-xl px-2 py-2 transition-colors hover:bg-[#c5a0ff]/10">
+                  <span className="w-4 shrink-0 text-center text-[11px] tabular-nums text-white/30">{index + 1}</span>
+                  <button
+                    type="button"
+                    onClick={() => { playPlayingNext(song.id); onToggle(); }}
+                    aria-label={`เล่น ${song.title}`}
+                    className="shrink-0 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c5a0ff]"
+                  >
+                    <SongCover src={song.coverUrl} title={song.title} className="h-[52px] w-[52px]" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => { playPlayingNext(song.id); onToggle(); }}
+                    className="min-w-0 flex-1 rounded text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c5a0ff]"
+                  >
+                    <span className="block truncate text-[13px] font-medium text-white/90 group-hover:text-[#c5a0ff]">{song.title}</span>
+                    <span className="mt-1 block truncate text-xs text-white/40">{song.artistName}</span>
+                  </button>
+                  <TrackActions
+                    title={song.title}
+                    durationSeconds={song.durationSeconds}
+                    actions={[{ label: "เพิ่มไปยังคิว", onSelect: () => movePlayingNextToQueue(song.id) }]}
+                  />
+                </div>
+              ))}
+              {playingNext.length === 0 && <p className="px-2 py-3 text-xs text-white/40">ไม่มีเพลงอื่นที่เล่นได้ในคลัง</p>}
             </div>
-          )}
+          </section>
         </div>
 
         {/* Minimal footer */}
