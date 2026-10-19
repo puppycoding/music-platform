@@ -7,3250 +7,1608 @@
     {
       "id": "three_man_down_001",
       "title": "ลึกลงไป",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/9B5iaMZTddc/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 84,
       "providers": {
         "youtube": {
           "video_id": "9B5iaMZTddc",
-          "url": "https://www.youtube.com/watch?v=9B5iaMZTddc",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=9B5iaMZTddc",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_002",
       "title": "เริ่มใหม่",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/_5DYQmLUD7o/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 202,
       "providers": {
         "youtube": {
           "video_id": "_5DYQmLUD7o",
-          "url": "https://www.youtube.com/watch?v=_5DYQmLUD7o",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=_5DYQmLUD7o",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_003",
       "title": "ขอโทษที่ติดต่อไป (feat. Nap The Nap)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/Tmoox_XEGLI/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 259,
       "providers": {
         "youtube": {
           "video_id": "Tmoox_XEGLI",
-          "url": "https://www.youtube.com/watch?v=Tmoox_XEGLI",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=Tmoox_XEGLI",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_004",
       "title": "ก็แค่พูดมา (feat. The TOYS)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/IZaTSHohVjM/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 263,
       "providers": {
         "youtube": {
           "video_id": "IZaTSHohVjM",
-          "url": "https://www.youtube.com/watch?v=IZaTSHohVjM",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=IZaTSHohVjM",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_005",
       "title": "ยอมถอย",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/JxTlDK8CMug/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 231,
       "providers": {
         "youtube": {
           "video_id": "JxTlDK8CMug",
-          "url": "https://www.youtube.com/watch?v=JxTlDK8CMug",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=JxTlDK8CMug",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_006",
       "title": "รักใครไม่ไหว",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/RzECw374Djc/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 251,
       "providers": {
         "youtube": {
           "video_id": "RzECw374Djc",
-          "url": "https://www.youtube.com/watch?v=RzECw374Djc",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=RzECw374Djc",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_007",
       "title": "ทุกอย่างยังเหมือนเดิม (feat. COCKTAIL)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/pvbnR9VvGPY/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 209,
       "providers": {
         "youtube": {
           "video_id": "pvbnR9VvGPY",
-          "url": "https://www.youtube.com/watch?v=pvbnR9VvGPY",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=pvbnR9VvGPY",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_008",
       "title": "ไม่ให้ไป",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/TJgm4gk6RDk/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 241,
       "providers": {
         "youtube": {
           "video_id": "TJgm4gk6RDk",
-          "url": "https://www.youtube.com/watch?v=TJgm4gk6RDk",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=TJgm4gk6RDk",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_009",
       "title": "ทางออก",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/z3NVJijkCBs/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 221,
       "providers": {
         "youtube": {
           "video_id": "z3NVJijkCBs",
-          "url": "https://www.youtube.com/watch?v=z3NVJijkCBs",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=z3NVJijkCBs",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_010",
       "title": "ข้อยกเว้น",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/Mkq1FfF-d3s/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 56,
       "providers": {
         "youtube": {
           "video_id": "Mkq1FfF-d3s",
-          "url": "https://www.youtube.com/watch?v=Mkq1FfF-d3s",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=Mkq1FfF-d3s",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_011",
       "title": "เพลงรัก",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/RZzqyol1CyY/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 270,
       "providers": {
         "youtube": {
           "video_id": "RZzqyol1CyY",
-          "url": "https://www.youtube.com/watch?v=RZzqyol1CyY",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=RZzqyol1CyY",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_012",
       "title": "ชาตินี้",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/YFRlGyhADqQ/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 216,
       "providers": {
         "youtube": {
           "video_id": "YFRlGyhADqQ",
-          "url": "https://www.youtube.com/watch?v=YFRlGyhADqQ",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=YFRlGyhADqQ",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_013",
       "title": "ขอบคุณที่กลับมา",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_iii",
       "cover_url": "https://i.ytimg.com/vi/P4fmqS0zGOY/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 246,
       "providers": {
         "youtube": {
           "video_id": "P4fmqS0zGOY",
-          "url": "https://www.youtube.com/watch?v=P4fmqS0zGOY",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=P4fmqS0zGOY",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59hXVrRW78L0BTtrZ1pn9M"
+      ]
     },
     {
       "id": "three_man_down_014",
       "title": "28 [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/hne0NJGVU9M/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 112,
       "providers": {
         "youtube": {
           "video_id": "hne0NJGVU9M",
-          "url": "https://www.youtube.com/watch?v=hne0NJGVU9M",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=hne0NJGVU9M",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_015",
       "title": "ปล่อยให้เวลา (Broken Clock) (Live At Impact Arena 2023)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/vAJNaB_71mE/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 194,
       "providers": {
         "youtube": {
           "video_id": "vAJNaB_71mE",
-          "url": "https://www.youtube.com/watch?v=vAJNaB_71mE",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=vAJNaB_71mE",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_016",
       "title": "ตอนไม่ได้เจอ [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/ki6eDrBo3ak/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 192,
       "providers": {
         "youtube": {
           "video_id": "ki6eDrBo3ak",
-          "url": "https://www.youtube.com/watch?v=ki6eDrBo3ak",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=ki6eDrBo3ak",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_017",
       "title": "ผ่านตา, หมดไอจี - Three Man Down Live At Impact Arena 2023",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/WnJrPGno08c/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 423,
       "providers": {
         "youtube": {
           "video_id": "WnJrPGno08c",
-          "url": "https://www.youtube.com/watch?v=WnJrPGno08c",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=WnJrPGno08c",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_018",
       "title": "ไม่อยากชิน (Don’t Wanna Get Used to It) (Live At Impact Arena 2023)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/aGjA4NCTSFE/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 400,
       "providers": {
         "youtube": {
           "video_id": "aGjA4NCTSFE",
-          "url": "https://www.youtube.com/watch?v=aGjA4NCTSFE",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=aGjA4NCTSFE",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_019",
       "title": "วันเกิดฉันปีนี้ (HBD to me) (Live At Impact Arena 2023)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/uRSiVFEG5eI/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 317,
       "providers": {
         "youtube": {
           "video_id": "uRSiVFEG5eI",
-          "url": "https://www.youtube.com/watch?v=uRSiVFEG5eI",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=uRSiVFEG5eI",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_020",
       "title": "ความรักทำให้คนตาบอด [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/6EUcBD2bgH8/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 368,
       "providers": {
         "youtube": {
           "video_id": "6EUcBD2bgH8",
-          "url": "https://www.youtube.com/watch?v=6EUcBD2bgH8",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=6EUcBD2bgH8",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_021",
       "title": "เก็บไว้ในใจไม่พอ [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/JEEq-7pivcA/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 301,
       "providers": {
         "youtube": {
           "video_id": "JEEq-7pivcA",
-          "url": "https://www.youtube.com/watch?v=JEEq-7pivcA",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=JEEq-7pivcA",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_022",
       "title": "น้อง Feat. URBOYTJ, MAIYARAP - Three Man Down Live At Impact Arena 2023",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/uiHq8kzmXm0/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 267,
       "providers": {
         "youtube": {
           "video_id": "uiHq8kzmXm0",
-          "url": "https://www.youtube.com/watch?v=uiHq8kzmXm0",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=uiHq8kzmXm0",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_023",
       "title": "Super Saiyan [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/vle93gmIAeA/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 357,
       "providers": {
         "youtube": {
           "video_id": "vle93gmIAeA",
-          "url": "https://www.youtube.com/watch?v=vle93gmIAeA",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=vle93gmIAeA",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_024",
       "title": "This City Won't be Lonely Anymore [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/v5Qt-upUaRk/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 70,
       "providers": {
         "youtube": {
           "video_id": "v5Qt-upUaRk",
-          "url": "https://www.youtube.com/watch?v=v5Qt-upUaRk",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=v5Qt-upUaRk",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_025",
       "title": "อยากฟัง [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/Z-Aa4D0nj_Q/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 220,
       "providers": {
         "youtube": {
           "video_id": "Z-Aa4D0nj_Q",
-          "url": "https://www.youtube.com/watch?v=Z-Aa4D0nj_Q",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=Z-Aa4D0nj_Q",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_026",
       "title": "ทีมรอเธอ - Three Man Down Live At Impact Arena 2023",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/wJbMIKBLijg/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 241,
       "providers": {
         "youtube": {
           "video_id": "wJbMIKBLijg",
-          "url": "https://www.youtube.com/watch?v=wJbMIKBLijg",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=wJbMIKBLijg",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_027",
       "title": "เดาไม่เก่ง [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/V0om43wqi5k/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 217,
       "providers": {
         "youtube": {
           "video_id": "V0om43wqi5k",
-          "url": "https://www.youtube.com/watch?v=V0om43wqi5k",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=V0om43wqi5k",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_028",
       "title": "เลือกคนที่เขารักเรา [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/-BZ1Z2bzcag/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 276,
       "providers": {
         "youtube": {
           "video_id": "-BZ1Z2bzcag",
-          "url": "https://www.youtube.com/watch?v=-BZ1Z2bzcag",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=-BZ1Z2bzcag",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_029",
       "title": "ไม่อยากให้เธอไม่สบาย (You) (Live At Impact Arena 2023)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/b_CjcrCWKnA/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 276,
       "providers": {
         "youtube": {
           "video_id": "b_CjcrCWKnA",
-          "url": "https://www.youtube.com/watch?v=b_CjcrCWKnA",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=b_CjcrCWKnA",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_030",
       "title": "เด็กเกินไป (Too Young) (Live At Impact Arena 2023)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/GRS_Jj5r2Tk/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 283,
       "providers": {
         "youtube": {
           "video_id": "GRS_Jj5r2Tk",
-          "url": "https://www.youtube.com/watch?v=GRS_Jj5r2Tk",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=GRS_Jj5r2Tk",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_031",
       "title": "ไปเถอะเธอ [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/ZT3Yn7YxRi4/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 229,
       "providers": {
         "youtube": {
           "video_id": "ZT3Yn7YxRi4",
-          "url": "https://www.youtube.com/watch?v=ZT3Yn7YxRi4",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=ZT3Yn7YxRi4",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_032",
       "title": "เปิดตัวเขา - Three Man Down Live At Impact Arena 2023",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/zFobVJcQ-fI/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 242,
       "providers": {
         "youtube": {
           "video_id": "zFobVJcQ-fI",
-          "url": "https://www.youtube.com/watch?v=zFobVJcQ-fI",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=zFobVJcQ-fI",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_033",
       "title": "ข้างกัน (City) (Live At Impact Arena 2023)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/HNSDenMBTTY/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 352,
       "providers": {
         "youtube": {
           "video_id": "HNSDenMBTTY",
-          "url": "https://www.youtube.com/watch?v=HNSDenMBTTY",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=HNSDenMBTTY",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_034",
       "title": "คนใหม่ (Someone New) (Live At Impact Arena 2023)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/lijSRXs-cL0/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 207,
       "providers": {
         "youtube": {
           "video_id": "lijSRXs-cL0",
-          "url": "https://www.youtube.com/watch?v=lijSRXs-cL0",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=lijSRXs-cL0",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_035",
       "title": "ไหนบอกเลิกแล้ว (In My Bed) (Live At Impact Arena 2023)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/JwNe7YnXHYM/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 308,
       "providers": {
         "youtube": {
           "video_id": "JwNe7YnXHYM",
-          "url": "https://www.youtube.com/watch?v=JwNe7YnXHYM",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=JwNe7YnXHYM",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_036",
       "title": "เมา (Drunk in Love) (Live At Impact Arena 2023)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/W5XfBJt9eng/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 380,
       "providers": {
         "youtube": {
           "video_id": "W5XfBJt9eng",
-          "url": "https://www.youtube.com/watch?v=W5XfBJt9eng",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=W5XfBJt9eng",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_037",
       "title": "ฝนตกไหม [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/LFkxKJdjbNs/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 573,
       "providers": {
         "youtube": {
           "video_id": "LFkxKJdjbNs",
-          "url": "https://www.youtube.com/watch?v=LFkxKJdjbNs",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=LFkxKJdjbNs",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_038",
       "title": "Time Zone [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/x-hZp4gqLYA/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 303,
       "providers": {
         "youtube": {
           "video_id": "x-hZp4gqLYA",
-          "url": "https://www.youtube.com/watch?v=x-hZp4gqLYA",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=x-hZp4gqLYA",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_039",
       "title": "ฝันถึงแฟนเก่า [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/7SgvdyMJeFo/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 338,
       "providers": {
         "youtube": {
           "video_id": "7SgvdyMJeFo",
-          "url": "https://www.youtube.com/watch?v=7SgvdyMJeFo",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=7SgvdyMJeFo",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_040",
       "title": "สุดทาง [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/XJnRlkB5HSo/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 155,
       "providers": {
         "youtube": {
           "video_id": "XJnRlkB5HSo",
-          "url": "https://www.youtube.com/watch?v=XJnRlkB5HSo",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=XJnRlkB5HSo",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_041",
       "title": "ไม่เคยมีดาวในเมืองใหญ่ [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/Op1qxDJKOqE/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 196,
       "providers": {
         "youtube": {
           "video_id": "Op1qxDJKOqE",
-          "url": "https://www.youtube.com/watch?v=Op1qxDJKOqE",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=Op1qxDJKOqE",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_042",
       "title": "คุยคนเดียวเก่ง [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/266FClASsFE/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 246,
       "providers": {
         "youtube": {
           "video_id": "266FClASsFE",
-          "url": "https://www.youtube.com/watch?v=266FClASsFE",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=266FClASsFE",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_043",
       "title": "วิธีไม่เสียใจ (How to Not Be Sad) (Live At Impact Arena 2023)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/dRvq9JCW2O0/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 262,
       "providers": {
         "youtube": {
           "video_id": "dRvq9JCW2O0",
-          "url": "https://www.youtube.com/watch?v=dRvq9JCW2O0",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=dRvq9JCW2O0",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_044",
       "title": "ถ้าเธอรักฉันจริง [Live At Impact Arena 2023]",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_live_impact_2023",
       "cover_url": "https://i.ytimg.com/vi/redUE7Tk4Nc/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 316,
       "providers": {
         "youtube": {
           "video_id": "redUE7Tk4Nc",
-          "url": "https://www.youtube.com/watch?v=redUE7Tk4Nc",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=redUE7Tk4Nc",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ix9nzxG6yuWAxRlpXRWDQ"
+      }
     },
     {
       "id": "three_man_down_045",
       "title": "28",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_28",
       "cover_url": "https://i.ytimg.com/vi/mDOM-pe99VE/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 71,
       "providers": {
         "youtube": {
           "video_id": "mDOM-pe99VE",
-          "url": "https://www.youtube.com/watch?v=mDOM-pe99VE",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=mDOM-pe99VE",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
+      }
     },
     {
       "id": "three_man_down_046",
       "title": "ปล่อยให้เวลา (Broken Clock)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_28",
       "cover_url": "https://i.ytimg.com/vi/a9vV8lnpmLA/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 170,
       "providers": {
         "youtube": {
           "video_id": "a9vV8lnpmLA",
-          "url": "https://www.youtube.com/watch?v=a9vV8lnpmLA",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=a9vV8lnpmLA",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
+      }
     },
     {
       "id": "three_man_down_047",
       "title": "เมา (Drunk in Love)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_28",
       "cover_url": "https://i.ytimg.com/vi/FMhVGk0sP_I/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 164,
       "providers": {
         "youtube": {
           "video_id": "FMhVGk0sP_I",
-          "url": "https://www.youtube.com/watch?v=FMhVGk0sP_I",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=FMhVGk0sP_I",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
+      }
     },
     {
       "id": "three_man_down_048",
       "title": "ไหนบอกเลิกแล้ว (In My Bed)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_28",
       "cover_url": "https://i.ytimg.com/vi/GdwTgBFj4QE/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 220,
       "providers": {
         "youtube": {
           "video_id": "GdwTgBFj4QE",
-          "url": "https://www.youtube.com/watch?v=GdwTgBFj4QE",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=GdwTgBFj4QE",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
+      }
     },
     {
       "id": "three_man_down_049",
       "title": "ไม่อยากให้เธอไม่สบาย (You)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_28",
       "cover_url": "https://i.ytimg.com/vi/bpAeqRq6hT8/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 271,
       "providers": {
         "youtube": {
           "video_id": "bpAeqRq6hT8",
-          "url": "https://www.youtube.com/watch?v=bpAeqRq6hT8",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=bpAeqRq6hT8",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
+      }
     },
     {
       "id": "three_man_down_050",
       "title": "เด็กเกินไป (Too Young)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_28",
       "cover_url": "https://i.ytimg.com/vi/GbP1-Hufv_s/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 225,
       "providers": {
         "youtube": {
           "video_id": "GbP1-Hufv_s",
-          "url": "https://www.youtube.com/watch?v=GbP1-Hufv_s",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=GbP1-Hufv_s",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
+      }
     },
     {
       "id": "three_man_down_051",
       "title": "เปิดตัวเขา (Rebound)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_28",
       "cover_url": "https://i.ytimg.com/vi/GeNN3AkhyBQ/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 219,
       "providers": {
         "youtube": {
           "video_id": "GeNN3AkhyBQ",
-          "url": "https://www.youtube.com/watch?v=GeNN3AkhyBQ",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=GeNN3AkhyBQ",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
+      }
     },
     {
       "id": "three_man_down_052",
       "title": "คนใหม่ (Someone New)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_28",
       "cover_url": "https://i.ytimg.com/vi/SZeRUNLTbZg/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 215,
       "providers": {
         "youtube": {
           "video_id": "SZeRUNLTbZg",
-          "url": "https://www.youtube.com/watch?v=SZeRUNLTbZg",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=SZeRUNLTbZg",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
+      }
     },
     {
       "id": "three_man_down_053",
       "title": "น้อง (Nong)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_28",
       "cover_url": "https://i.ytimg.com/vi/D4ozQShU2yI/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 189,
       "providers": {
         "youtube": {
           "video_id": "D4ozQShU2yI",
-          "url": "https://www.youtube.com/watch?v=D4ozQShU2yI",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=D4ozQShU2yI",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
+      }
     },
     {
       "id": "three_man_down_054",
       "title": "ไม่อยากชิน (Don’t Wanna Get Used to It)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_28",
       "cover_url": "https://i.ytimg.com/vi/I-ndCXYh5kk/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 253,
       "providers": {
         "youtube": {
           "video_id": "I-ndCXYh5kk",
-          "url": "https://www.youtube.com/watch?v=I-ndCXYh5kk",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=I-ndCXYh5kk",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
+      }
     },
     {
       "id": "three_man_down_055",
       "title": "วิธีไม่เสียใจ (How to Not Be Sad)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_28",
       "cover_url": "https://i.ytimg.com/vi/zeZg7a99Qb4/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 215,
       "providers": {
         "youtube": {
           "video_id": "zeZg7a99Qb4",
-          "url": "https://www.youtube.com/watch?v=zeZg7a99Qb4",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=zeZg7a99Qb4",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1YcOzE3Tgv9KPpCxgYy6uw"
+      }
     },
     {
       "id": "three_man_down_056",
       "title": "This City Won’t Be Lonely Anymore",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/pIjuc7lu3Bk/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 72,
       "providers": {
         "youtube": {
           "video_id": "pIjuc7lu3Bk",
-          "url": "https://www.youtube.com/watch?v=pIjuc7lu3Bk",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=pIjuc7lu3Bk",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_057",
       "title": "เดาไม่เก่ง",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/949QSREs5d8/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 187,
       "providers": {
         "youtube": {
           "video_id": "949QSREs5d8",
-          "url": "https://www.youtube.com/watch?v=949QSREs5d8",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=949QSREs5d8",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_058",
       "title": "ตอนไม่ได้เจอ",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/4x9l7MWig5Y/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 202,
       "providers": {
         "youtube": {
           "video_id": "4x9l7MWig5Y",
-          "url": "https://www.youtube.com/watch?v=4x9l7MWig5Y",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=4x9l7MWig5Y",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_059",
       "title": "เลือกคนที่เขารักเรา",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/6IZuakMY-7Q/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 227,
       "providers": {
         "youtube": {
           "video_id": "6IZuakMY-7Q",
-          "url": "https://www.youtube.com/watch?v=6IZuakMY-7Q",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=6IZuakMY-7Q",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_060",
       "title": "คุยคนเดียวเก่ง",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/DR3VUL8Cx7s/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 202,
       "providers": {
         "youtube": {
           "video_id": "DR3VUL8Cx7s",
-          "url": "https://www.youtube.com/watch?v=DR3VUL8Cx7s",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=DR3VUL8Cx7s",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_061",
       "title": "Friend Zone",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/XMt-G-pxrpM/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 230,
       "providers": {
         "youtube": {
           "video_id": "XMt-G-pxrpM",
-          "url": "https://www.youtube.com/watch?v=XMt-G-pxrpM",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=XMt-G-pxrpM",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_062",
       "title": "Time Zone",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/23Za7Nth4p8/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 279,
       "providers": {
         "youtube": {
           "video_id": "23Za7Nth4p8",
-          "url": "https://www.youtube.com/watch?v=23Za7Nth4p8",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=23Za7Nth4p8",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_063",
       "title": "ไปเถอะเธอ",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/_c3IM8CeHFs/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 237,
       "providers": {
         "youtube": {
           "video_id": "_c3IM8CeHFs",
-          "url": "https://www.youtube.com/watch?v=_c3IM8CeHFs",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=_c3IM8CeHFs",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_064",
       "title": "ฝันถึงแฟนเก่า",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/Ik45nzNF_Ng/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 242,
       "providers": {
         "youtube": {
           "video_id": "Ik45nzNF_Ng",
-          "url": "https://www.youtube.com/watch?v=Ik45nzNF_Ng",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=Ik45nzNF_Ng",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_065",
       "title": "รถฉันบินไม่ได้",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/1Vzxuy3z6pE/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 218,
       "providers": {
         "youtube": {
           "video_id": "1Vzxuy3z6pE",
-          "url": "https://www.youtube.com/watch?v=1Vzxuy3z6pE",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=1Vzxuy3z6pE",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_066",
       "title": "ทีมรอเธอ",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/VfiLDcU_65Q/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 247,
       "providers": {
         "youtube": {
           "video_id": "VfiLDcU_65Q",
-          "url": "https://www.youtube.com/watch?v=VfiLDcU_65Q",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=VfiLDcU_65Q",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_067",
       "title": "ฝนตกไหม",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/bPxdWUlCrIg/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 262,
       "providers": {
         "youtube": {
           "video_id": "bPxdWUlCrIg",
-          "url": "https://www.youtube.com/watch?v=bPxdWUlCrIg",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=bPxdWUlCrIg",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_068",
       "title": "ผ่านตา (Everyday)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/V7xfNuFMqls/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 201,
       "providers": {
         "youtube": {
           "video_id": "V7xfNuFMqls",
-          "url": "https://www.youtube.com/watch?v=V7xfNuFMqls",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=V7xfNuFMqls",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_069",
       "title": "หมดไอจี",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/TxH8TUQ3-Gc/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 143,
       "providers": {
         "youtube": {
           "video_id": "TxH8TUQ3-Gc",
-          "url": "https://www.youtube.com/watch?v=TxH8TUQ3-Gc",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=TxH8TUQ3-Gc",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_070",
       "title": "ข้างกัน (City) Feat.ออม TELEx TELEXs",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/ks7p6DA0dKk/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 312,
       "providers": {
         "youtube": {
           "video_id": "ks7p6DA0dKk",
-          "url": "https://www.youtube.com/watch?v=ks7p6DA0dKk",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=ks7p6DA0dKk",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_071",
       "title": "ถ้าเธอรักฉันจริง",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/-7pqaoLiLRQ/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 241,
       "providers": {
         "youtube": {
           "video_id": "-7pqaoLiLRQ",
-          "url": "https://www.youtube.com/watch?v=-7pqaoLiLRQ",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=-7pqaoLiLRQ",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_072",
       "title": "ไม่เคยมีดาวในเมืองใหญ่",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "album_tmd_city",
       "cover_url": "https://i.ytimg.com/vi/BTpifWLev1U/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 236,
       "providers": {
         "youtube": {
           "video_id": "BTpifWLev1U",
-          "url": "https://www.youtube.com/watch?v=BTpifWLev1U",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [
         "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=BTpifWLev1U",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2CW683T46NKuomRUrqv00W"
+      ]
     },
     {
       "id": "three_man_down_073",
       "title": "ไม่เคยได้ลา (Ost. เทอม 4)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_mai_khoei_dai_la",
       "cover_url": "https://i.ytimg.com/vi/cg9p8B6h6Gc/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 281,
       "providers": {
         "youtube": {
           "video_id": "cg9p8B6h6Gc",
-          "url": "https://www.youtube.com/watch?v=cg9p8B6h6Gc",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/4m3g6yCxmXxz31OTmgLefR"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=cg9p8B6h6Gc",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/4m3g6yCxmXxz31OTmgLefR"
+      }
     },
     {
       "id": "three_man_down_074",
       "title": "เหตุผล - Three Man Down Feat. whateve |Official MV",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_hetphon",
       "cover_url": "https://i.ytimg.com/vi/LCuxGozZh7c/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 312,
       "providers": {
         "youtube": {
           "video_id": "LCuxGozZh7c",
-          "url": "https://www.youtube.com/watch?v=LCuxGozZh7c",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/6mdtFQaLaLklgBbQI4A8ia"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=LCuxGozZh7c",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/6mdtFQaLaLklgBbQI4A8ia"
+      }
     },
     {
       "id": "three_man_down_075",
       "title": "ข้างกัน (City) (Speed Up Version)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "ep_tmd_city_alternate_versions",
       "cover_url": "https://i.ytimg.com/vi/ultq4D7Swgk/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 249,
       "providers": {
         "youtube": {
           "video_id": "ultq4D7Swgk",
-          "url": "https://www.youtube.com/watch?v=ultq4D7Swgk",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/5isZlrK8kNYmav4pLBVZEU"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=ultq4D7Swgk",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/5isZlrK8kNYmav4pLBVZEU"
+      }
     },
     {
       "id": "three_man_down_076",
       "title": "ข้างกัน (City) (Acoustic Version)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "ep_tmd_city_alternate_versions",
       "cover_url": "https://i.ytimg.com/vi/Axir-ar6z94/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 295,
       "providers": {
         "youtube": {
           "video_id": "Axir-ar6z94",
-          "url": "https://www.youtube.com/watch?v=Axir-ar6z94",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/5isZlrK8kNYmav4pLBVZEU"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=Axir-ar6z94",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/5isZlrK8kNYmav4pLBVZEU"
+      }
     },
     {
       "id": "three_man_down_077",
       "title": "เพื่อนสนิท (Platonic Love) - Three Man Down Feat. PEEMWASU OF BUS |Official MV",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_phuean_sanit_platonic_love",
       "cover_url": "https://i.ytimg.com/vi/KEq5oiG35hI/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 228,
       "providers": {
         "youtube": {
           "video_id": "KEq5oiG35hI",
-          "url": "https://www.youtube.com/watch?v=KEq5oiG35hI",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/26P69L852w82osraPlizaB"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=KEq5oiG35hI",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/26P69L852w82osraPlizaB"
+      }
     },
     {
       "id": "three_man_down_078",
       "title": "เริ่มใหม่",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_roem_mai",
       "cover_url": "https://i.ytimg.com/vi/Z0lxUPu84Zk/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 202,
       "providers": {
         "youtube": {
           "video_id": "Z0lxUPu84Zk",
-          "url": "https://www.youtube.com/watch?v=Z0lxUPu84Zk",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/5NAkGig4ajWDazmU0sA0Xn"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=Z0lxUPu84Zk",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/5NAkGig4ajWDazmU0sA0Xn"
+      }
     },
     {
       "id": "three_man_down_079",
       "title": "ลึกลงไป",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_luek_long_pai",
       "cover_url": "https://i.ytimg.com/vi/1IQBZDCmhKg/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 84,
       "providers": {
         "youtube": {
           "video_id": "1IQBZDCmhKg",
-          "url": "https://www.youtube.com/watch?v=1IQBZDCmhKg",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/6npo5IowLtc1RcHxKu5bxL"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=1IQBZDCmhKg",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/6npo5IowLtc1RcHxKu5bxL"
+      }
     },
     {
       "id": "three_man_down_080",
       "title": "ยอมถอย",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_yom_thoi",
       "cover_url": "https://i.ytimg.com/vi/X3WYxWhCrH4/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 231,
       "providers": {
         "youtube": {
           "video_id": "X3WYxWhCrH4",
-          "url": "https://www.youtube.com/watch?v=X3WYxWhCrH4",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/2h420jptxny3RWTyrdTxrI"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=X3WYxWhCrH4",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2h420jptxny3RWTyrdTxrI"
+      }
     },
     {
       "id": "three_man_down_081",
       "title": "รักใครไม่ไหว",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_rak_krai_mai_wai",
       "cover_url": "https://i.ytimg.com/vi/9owV4em4Q64/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 251,
       "providers": {
         "youtube": {
           "video_id": "9owV4em4Q64",
-          "url": "https://www.youtube.com/watch?v=9owV4em4Q64",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/0m2tnO0TVcf6tfiYVofY59"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=9owV4em4Q64",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/0m2tnO0TVcf6tfiYVofY59"
+      }
     },
     {
       "id": "three_man_down_082",
       "title": "ขอโทษที่ติดต่อไป",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_kho_thot_thi_tิดต่อ_pai",
       "cover_url": "https://i.ytimg.com/vi/-6oEyDVFSkw/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 259,
       "providers": {
         "youtube": {
           "video_id": "-6oEyDVFSkw",
-          "url": "https://www.youtube.com/watch?v=-6oEyDVFSkw",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7duI9Nj9qF85fbCeak1J4W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=-6oEyDVFSkw",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/7duI9Nj9qF85fbCeak1J4W"
+      }
     },
     {
       "id": "three_man_down_083",
       "title": "เพลงรัก",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_phleng_rak",
       "cover_url": "https://i.ytimg.com/vi/4leWDap9InM/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 270,
       "providers": {
         "youtube": {
           "video_id": "4leWDap9InM",
-          "url": "https://www.youtube.com/watch?v=4leWDap9InM",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/3VL7QhNU2t3kSagMo0VXAR"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=4leWDap9InM",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/3VL7QhNU2t3kSagMo0VXAR"
+      }
     },
     {
       "id": "three_man_down_084",
       "title": "ซ่าให้สุด",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_sa_hai_sut",
       "cover_url": "https://i.ytimg.com/vi/uc_R_Hp0oCw/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 188,
       "providers": {
         "youtube": {
           "video_id": "uc_R_Hp0oCw",
-          "url": "https://www.youtube.com/watch?v=uc_R_Hp0oCw",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/6JUqvMmiteYVkxwR8Ablq7"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=uc_R_Hp0oCw",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/6JUqvMmiteYVkxwR8Ablq7"
+      }
     },
     {
       "id": "three_man_down_085",
       "title": "ไม่ให้ไป",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_mai_hai_pai",
       "cover_url": "https://i.ytimg.com/vi/pHfiCnIFu50/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 241,
       "providers": {
         "youtube": {
           "video_id": "pHfiCnIFu50",
-          "url": "https://www.youtube.com/watch?v=pHfiCnIFu50",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/28dy93d5fLZFNkBKpuhtpQ"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=pHfiCnIFu50",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/28dy93d5fLZFNkBKpuhtpQ"
+      }
     },
     {
       "id": "three_man_down_086",
       "title": "ไปด้วยกันนะ",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_pai_duai_kan_na",
       "cover_url": "https://i.ytimg.com/vi/w1GWIPTLGr4/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 205,
       "providers": {
         "youtube": {
           "video_id": "w1GWIPTLGr4",
-          "url": "https://www.youtube.com/watch?v=w1GWIPTLGr4",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7z5T0AiJ46jHVoT4JUKlTw"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=w1GWIPTLGr4",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/7z5T0AiJ46jHVoT4JUKlTw"
+      }
     },
     {
       "id": "three_man_down_087",
       "title": "ความรักทำให้คนตาบอด (ซนซน 40 ปี GMM GRAMMY)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_khwam_rak_tham_hai_khon_ta_bot",
       "cover_url": "https://i.ytimg.com/vi/Nj3TSgQnT2M/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 256,
       "providers": {
         "youtube": {
           "video_id": "Nj3TSgQnT2M",
-          "url": "https://www.youtube.com/watch?v=Nj3TSgQnT2M",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/2JiG4kprHCT2IVbVEk9GqC"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=Nj3TSgQnT2M",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2JiG4kprHCT2IVbVEk9GqC"
+      }
     },
     {
       "id": "three_man_down_088",
       "title": "เมา (Drunk in Love)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_mao",
       "cover_url": "https://i.ytimg.com/vi/CiGCI0C_sWE/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 164,
       "providers": {
         "youtube": {
           "video_id": "CiGCI0C_sWE",
-          "url": "https://www.youtube.com/watch?v=CiGCI0C_sWE",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/2Y3DIJ6pUx9YkV8blesucC"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=CiGCI0C_sWE",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/2Y3DIJ6pUx9YkV8blesucC"
+      }
     },
     {
       "id": "three_man_down_089",
       "title": "เปิดตัวเขา (Rebound) - Three Man Down |Official MV",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_poet_tua_khao",
       "cover_url": "https://i.ytimg.com/vi/XnxWDyyQj18/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 236,
       "providers": {
         "youtube": {
           "video_id": "XnxWDyyQj18",
-          "url": "https://www.youtube.com/watch?v=XnxWDyyQj18",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1ebj18DUuS6Nyor19XoGob"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=XnxWDyyQj18",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1ebj18DUuS6Nyor19XoGob"
+      }
     },
     {
       "id": "three_man_down_090",
       "title": "ไม่อยากให้เธอไม่สบาย (You)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_mai_yak_hai_thoe_mai_sabai",
       "cover_url": "https://i.ytimg.com/vi/nc3BB2BCf0Y/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 271,
       "providers": {
         "youtube": {
           "video_id": "nc3BB2BCf0Y",
-          "url": "https://www.youtube.com/watch?v=nc3BB2BCf0Y",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/0KjUaEz4G5z2SORXJ9FzUg"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=nc3BB2BCf0Y",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/0KjUaEz4G5z2SORXJ9FzUg"
+      }
     },
     {
       "id": "three_man_down_091",
       "title": "เด็กเกินไป (Too Young)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_dek_koen_pai",
       "cover_url": "https://i.ytimg.com/vi/TMD45bDur5Q/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 227,
       "providers": {
         "youtube": {
           "video_id": "TMD45bDur5Q",
-          "url": "https://www.youtube.com/watch?v=TMD45bDur5Q",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/4DqBlFpKTfEwyjmjY6ns9W"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=TMD45bDur5Q",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/4DqBlFpKTfEwyjmjY6ns9W"
+      }
     },
     {
       "id": "three_man_down_092",
       "title": "ไหนบอกเลิกแล้ว (In My Bed)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_nai_bok_loek_laew",
       "cover_url": "https://i.ytimg.com/vi/Z5lsD1CxjvY/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 217,
       "providers": {
         "youtube": {
           "video_id": "Z5lsD1CxjvY",
-          "url": "https://www.youtube.com/watch?v=Z5lsD1CxjvY",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/3PJHkk7y2KHuf2elvuwXrS"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=Z5lsD1CxjvY",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/3PJHkk7y2KHuf2elvuwXrS"
+      }
     },
     {
       "id": "three_man_down_093",
       "title": "น้อง - Three Man Down Feat. URBOYTJ |Official MV",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_nong",
       "cover_url": "https://i.ytimg.com/vi/VVs5UHgafv8/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 237,
       "providers": {
         "youtube": {
           "video_id": "VVs5UHgafv8",
-          "url": "https://www.youtube.com/watch?v=VVs5UHgafv8",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1mAboC2rOQTkM3OxdVGP0s"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=VVs5UHgafv8",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1mAboC2rOQTkM3OxdVGP0s"
+      }
     },
     {
       "id": "three_man_down_094",
       "title": "ปล่อยให้เวลา (Broken Clock)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_ploi_hai_wela",
       "cover_url": "https://i.ytimg.com/vi/K_hCc16-KuI/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 172,
       "providers": {
         "youtube": {
           "video_id": "K_hCc16-KuI",
-          "url": "https://www.youtube.com/watch?v=K_hCc16-KuI",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1nHkmufoFGvhC8BaAz8agN"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=K_hCc16-KuI",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1nHkmufoFGvhC8BaAz8agN"
+      }
     },
     {
       "id": "three_man_down_095",
       "title": "หยุดหัวใจ (เพลงประกอบซีรีส์ รักนาย My Ride)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_yut_hua_jai",
       "cover_url": "https://i.ytimg.com/vi/PfCzHyI5iSg/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 212,
       "providers": {
         "youtube": {
           "video_id": "PfCzHyI5iSg",
-          "url": "https://www.youtube.com/watch?v=PfCzHyI5iSg",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/3UIqhMh7CBxcylQRLJ8uLN"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=PfCzHyI5iSg",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/3UIqhMh7CBxcylQRLJ8uLN"
+      }
     },
     {
       "id": "three_man_down_096",
       "title": "อีกไม่นาน นานแค่ไหน - Getsunova x Three Man Down feat. พระมหาไพรวัลย์",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_ik_mai_nan_nan_khae_nai",
       "cover_url": "https://i.ytimg.com/vi/pJ-wmn9P6SE/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 241,
       "providers": {
         "youtube": {
           "video_id": "pJ-wmn9P6SE",
-          "url": "https://www.youtube.com/watch?v=pJ-wmn9P6SE",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/4bPRwpur2wVqvxX6NWqHVh"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=pJ-wmn9P6SE",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/4bPRwpur2wVqvxX6NWqHVh"
+      }
     },
     {
       "id": "three_man_down_097",
       "title": "วันเกิดฉันปีนี้ (HBD to me)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_wan_koet_chan_pi_ni",
       "cover_url": "https://i.ytimg.com/vi/Q95AxM4sOPc/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 252,
       "providers": {
         "youtube": {
           "video_id": "Q95AxM4sOPc",
-          "url": "https://www.youtube.com/watch?v=Q95AxM4sOPc",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/09UJqu4YtsVZBMQ2OCFZiN"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=Q95AxM4sOPc",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/09UJqu4YtsVZBMQ2OCFZiN"
+      }
     },
     {
       "id": "three_man_down_098",
       "title": "อยู่ในสาย",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_yu_nai_sai",
       "cover_url": "https://i.ytimg.com/vi/dGyBO2TXrOQ/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 223,
       "providers": {
         "youtube": {
           "video_id": "dGyBO2TXrOQ",
-          "url": "https://www.youtube.com/watch?v=dGyBO2TXrOQ",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/5qXRcoFjQHiEiTFDTcKsoo"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=dGyBO2TXrOQ",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/5qXRcoFjQHiEiTFDTcKsoo"
+      }
     },
     {
       "id": "three_man_down_099",
       "title": "เดาไม่เก่ง",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_dao_mai_keng",
       "cover_url": "https://i.ytimg.com/vi/y9Nt7itN9jA/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 189,
       "providers": {
         "youtube": {
           "video_id": "y9Nt7itN9jA",
-          "url": "https://www.youtube.com/watch?v=y9Nt7itN9jA",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/6Hi3j93J1ab4HFKoHd5BGG"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=y9Nt7itN9jA",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/6Hi3j93J1ab4HFKoHd5BGG"
+      }
     },
     {
       "id": "three_man_down_100",
       "title": "ถ้าเธอรักฉันจริง",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_tha_thoe_rak_chan_ching",
       "cover_url": "https://i.ytimg.com/vi/eOxNncYyG00/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 241,
       "providers": {
         "youtube": {
           "video_id": "eOxNncYyG00",
-          "url": "https://www.youtube.com/watch?v=eOxNncYyG00",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/1qSxbcfTQplNcUSmIgTo63"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=eOxNncYyG00",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/1qSxbcfTQplNcUSmIgTo63"
+      }
     },
     {
       "id": "three_man_down_101",
       "title": "อยากฟัง",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_yak_fang",
       "cover_url": "https://i.ytimg.com/vi/b2qGVX4XfWg/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 206,
       "providers": {
         "youtube": {
           "video_id": "b2qGVX4XfWg",
-          "url": "https://www.youtube.com/watch?v=b2qGVX4XfWg",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/0LuB4N3QJVS7havnVSEak7"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=b2qGVX4XfWg",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/0LuB4N3QJVS7havnVSEak7"
+      }
     },
     {
       "id": "three_man_down_102",
       "title": "กอดเธอคืนนี้ (Tonight)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_kot_thoe_khuen_ni",
       "cover_url": "https://i.ytimg.com/vi/MbQFATTqUbE/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 210,
       "providers": {
         "youtube": {
           "video_id": "MbQFATTqUbE",
-          "url": "https://www.youtube.com/watch?v=MbQFATTqUbE",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7MF3TFTDcmdkYo12KJvJdP"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=MbQFATTqUbE",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/7MF3TFTDcmdkYo12KJvJdP"
+      }
     },
     {
       "id": "three_man_down_103",
       "title": "ข้างกัน (City) Feat.ออม TELEx TELEXs",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_khang_kan_city",
       "cover_url": "https://i.ytimg.com/vi/ks7p6DA0dKk/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 312,
       "providers": {
         "youtube": {
           "video_id": "ks7p6DA0dKk",
-          "url": "https://www.youtube.com/watch?v=ks7p6DA0dKk",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/5z57MZuxys8GOXr8NiqBL4"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=ks7p6DA0dKk",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/5z57MZuxys8GOXr8NiqBL4"
+      }
     },
     {
       "id": "three_man_down_104",
       "title": "นอนไม่หลับ (THE REMAKE)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_non_mai_lap_remake",
       "cover_url": "https://i.ytimg.com/vi/Y36vWZQnA_Q/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 250,
       "providers": {
         "youtube": {
           "video_id": "Y36vWZQnA_Q",
-          "url": "https://www.youtube.com/watch?v=Y36vWZQnA_Q",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7vob00SkQDD5fnL8KQ9VOD"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=Y36vWZQnA_Q",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/7vob00SkQDD5fnL8KQ9VOD"
+      }
     },
     {
       "id": "three_man_down_105",
       "title": "คุกเข่า (เพลงประกอบซีรีส์ Hook รักหมัดหนัก)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_khuk_khao",
       "cover_url": "https://i.ytimg.com/vi/yx5lyyHnB9c/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 238,
       "providers": {
         "youtube": {
           "video_id": "yx5lyyHnB9c",
-          "url": "https://www.youtube.com/watch?v=yx5lyyHnB9c",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/0SaLr64PPPKqyy0BXsQ09Z"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=yx5lyyHnB9c",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/0SaLr64PPPKqyy0BXsQ09Z"
+      }
     },
     {
       "id": "three_man_down_106",
       "title": "ฝันถึงแฟนเก่า",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_fan_thueng_fan_khao",
       "cover_url": "https://i.ytimg.com/vi/jJJtU1sgJ3M/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 243,
       "providers": {
         "youtube": {
           "video_id": "jJJtU1sgJ3M",
-          "url": "https://www.youtube.com/watch?v=jJJtU1sgJ3M",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7d5CVlBEIqWJXO0lvFOQDf"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=jJJtU1sgJ3M",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/7d5CVlBEIqWJXO0lvFOQDf"
+      }
     },
     {
       "id": "three_man_down_107",
       "title": "ความคิดถึงที่ฉันได้เคยส่งไปในคืนที่ฝนโปรยลงมา",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_khwam_khitthueng_thi_chan_dai_khoei_song_pai",
       "cover_url": "https://i.ytimg.com/vi/Dk1x3PW99U4/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 259,
       "providers": {
         "youtube": {
           "video_id": "Dk1x3PW99U4",
-          "url": "https://www.youtube.com/watch?v=Dk1x3PW99U4",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/50pRPHus7A9jVHodOneAL5"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=Dk1x3PW99U4",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/50pRPHus7A9jVHodOneAL5"
+      }
     },
     {
       "id": "three_man_down_108",
       "title": "เลือกคนที่เขารักเรา",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_lueak_khon_thi_khao_rak_rao",
       "cover_url": "https://i.ytimg.com/vi/jrCSX1LDhSI/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 227,
       "providers": {
         "youtube": {
           "video_id": "jrCSX1LDhSI",
-          "url": "https://www.youtube.com/watch?v=jrCSX1LDhSI",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7g2so5guge6q55fMBksdgY"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=jrCSX1LDhSI",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/7g2so5guge6q55fMBksdgY"
+      }
     },
     {
       "id": "three_man_down_109",
       "title": "ฝนตกไหม",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_fon_tok_mai",
       "cover_url": "https://i.ytimg.com/vi/tW2x51Kk0ng/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 263,
       "providers": {
         "youtube": {
           "video_id": "tW2x51Kk0ng",
-          "url": "https://www.youtube.com/watch?v=tW2x51Kk0ng",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/0wXyMirCCUwDx04BUuTIHy"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=tW2x51Kk0ng",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/0wXyMirCCUwDx04BUuTIHy"
+      }
     },
     {
       "id": "three_man_down_110",
       "title": "ไปเถอะเธอ",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_pai_thoe_thoe",
       "cover_url": "https://i.ytimg.com/vi/v8mWX2Nh-wM/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 234,
       "providers": {
         "youtube": {
           "video_id": "v8mWX2Nh-wM",
-          "url": "https://www.youtube.com/watch?v=v8mWX2Nh-wM",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/29EOuDTq84httddS1G6fW2"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=v8mWX2Nh-wM",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/29EOuDTq84httddS1G6fW2"
+      }
     },
     {
       "id": "three_man_down_111",
       "title": "ทีมรอเธอ",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_team_ro_thoe",
       "cover_url": "https://i.ytimg.com/vi/3i9nctGAm4g/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 247,
       "providers": {
         "youtube": {
           "video_id": "3i9nctGAm4g",
-          "url": "https://www.youtube.com/watch?v=3i9nctGAm4g",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/6BWT4mIK9BCrsBsygdRpRW"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=3i9nctGAm4g",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/6BWT4mIK9BCrsBsygdRpRW"
+      }
     },
     {
       "id": "three_man_down_112",
       "title": "ตอนไม่ได้เจอ",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_ton_mai_dai_choe",
       "cover_url": "https://i.ytimg.com/vi/yQ43hlbdsPY/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 204,
       "providers": {
         "youtube": {
           "video_id": "yQ43hlbdsPY",
-          "url": "https://www.youtube.com/watch?v=yQ43hlbdsPY",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/5LnEn10N1vDwn8QKIOUxfK"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=yQ43hlbdsPY",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/5LnEn10N1vDwn8QKIOUxfK"
+      }
     },
     {
       "id": "three_man_down_113",
       "title": "ผ่านตา (Everyday)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_phan_ta",
       "cover_url": "https://i.ytimg.com/vi/-twOtyb6VKU/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 202,
       "providers": {
         "youtube": {
           "video_id": "-twOtyb6VKU",
-          "url": "https://www.youtube.com/watch?v=-twOtyb6VKU",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/59NLZPEE1Q3RS0cy1ijBPR"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=-twOtyb6VKU",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/59NLZPEE1Q3RS0cy1ijBPR"
+      }
     },
     {
       "id": "three_man_down_114",
       "title": "ของที่เธอไม่ต้องการ",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_khong_thi_thoe_mai_tongkan",
       "cover_url": "https://i.ytimg.com/vi/0Sd_0T0kelU/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 241,
       "providers": {
         "youtube": {
           "video_id": "0Sd_0T0kelU",
-          "url": "https://www.youtube.com/watch?v=0Sd_0T0kelU",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/659axlfiwWff34J5WHra3F"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=0Sd_0T0kelU",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/659axlfiwWff34J5WHra3F"
+      }
     },
     {
       "id": "three_man_down_115",
       "title": "ความรักที่ดีที่สุด (Live)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_khwam_rak_thi_di_thi_sut_live",
       "cover_url": "https://i.ytimg.com/vi/DLPkl4rKjzs/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 273,
       "providers": {
         "youtube": {
           "video_id": "DLPkl4rKjzs",
-          "url": "https://www.youtube.com/watch?v=DLPkl4rKjzs",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/7rwWj0Vilc1ascwlYFjK7n"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=DLPkl4rKjzs",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/7rwWj0Vilc1ascwlYFjK7n"
+      }
     },
     {
       "id": "three_man_down_116",
       "title": "Hey Josh! (พรุ่งนี้ต้องลืมเธอ)",
-      "artist_ids": [
-        "artist_three_man_down"
-      ],
       "album_id": "single_tmd_hey_josh",
       "cover_url": "https://i.ytimg.com/vi/OxpwYCUiFls/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 237,
       "providers": {
         "youtube": {
           "video_id": "OxpwYCUiFls",
-          "url": "https://www.youtube.com/watch?v=OxpwYCUiFls",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [
-        "https://open.spotify.com/album/5Lt9MheLfY1RVNZF2xfIUW"
-      ],
-      "metadata_status": "needs_cover_and_duration_verification",
-      "listen_url": "https://www.youtube.com/watch?v=OxpwYCUiFls",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail",
-      "cover_source_url": "https://open.spotify.com/album/5Lt9MheLfY1RVNZF2xfIUW"
+      }
     }
-  ]
+  ],
+  "defaults": {
+    "status": "draft",
+    "source_type": "release_tracklist",
+    "metadata_status": "needs_cover_and_duration_verification",
+    "listen_provider": "youtube",
+    "cover_status": "youtube_video_thumbnail",
+    "moods": []
+  }
 }

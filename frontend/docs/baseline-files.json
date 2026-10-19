@@ -1,0 +1,182 @@
+[
+  {
+    "path": "src/app/artists/page.tsx",
+    "sha256": "67aaad8a3a9e7a1a518a0652c329e5c04597689c9c014c9ce0101d77b523272b"
+  },
+  {
+    "path": "src/app/artists/[artistId]/albums/[albumId]/page.tsx",
+    "sha256": "4685e3aff5f1aa8b4f14b12df7515313d3ffc44ed68cc785c876fd76f20c6263"
+  },
+  {
+    "path": "src/app/artists/[artistId]/page.tsx",
+    "sha256": "a0888ba26008160bb217301a423806a94ee9a3bfd500f1d6b6c76d90eac51cb7"
+  },
+  {
+    "path": "src/app/favicon.ico",
+    "sha256": "c28fdd2a4f31e2dc64f653962286da5c82a4cdfc518b242d32812c624e9a19a4"
+  },
+  {
+    "path": "src/app/globals.css",
+    "sha256": "ef8de615dec690a1a2073562edd425a40b5325da6a273f5ccd0a016d13546812"
+  },
+  {
+    "path": "src/app/layout.tsx",
+    "sha256": "158bef54b8e60586e901f58f267758d87596b1eebf2c1fc86d0e3e5775537efe"
+  },
+  {
+    "path": "src/app/page.module.css",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src/app/page.tsx",
+    "sha256": "91f3e771242568710b162f30c7a1662ab4c322d8da377a1d33da065db04c4e27"
+  },
+  {
+    "path": "src/app/search/page.tsx",
+    "sha256": "d55c8353c32fc15f891f555776f68beb6feb103fd0eba557e89f384e3fc773bc"
+  },
+  {
+    "path": "src/app/songs/page.tsx",
+    "sha256": "de928f4a573358d98d4dceebd6a8ed6c56add61fa4c522a1d0a659858c8ac247"
+  },
+  {
+    "path": "src/components/music-player/components/PlayerBar.tsx",
+    "sha256": "b3a6ace1c38db5de3b4d462210e08d730400abdc0c1c9847d05ba65ae55bba67"
+  },
+  {
+    "path": "src/components/music-player/components/PlayerVolume.tsx",
+    "sha256": "bd39536578f2b193cab1b5c340dbca17108c84700ab7f12b5908f8f293ce47fa"
+  },
+  {
+    "path": "src/components/music-player/components/VolumeControl.tsx",
+    "sha256": "5125520723aa387ab3d00a428e271af075a8afd05ddb0e2c79876ad3ac0ea0e2"
+  },
+  {
+    "path": "src/components/music-player/players/AppleMusicPlayer.tsx",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src/components/music-player/players/SpotifyPlayer.tsx",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "src/components/music-player/players/YouTubePlayer.tsx",
+    "sha256": "cf320dce7a035d8e3fd22dcfa0f9a75f52622ac61adef9e4ca3afbc616902cc1"
+  },
+  {
+    "path": "src/components/music-player/providers/MusicPlayerProvider.tsx",
+    "sha256": "f12b4834ddb497e4a5541567f6b3de6cd1f8981fd6caa44de9382c15debfd7da"
+  },
+  {
+    "path": "src/components/music-player/services/player-service.ts",
+    "sha256": "174bfe79da994b2f1c2a9fefcd81fd9e03ecb179518d4bd9ca5158c0bf9e8c35"
+  },
+  {
+    "path": "src/components/music-player/services/playing-next.ts",
+    "sha256": "f96d49b8df4e263b6d234aa02b27772ad37d89447dd7f838e6afc9d672e469ce"
+  },
+  {
+    "path": "src/components/music-player/types/player-types.ts",
+    "sha256": "e2f6f8cfa1f34931b0e18d57beade90461605eea35fe61afa60ffccd0fe90768"
+  },
+  {
+    "path": "src/components/navigation/BackForwardButtons.tsx",
+    "sha256": "f17447fb11e262a834f283d145c85457538f06a8d50d3006304b0c669f22ec78"
+  },
+  {
+    "path": "src/components/navigation/NavigationDots.tsx",
+    "sha256": "cbfc674e3512f40f8be5e76951335b0debcbbb9f0c7ffa2f05c8c1d15f9f6042"
+  },
+  {
+    "path": "src/components/navigation/TopNavigation.tsx",
+    "sha256": "d3574455f5bd051e3b5863f9c2b1d0b86189ec75fef4373673257cb36bea6493"
+  },
+  {
+    "path": "src/components/PlayerBar.tsx",
+    "sha256": "e8ead5c01ec23aec6818d5aa309412ee7c3a91131f35d2717ebea10c1953a882"
+  },
+  {
+    "path": "src/components/queue/components/QueueTrackList.tsx",
+    "sha256": "ccd551690b5c22b2dfcda0cdc625be889cfaa2bb3e86f55fa4ed2518b44ad377"
+  },
+  {
+    "path": "src/components/queue/components/TrackActions.tsx",
+    "sha256": "2f2cca0e2ee731d58b2c6f38d92804b4a2b251a824083f3c872c63adc317854e"
+  },
+  {
+    "path": "src/components/queue/hooks/useQueueReorder.ts",
+    "sha256": "d90ba6a7b81067c21cc692b70b17b3ce4f613a63a73483dcaab587d48f9175b1"
+  },
+  {
+    "path": "src/components/queue/UpNextPanel.tsx",
+    "sha256": "fdbb13963cdfd5a16c324eb91c016fbb60fed2d10553af72881728001bb0a966"
+  },
+  {
+    "path": "src/data/music-catalog/albums/dr_fuu.json",
+    "sha256": "805f70ff9ac2f79fcc2dbb07b336bf793f0cace09b3c01704509ad50f1ed9fd2"
+  },
+  {
+    "path": "src/data/music-catalog/albums/guncharlie.json",
+    "sha256": "46aa65ea805ec5676969c579913ea4f36758c39b029139d18e6159c632d52db7"
+  },
+  {
+    "path": "src/data/music-catalog/albums/purpeech.json",
+    "sha256": "cb197073e9dae355b67966e55a4aba004fc582deb948edc929d2dd6cd468dfeb"
+  },
+  {
+    "path": "src/data/music-catalog/albums/three_man_down.json",
+    "sha256": "9cd549683dcd3d46e5877a49a7e663bb07d9665b21da473e1b28c690a6729d5d"
+  },
+  {
+    "path": "src/data/music-catalog/artists/dr_fuu.json",
+    "sha256": "e31d16842d36feffc1ee1a46aeb48cd892b3e0f359f3a93cc65ac7fa3be7663a"
+  },
+  {
+    "path": "src/data/music-catalog/artists/guncharlie.json",
+    "sha256": "05d86dc57c80ec5846285126bcf8b5008d40038a7b0e17b1bcc9f2c934c30288"
+  },
+  {
+    "path": "src/data/music-catalog/artists/purpeech.json",
+    "sha256": "160880b28bfbab09f1ea972a31da49e9722777a53a1b4f11a3f590b04e9cbf78"
+  },
+  {
+    "path": "src/data/music-catalog/artists/three_man_down.json",
+    "sha256": "f9a8a58a756bee9d417005cfae4f234b5c0e1243f47bf1a53adccf4f225fe9ac"
+  },
+  {
+    "path": "src/data/music-catalog/index.ts",
+    "sha256": "927e8e08ed7bb04350605cb2c645d3fc8884cd554b6e3bd112b1f57456ffa1db"
+  },
+  {
+    "path": "src/data/music-catalog/README.md",
+    "sha256": "44946780d8beb2c81744c0a31c0f16bc05b7fa4eda2189350c44db4f0bd539bf"
+  },
+  {
+    "path": "src/data/music-catalog/songs/dr_fuu.json",
+    "sha256": "c93a668bd90cd061491fd93e8681570fef746a91bae9895900e46275ffeee6ad"
+  },
+  {
+    "path": "src/data/music-catalog/songs/guncharlie.json",
+    "sha256": "3ba141d0921349c4f793fea7a95635644618020e8a74902a87de799035ffff20"
+  },
+  {
+    "path": "src/data/music-catalog/songs/purpeech.json",
+    "sha256": "3f5b08a3a9454890e044984a8aac101f2708aeac2a7d7ede2881bfad5df24b3b"
+  },
+  {
+    "path": "src/data/music-catalog/songs/three_man_down.json",
+    "sha256": "c795d1fcf748f5ba0c44a5e38b783fc19d037ceee3330821873e09ab95d80f84"
+  },
+  {
+    "path": "src/data/music-catalog/types.ts",
+    "sha256": "5b139d372c15ae9f88fbffd6867872582a91caa2da09f87ca7d1abbda4ea7651"
+  },
+  {
+    "path": "src/data/music-catalog2.json",
+    "sha256": "fd792913055aa3c9a10dcf36ebe8b32d77fdab002f9cce16dac21ace458db21f"
+  },
+  {
+    "path": "src/data/music-catalog3.json",
+    "sha256": "d3e76cdeb41db85b361f9ccb28d80a2b9a926c5d003ff476c6f998e318f5b5cf"
+  }
+]

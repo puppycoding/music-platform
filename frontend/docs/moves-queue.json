@@ -1,0 +1,18 @@
+[
+  {
+    "from": "src/components/queue/components/QueueTrackList.tsx",
+    "to": "src/features/queue/components/QueueTrackList.tsx"
+  },
+  {
+    "from": "src/components/queue/components/TrackActions.tsx",
+    "to": "src/features/queue/components/TrackActions.tsx"
+  },
+  {
+    "from": "src/components/queue/hooks/useQueueReorder.ts",
+    "to": "src/features/queue/hooks/useQueueReorder.ts"
+  },
+  {
+    "from": "src/components/queue/UpNextPanel.tsx",
+    "to": "src/features/queue/UpNextPanel.tsx"
+  }
+]

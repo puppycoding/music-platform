@@ -22,589 +22,334 @@
     {
       "id": "purpeech_001",
       "title": "กลัวว่าฉันจะไม่เสียใจ",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/Hc4OrO4LRWw/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 295,
       "providers": {
         "youtube": {
           "video_id": "Hc4OrO4LRWw",
-          "url": "https://www.youtube.com/watch?v=Hc4OrO4LRWw",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [],
-      "metadata_status": "direct_youtube_link_verified",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=Hc4OrO4LRWw",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "metadata_status": "direct_youtube_link_verified"
     },
     {
       "id": "purpeech_002",
       "title": "หนึ่งคนตรงนี้ (I'm here)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/HSUY57U2kJ4/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 289,
       "providers": {
         "youtube": {
           "video_id": "HSUY57U2kJ4",
-          "url": "https://www.youtube.com/watch?v=HSUY57U2kJ4",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=HSUY57U2kJ4",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "source_urls": []
     },
     {
       "id": "purpeech_003",
       "title": "สบายดี",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/fZMPI0nSP5k/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 310,
       "providers": {
         "youtube": {
           "video_id": "fZMPI0nSP5k",
-          "url": "https://www.youtube.com/watch?v=fZMPI0nSP5k",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [],
-      "metadata_status": "direct_youtube_link_verified",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=fZMPI0nSP5k",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "metadata_status": "direct_youtube_link_verified"
     },
     {
       "id": "purpeech_004",
       "title": "ภาพถ่ายวันวาน",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/p_ZH_oqoz7k/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 393,
       "providers": {
         "youtube": {
           "video_id": "p_ZH_oqoz7k",
-          "url": "https://www.youtube.com/watch?v=p_ZH_oqoz7k",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [],
-      "metadata_status": "direct_youtube_link_verified",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=p_ZH_oqoz7k",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "metadata_status": "direct_youtube_link_verified"
     },
     {
       "id": "purpeech_005",
       "title": "Radio 1.920 MHz (จดหมาย)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/Crj7ABIbBRw/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 118,
       "providers": {
         "youtube": {
           "video_id": "Crj7ABIbBRw",
-          "url": "https://www.youtube.com/watch?v=Crj7ABIbBRw",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=Crj7ABIbBRw",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "source_urls": []
     },
     {
       "id": "purpeech_006",
       "title": "สายรุ้งหลังฝนโปรย",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/Xyq7W28X_1Q/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 301,
       "providers": {
         "youtube": {
           "video_id": "Xyq7W28X_1Q",
-          "url": "https://www.youtube.com/watch?v=Xyq7W28X_1Q",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [],
-      "metadata_status": "direct_youtube_link_verified",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=Xyq7W28X_1Q",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "metadata_status": "direct_youtube_link_verified"
     },
     {
       "id": "purpeech_007",
       "title": "Radio 1.920 MHz (สายจากทางบ้าน)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/YDUmdUP_e60/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 127,
       "providers": {
         "youtube": {
           "video_id": "YDUmdUP_e60",
-          "url": "https://www.youtube.com/watch?v=YDUmdUP_e60",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=YDUmdUP_e60",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "source_urls": []
     },
     {
       "id": "purpeech_008",
       "title": "กลัวว่าฉันจะไม่เสียใจ (Live Session)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/GKNYcw9clAY/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 287,
       "providers": {
         "youtube": {
           "video_id": "GKNYcw9clAY",
-          "url": "https://www.youtube.com/watch?v=GKNYcw9clAY",
           "link_type": "video",
           "review_status": "direct_youtube_candidate_needs_review",
           "matched_video_title": "PURPEECH x LIPTA - กลัวว่าฉันจะไม่เสียใจ (Fear) [Live Session]",
           "channel_title": "PURPEECH Official"
         }
       },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=GKNYcw9clAY",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "source_urls": []
     },
     {
       "id": "purpeech_009",
       "title": "ไม่ได้ลืมแค่ไม่ได้เจอ - Live Session",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/6JbqGuX3yOo/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 231,
       "providers": {
         "youtube": {
           "video_id": "6JbqGuX3yOo",
-          "url": "https://www.youtube.com/watch?v=6JbqGuX3yOo",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=6JbqGuX3yOo",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "source_urls": []
     },
     {
       "id": "purpeech_010",
       "title": "ดีใจที่ได้พบเธอ (Peech.)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/mftAzF_9VbI/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 230,
       "providers": {
         "youtube": {
           "video_id": "mftAzF_9VbI",
-          "url": "https://www.youtube.com/watch?v=mftAzF_9VbI",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [],
-      "metadata_status": "direct_youtube_link_verified",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=mftAzF_9VbI",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "metadata_status": "direct_youtube_link_verified"
     },
     {
       "id": "purpeech_011",
       "title": "ขอบคุณครับ (Live Session)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/TwYx9fxn3vc/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 205,
       "providers": {
         "youtube": {
           "video_id": "TwYx9fxn3vc",
-          "url": "https://www.youtube.com/watch?v=TwYx9fxn3vc",
           "link_type": "video",
           "review_status": "direct_youtube_candidate_needs_review",
           "matched_video_title": "ขอบคุณครับ - Lipta feat. PURPEECH [Live Session]",
           "channel_title": "LIPTAofficial"
         }
       },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=TwYx9fxn3vc",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "source_urls": []
     },
     {
       "id": "purpeech_012",
       "title": "ไม่มีวันไหนที่ไม่คิดถึง (starlost.)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/-IKugu3e0wE/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 280,
       "providers": {
         "youtube": {
           "video_id": "-IKugu3e0wE",
-          "url": "https://www.youtube.com/watch?v=-IKugu3e0wE",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
       "source_urls": [],
-      "metadata_status": "direct_youtube_link_verified",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=-IKugu3e0wE",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "metadata_status": "direct_youtube_link_verified"
     },
     {
       "id": "purpeech_013",
       "title": "ตกกะใจทำได้ลง (Oops.)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/o7UFzgu4oAw/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 212,
       "providers": {
         "youtube": {
           "video_id": "o7UFzgu4oAw",
-          "url": "https://www.youtube.com/watch?v=o7UFzgu4oAw",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=o7UFzgu4oAw",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "source_urls": []
     },
     {
       "id": "purpeech_014",
       "title": "ทิ้งไว้อย่างพอใจ",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/T1EzV1pMSMQ/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 335,
       "providers": {
         "youtube": {
           "video_id": "T1EzV1pMSMQ",
-          "url": "https://www.youtube.com/watch?v=T1EzV1pMSMQ",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=T1EzV1pMSMQ",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "source_urls": []
     },
     {
       "id": "purpeech_015",
       "title": "อาจเป็นเพราะฉันเอง (me.)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/y687Um7b54E/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 290,
       "providers": {
         "youtube": {
           "video_id": "y687Um7b54E",
-          "url": "https://www.youtube.com/watch?v=y687Um7b54E",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=y687Um7b54E",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "source_urls": []
     },
     {
       "id": "purpeech_016",
       "title": "รักรออยู่ไม่ไกล",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/HBOz7XiKl-s/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 282,
       "providers": {
         "youtube": {
           "video_id": "HBOz7XiKl-s",
-          "url": "https://www.youtube.com/watch?v=HBOz7XiKl-s",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=HBOz7XiKl-s",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "source_urls": []
     },
     {
       "id": "purpeech_017",
       "title": "หากจะเพียงขอ (Sincare)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_purfectpeech",
       "cover_url": "https://i.ytimg.com/vi/Ht_6puWUJH4/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 317,
       "providers": {
         "youtube": {
           "video_id": "Ht_6puWUJH4",
-          "url": "https://www.youtube.com/watch?v=Ht_6puWUJH4",
           "link_type": "video"
         }
       },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://music.apple.com/us/album/purfectpeech/1725320200",
-      "listen_url": "https://www.youtube.com/watch?v=Ht_6puWUJH4",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      "source_urls": []
     },
     {
       "id": "purpeech_018",
       "title": "กาลครั้งหนึ่งบนโลก (Parsec) (Live)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_live",
       "cover_url": "https://i.ytimg.com/vi/v0v3drSaEhc/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 339,
       "providers": {
         "youtube": {
           "video_id": "v0v3drSaEhc",
-          "url": "https://www.youtube.com/watch?v=v0v3drSaEhc",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live",
-      "listen_url": "https://www.youtube.com/watch?v=v0v3drSaEhc",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      }
     },
     {
       "id": "purpeech_019",
       "title": "กลัวว่าฉันจะไม่เสียใจ (Live)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_live",
       "cover_url": "https://i.ytimg.com/vi/GKNYcw9clAY/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 287,
       "providers": {
         "youtube": {
           "video_id": "GKNYcw9clAY",
-          "url": "https://www.youtube.com/watch?v=GKNYcw9clAY",
           "link_type": "video",
           "review_status": "direct_youtube_candidate_needs_review",
           "matched_video_title": "PURPEECH x LIPTA - กลัวว่าฉันจะไม่เสียใจ (Fear) [Live Session]",
           "channel_title": "PURPEECH Official"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live",
-      "listen_url": "https://www.youtube.com/watch?v=GKNYcw9clAY",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      }
     },
     {
       "id": "purpeech_020",
       "title": "ภาพถ่ายวันวาน (Live)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_live",
       "cover_url": "https://i.ytimg.com/vi/5y6xqfFbg2s/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 369,
       "providers": {
         "youtube": {
           "video_id": "5y6xqfFbg2s",
-          "url": "https://www.youtube.com/watch?v=5y6xqfFbg2s",
           "link_type": "video",
           "review_status": "direct_youtube_candidate_needs_review",
           "matched_video_title": "PURPEECH x THE TOYS - ภาพถ่ายวันวาน at BLEND 285 Signature presents The Peech Man Show Concert",
           "channel_title": "Whattheduck"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live",
-      "listen_url": "https://www.youtube.com/watch?v=5y6xqfFbg2s",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      }
     },
     {
       "id": "purpeech_021",
       "title": "Interlude (Live)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_live",
       "cover_url": "https://i.ytimg.com/vi/-gYtlr7O4NM/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 108,
       "providers": {
         "youtube": {
           "video_id": "-gYtlr7O4NM",
-          "url": "https://www.youtube.com/watch?v=-gYtlr7O4NM",
           "link_type": "video",
           "review_status": "direct_youtube_candidate_needs_review",
           "matched_video_title": "Interlude (Live)",
           "channel_title": "PURPEECH - Topic"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live",
-      "listen_url": "https://www.youtube.com/watch?v=-gYtlr7O4NM",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      }
     },
     {
       "id": "purpeech_022",
       "title": "สายรุ้งหลังฝนโปรย (Live)",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "album_id": "album_purpeech_live",
       "cover_url": "https://i.ytimg.com/vi/An0zayK8fhQ/hqdefault.jpg",
-      "moods": [],
-      "duration_seconds": null,
-      "status": "draft",
+      "duration_seconds": 361,
       "providers": {
         "youtube": {
           "video_id": "An0zayK8fhQ",
-          "url": "https://www.youtube.com/watch?v=An0zayK8fhQ",
           "link_type": "video"
         }
-      },
-      "source_type": "release_tracklist",
-      "source_urls": [],
-      "metadata_status": "direct_youtube_candidate_needs_review",
-      "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live",
-      "listen_url": "https://www.youtube.com/watch?v=An0zayK8fhQ",
-      "listen_provider": "youtube",
-      "cover_status": "youtube_video_thumbnail"
+      }
     }
-  ]
+  ],
+  "defaults": {
+    "status": "draft",
+    "source_type": "release_tracklist",
+    "metadata_status": "direct_youtube_candidate_needs_review",
+    "listen_provider": "youtube",
+    "cover_status": "youtube_video_thumbnail",
+    "moods": []
+  }
 }

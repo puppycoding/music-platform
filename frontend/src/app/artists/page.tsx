@@ -1,5 +1,9 @@
 "use client";
 
+import { shuffleItems as shuffleArtists } from "@/lib/random";
+
+import { normalizeSearchText as normalize } from "@/lib/search-text";
+
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -13,29 +17,18 @@ type Artist = {
   [key: string]: unknown;
 };
 
-type Catalog = {
-  artists?: Artist[];
-};
-
 type SortMode = "random" | "asc" | "desc";
 
-const artists = ((catalog as unknown as Catalog).artists ?? []).filter(
+const artists = catalog.artists.filter(
   (artist) =>
     typeof artist?.id === "string" &&
     artist.id.length > 0 &&
     typeof artist?.name === "string" &&
-    artist.name.length > 0
+    artist.name.length > 0,
 );
 
 const INITIAL_DISPLAY_COUNT = 100;
 const LOAD_MORE_COUNT = 25;
-
-function normalize(value: unknown): string {
-  return String(value ?? "")
-    .toLocaleLowerCase("th")
-    .normalize("NFC")
-    .trim();
-}
 
 function getInitials(name: string): string {
   const words = name.trim().split(/\s+/).filter(Boolean);
@@ -45,17 +38,6 @@ function getInitials(name: string): string {
   }
 
   return name.slice(0, 2).toUpperCase();
-}
-
-function shuffleArtists(source: Artist[]): Artist[] {
-  const shuffled = [...source];
-
-  for (let i = shuffled.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-
-  return shuffled;
 }
 
 function SearchIcon({ className = "h-5 w-5" }: { className?: string }) {
@@ -129,18 +111,11 @@ function SortIcon({
   );
 }
 
-function ArtistCard({
-  artist,
-  index,
-}: {
-  artist: Artist;
-  index: number;
-}) {
+function ArtistCard({ artist, index }: { artist: Artist; index: number }) {
   const [imageFailed, setImageFailed] = useState(false);
 
   const imageUrl =
-    typeof artist.image_url === "string" &&
-      artist.image_url.trim().length > 0
+    typeof artist.image_url === "string" && artist.image_url.trim().length > 0
       ? artist.image_url.trim()
       : null;
 
@@ -218,7 +193,10 @@ export default function ArtistsPage() {
   }, []);
 
   useEffect(() => {
-    refreshRecommendations();
+    const timer = setTimeout(() => {
+      refreshRecommendations();
+    }, 0);
+    return () => clearTimeout(timer);
   }, [refreshRecommendations]);
 
   const filteredArtists = useMemo(() => {
@@ -236,14 +214,14 @@ export default function ArtistsPage() {
         a.name.localeCompare(b.name, "th", {
           sensitivity: "base",
           numeric: true,
-        })
+        }),
       );
     } else if (sortMode === "desc") {
       sorted.sort((a, b) =>
         b.name.localeCompare(a.name, "th", {
           sensitivity: "base",
           numeric: true,
-        })
+        }),
       );
     }
 
@@ -252,7 +230,7 @@ export default function ArtistsPage() {
 
   const visibleArtists = useMemo(
     () => filteredArtists.slice(0, visibleCount),
-    [filteredArtists, visibleCount]
+    [filteredArtists, visibleCount],
   );
 
   function clearSearch() {
@@ -501,11 +479,7 @@ export default function ArtistsPage() {
               <section aria-label="ศิลปิน">
                 <div className="grid grid-cols-2 gap-x-4 gap-y-7 sm:grid-cols-3 sm:gap-x-5 lg:grid-cols-4 xl:grid-cols-5">
                   {visibleArtists.map((artist, index) => (
-                    <ArtistCard
-                      key={artist.id}
-                      artist={artist}
-                      index={index}
-                    />
+                    <ArtistCard key={artist.id} artist={artist} index={index} />
                   ))}
                 </div>
               </section>
@@ -518,8 +492,8 @@ export default function ArtistsPage() {
                       setVisibleCount((current) =>
                         Math.min(
                           current + LOAD_MORE_COUNT,
-                          filteredArtists.length
-                        )
+                          filteredArtists.length,
+                        ),
                       )
                     }
                     className="inline-flex min-w-44 items-center justify-center gap-2 rounded-full border border-violet-400/30 bg-[#211a30] px-6 py-3 text-sm font-semibold text-violet-200 transition hover:border-violet-300/60 hover:bg-[#302342] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400"

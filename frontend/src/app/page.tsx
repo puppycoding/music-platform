@@ -1,10 +1,12 @@
 "use client";
 
+import { sampleItems as getRandomSongs } from "@/lib/random";
+
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import catalog from "../data/music-catalog";
-import { useMusicPlayer } from "../components/music-player/providers/MusicPlayerProvider";
+import { useMusicPlayer } from "@/features/music-player";
 
 const artists = catalog.artists;
 type Song = (typeof catalog.songs)[number];
@@ -28,17 +30,6 @@ type AlbumData = Album & {
   title?: string;
   id: string;
 };
-
-function getRandomSongs<T>(items: T[], count: number): T[] {
-  const shuffled = [...items];
-
-  for (let i = shuffled.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-
-  return shuffled.slice(0, count);
-}
 
 function getCoverUrl(song: Song): string | null {
   const item = song as SongData;
@@ -74,7 +65,7 @@ function getCoverUrl(song: Song): string | null {
   if (albumName) {
     const album = albums.find(
       (entry) =>
-        entry.title?.trim().toLowerCase() === albumName.trim().toLowerCase()
+        entry.title?.trim().toLowerCase() === albumName.trim().toLowerCase(),
     );
 
     if (album?.cover_url) return album.cover_url;
@@ -185,7 +176,10 @@ function SongCard({
       tabIndex={0}
       onClick={handlePlaySong}
       onKeyDown={(event) => {
-        if (event.target === event.currentTarget && (event.key === "Enter" || event.key === " ")) {
+        if (
+          event.target === event.currentTarget &&
+          (event.key === "Enter" || event.key === " ")
+        ) {
           event.preventDefault();
           handlePlaySong();
         }
@@ -194,7 +188,9 @@ function SongCard({
     >
       <div className="relative aspect-square overflow-hidden rounded-md bg-gradient-to-br from-violet-950 via-purple-900 to-[#171220] sm:rounded-lg">
         {coverUrl && !imageError ? (
-          <img
+          <Image
+            fill
+            sizes="(max-width: 640px) 45vw, 200px"
             src={coverUrl}
             alt={`ปกเพลง ${song.title}`}
             loading="lazy"
@@ -208,10 +204,12 @@ function SongCard({
         )}
 
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10" />
-
       </div>
 
-      <div className="absolute right-2 top-2 z-50" onClick={(event) => event.stopPropagation()}>
+      <div
+        className="absolute right-2 top-2 z-50"
+        onClick={(event) => event.stopPropagation()}
+      >
         <button
           type="button"
           aria-label={`ตัวเลือกเพิ่มเติมสำหรับเพลง ${song.title}`}
@@ -224,17 +222,28 @@ function SongCard({
         </button>
         {isMenuOpen && (
           <div className="absolute right-0 top-full z-[100] mt-2 w-44 overflow-hidden rounded-xl border border-white/10 bg-[#191421] py-1 text-xs text-white shadow-2xl">
-            <button type="button" onClick={handleAddToQueue} className="flex w-full items-center gap-3 px-3.5 py-2.5 text-left transition hover:bg-white/10">
+            <button
+              type="button"
+              onClick={handleAddToQueue}
+              className="flex w-full items-center gap-3 px-3.5 py-2.5 text-left transition hover:bg-white/10"
+            >
               <span className="text-violet-300">＋</span>เพิ่มเข้าคิว
             </button>
-            <button type="button" onClick={() => void handleCopyTitle()} className="flex w-full items-center gap-3 px-3.5 py-2.5 text-left transition hover:bg-white/10">
+            <button
+              type="button"
+              onClick={() => void handleCopyTitle()}
+              className="flex w-full items-center gap-3 px-3.5 py-2.5 text-left transition hover:bg-white/10"
+            >
               <span className="text-violet-300">▢</span>คัดลอกชื่อเพลง
             </button>
             {song.artist_ids[0] && (
               <Link
                 href={`/artists/${encodeURIComponent(song.artist_ids[0])}?returnTo=%2F`}
                 onClick={() => {
-                  sessionStorage.setItem("artistDetailReturnTo", window.location.pathname + window.location.search);
+                  sessionStorage.setItem(
+                    "artistDetailReturnTo",
+                    window.location.pathname + window.location.search,
+                  );
                   setActiveMenu(null);
                 }}
                 className="flex w-full items-center gap-3 px-3.5 py-2.5 transition hover:bg-white/10"
@@ -264,7 +273,6 @@ function SongCard({
     </article>
   );
 }
-
 
 function SongListRow({
   song,
@@ -309,25 +317,45 @@ function SongListRow({
     <article className="group relative flex min-w-0 items-center gap-3 border-t border-white/[0.12] py-2.5 sm:gap-4 sm:py-3">
       <button
         type="button"
-        onClick={() => { playSong(song.id); setActiveMenu(null); }}
+        onClick={() => {
+          playSong(song.id);
+          setActiveMenu(null);
+        }}
         className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg bg-[#15111e] text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 sm:h-[60px] sm:w-[60px]"
         aria-label={`เล่นเพลง ${song.title}`}
       >
         {coverUrl && !imageError ? (
-          <img src={coverUrl} alt={`ปกเพลง ${song.title}`} loading="lazy" onError={() => setImageError(true)} className="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+          <Image
+            fill
+            sizes="(max-width: 640px) 48px, 60px"
+            src={coverUrl}
+            alt={`ปกเพลง ${song.title}`}
+            loading="lazy"
+            onError={() => setImageError(true)}
+            className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+          />
         ) : (
-          <span className="flex h-full w-full items-center justify-center bg-gradient-to-br from-violet-900 to-[#171220] text-violet-200"><MusicIcon className="h-5 w-5" /></span>
+          <span className="flex h-full w-full items-center justify-center bg-gradient-to-br from-violet-900 to-[#171220] text-violet-200">
+            <MusicIcon className="h-5 w-5" />
+          </span>
         )}
       </button>
 
       <button
         type="button"
-        onClick={() => { playSong(song.id); setActiveMenu(null); }}
+        onClick={() => {
+          playSong(song.id);
+          setActiveMenu(null);
+        }}
         className="min-w-0 flex-1 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400"
         title={`เล่นเพลง ${song.title}`}
       >
-        <span className="block truncate text-sm font-semibold leading-5 text-white/90 transition-colors group-hover:text-violet-200 sm:text-base">{song.title}</span>
-        <span className="mt-0.5 block truncate text-xs leading-4 text-white/60 sm:text-sm">{artistName}</span>
+        <span className="block truncate text-sm font-semibold leading-5 text-white/90 transition-colors group-hover:text-violet-200 sm:text-base">
+          {song.title}
+        </span>
+        <span className="mt-0.5 block truncate text-xs leading-4 text-white/60 sm:text-sm">
+          {artistName}
+        </span>
       </button>
 
       <div className="relative shrink-0">
@@ -336,22 +364,47 @@ function SongListRow({
           aria-label={`ตัวเลือกเพิ่มเติมสำหรับเพลง ${song.title}`}
           aria-expanded={isMenuOpen}
           title="ตัวเลือกเพิ่มเติม"
-          onClick={(event) => { event.stopPropagation(); setActiveMenu(isMenuOpen ? null : menuId); }}
+          onClick={(event) => {
+            event.stopPropagation();
+            setActiveMenu(isMenuOpen ? null : menuId);
+          }}
           className="flex h-9 w-9 items-center justify-center rounded-full text-white/60 transition hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400"
-        ><MoreIcon /></button>
+        >
+          <MoreIcon />
+        </button>
         {isMenuOpen && (
-          <div className="absolute right-0 top-full z-50 mt-1 w-44 overflow-hidden rounded-xl border border-white/10 bg-[#191421] py-1 text-xs text-white shadow-2xl" onClick={(event) => event.stopPropagation()}>
-            <button type="button" onClick={handleAddToQueue} className="flex w-full items-center gap-3 px-3.5 py-2.5 text-left transition hover:bg-white/10"><span className="text-violet-300">＋</span>เพิ่มเข้าคิว</button>
-            <button type="button" onClick={() => void handleCopyTitle()} className="flex w-full items-center gap-3 px-3.5 py-2.5 text-left transition hover:bg-white/10"><span className="text-violet-300">▢</span>คัดลอกชื่อเพลง</button>
+          <div
+            className="absolute right-0 top-full z-50 mt-1 w-44 overflow-hidden rounded-xl border border-white/10 bg-[#191421] py-1 text-xs text-white shadow-2xl"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={handleAddToQueue}
+              className="flex w-full items-center gap-3 px-3.5 py-2.5 text-left transition hover:bg-white/10"
+            >
+              <span className="text-violet-300">＋</span>เพิ่มเข้าคิว
+            </button>
+            <button
+              type="button"
+              onClick={() => void handleCopyTitle()}
+              className="flex w-full items-center gap-3 px-3.5 py-2.5 text-left transition hover:bg-white/10"
+            >
+              <span className="text-violet-300">▢</span>คัดลอกชื่อเพลง
+            </button>
             {song.artist_ids[0] && (
               <Link
                 href={`/artists/${encodeURIComponent(song.artist_ids[0])}?returnTo=%2F`}
                 onClick={() => {
-                  sessionStorage.setItem("artistDetailReturnTo", window.location.pathname + window.location.search);
+                  sessionStorage.setItem(
+                    "artistDetailReturnTo",
+                    window.location.pathname + window.location.search,
+                  );
                   setActiveMenu(null);
                 }}
                 className="flex w-full items-center gap-3 px-3.5 py-2.5 transition hover:bg-white/10"
-              ><span className="text-violet-300">♬</span>ดูเพลงของศิลปิน</Link>
+              >
+                <span className="text-violet-300">♬</span>ดูเพลงของศิลปิน
+              </Link>
             )}
           </div>
         )}
@@ -360,11 +413,7 @@ function SongListRow({
   );
 }
 
-function ArtistCard({
-  artist,
-}: {
-  artist: (typeof catalog.artists)[number];
-}) {
+function ArtistCard({ artist }: { artist: (typeof catalog.artists)[number] }) {
   const [imageError, setImageError] = useState(false);
 
   return (
@@ -373,7 +422,7 @@ function ArtistCard({
       onClick={() =>
         sessionStorage.setItem(
           "artistDetailReturnTo",
-          window.location.pathname + window.location.search
+          window.location.pathname + window.location.search,
         )
       }
       className="group flex min-w-0 flex-col items-center rounded-xl border border-white/[0.08] bg-[#15111e] p-3 transition duration-300 hover:-translate-y-0.5 hover:border-violet-400/40 hover:bg-[#1b1528] hover:shadow-lg hover:shadow-violet-950/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 sm:rounded-2xl sm:p-4"
@@ -419,19 +468,36 @@ export default function Home() {
   const [toast, setToast] = useState("");
 
   useEffect(() => {
-    const featured = getRandomSongs(catalog.songs, 10);
-    setSongs(featured);
-    const featuredIds = new Set(featured.map((song) => song.id));
-    const remainingSongs = catalog.songs.filter((song) => !featuredIds.has(song.id));
-    setListSongs(getRandomSongs(remainingSongs.length ? remainingSongs : catalog.songs, 12));
+    const timer = setTimeout(() => {
+      const featured = getRandomSongs(catalog.songs, 10);
+      setSongs(featured);
+      const featuredIds = new Set(featured.map((song) => song.id));
+      const remainingSongs = catalog.songs.filter(
+        (song) => !featuredIds.has(song.id),
+      );
+      setListSongs(
+        getRandomSongs(
+          remainingSongs.length ? remainingSongs : catalog.songs,
+          12,
+        ),
+      );
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   function shuffleSongs() {
     const featured = getRandomSongs(catalog.songs, 10);
     setSongs(featured);
     const featuredIds = new Set(featured.map((song) => song.id));
-    const remainingSongs = catalog.songs.filter((song) => !featuredIds.has(song.id));
-    setListSongs(getRandomSongs(remainingSongs.length ? remainingSongs : catalog.songs, 12));
+    const remainingSongs = catalog.songs.filter(
+      (song) => !featuredIds.has(song.id),
+    );
+    setListSongs(
+      getRandomSongs(
+        remainingSongs.length ? remainingSongs : catalog.songs,
+        12,
+      ),
+    );
     setActiveMenu(null);
   }
 
@@ -447,7 +513,6 @@ export default function Home() {
         if (activeMenu) setActiveMenu(null);
       }}
     >
-
       <header className="relative -mx-4 mb-6 flex h-[73px] items-center overflow-hidden border-b border-white/[0.07] bg-gradient-to-r from-[#100c19] via-[#0b0911] to-[#151020] px-4 shadow-[0_8px_30px_rgba(0,0,0,0.12)] sm:-mx-6 sm:px-6 md:-mx-10 md:px-10">
         {/* แสงตกแต่งพื้นหลัง */}
         <div
@@ -458,7 +523,6 @@ export default function Home() {
           aria-hidden="true"
           className="pointer-events-none absolute left-1/3 top-0 h-px w-1/3 bg-gradient-to-r from-transparent via-violet-400/20 to-transparent"
         />
-
 
         <div className="relative mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-3 sm:px-5 md:px-8">
           <div className="min-w-0">
@@ -478,9 +542,7 @@ export default function Home() {
             เข้าสู่ระบบ
           </button>
         </div>
-
       </header>
-
 
       <div className="mx-auto max-w-7xl space-y-10 px-5 pb-32 pt-6 md:space-y-14 md:px-10 md:pt-8">
         <section
@@ -515,7 +577,8 @@ export default function Home() {
             </h2>
 
             <p className="mt-4 max-w-sm text-xs leading-6 text-white/55 sm:text-sm sm:leading-7">
-              ค้นพบศิลปินและเพลงโปรดของคุณ แล้วปล่อยให้เสียงเพลงเติมเต็มช่วงเวลาของคุณ
+              ค้นพบศิลปินและเพลงโปรดของคุณ
+              แล้วปล่อยให้เสียงเพลงเติมเต็มช่วงเวลาของคุณ
             </p>
 
             <button
@@ -546,7 +609,7 @@ export default function Home() {
                     opacity: 0.35 + (index % 4) * 0.15,
                   }}
                 />
-              )
+              ),
             )}
           </div>
         </section>
@@ -598,7 +661,6 @@ export default function Home() {
             </div>
           )}
         </section>
-
 
         <section id="popular-list" className="scroll-mt-6">
           <div className="mb-3 sm:mb-4">

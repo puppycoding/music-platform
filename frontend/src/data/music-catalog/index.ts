@@ -2,6 +2,7 @@ import guncharlieArtists from "./artists/guncharlie.json";
 import drFuuArtists from "./artists/dr_fuu.json";
 import purpeechArtists from "./artists/purpeech.json";
 import threeManDownArtists from "./artists/three_man_down.json";
+import entityDefaults from "./entity-defaults.json";
 
 import guncharlieAlbums from "./albums/guncharlie.json";
 import drFuuAlbums from "./albums/dr_fuu.json";
@@ -45,6 +46,7 @@ type SongCatalogFile = {
   created_at?: string;
   purpose?: string;
   songs: unknown[];
+  defaults?: Record<string, unknown>;
   data_quality?: DataQuality;
 };
 
@@ -56,35 +58,107 @@ const songCatalogs: SongCatalogFile[] = [
   threeManDownSongs,
 ];
 
-// รวมศิลปิน
-const artists = [
-  ...guncharlieArtists.artists,
-  ...drFuuArtists.artists,
-  ...purpeechArtists.artists,
-  ...threeManDownArtists.artists,
+// รวมศิลปิน โดยใช้ค่าเริ่มต้นร่วมเมื่อไฟล์ศิลปินไม่ได้ระบุค่าเฉพาะ
+const artistCatalogs = [
+  guncharlieArtists,
+  drFuuArtists,
+  purpeechArtists,
+  threeManDownArtists,
 ];
+const artists = artistCatalogs.flatMap((catalog) =>
+  catalog.artists.map((artist) => ({ ...entityDefaults.artists, ...artist })),
+);
 
-// รวมอัลบั้ม
-const albums = [
-  ...guncharlieAlbums.albums,
-  ...drFuuAlbums.albums,
-  ...purpeechAlbums.albums,
-  ...threeManDownAlbums.albums,
+// รวมอัลบั้ม โดยให้ค่าระดับอัลบั้มทับค่าเริ่มต้นของไฟล์ได้ (เช่น อัลบั้มร่วม)
+const albumCatalogs = [
+  guncharlieAlbums,
+  drFuuAlbums,
+  purpeechAlbums,
+  threeManDownAlbums,
 ];
+const albums = albumCatalogs.flatMap((catalog) =>
+  catalog.albums.map((album) => ({ ...(catalog.defaults ?? {}), ...album })),
+);
 
-// รวมเพลง
-const songs = [
-  ...guncharlieSongs.songs,
-  ...drFuuSongs.songs,
-  ...purpeechSongs.songs,
-  ...threeManDownSongs.songs,
-];
+// Hydrate normalized song records with shared defaults and album metadata.
+const albumsById = new Map(albums.map((album) => [album.id, album]));
+
+type ProviderRecord = Record<string, unknown> & {
+  video_id?: string;
+  url?: string;
+};
+type SongRecord = Record<string, unknown> & {
+  id: string;
+  title: string;
+  album_id: string;
+  artist_ids?: string[];
+  source_urls?: string[];
+  cover_url?: string;
+  cover_source_url?: string;
+  cover_status?: string;
+  listen_provider?: string;
+  listen_url?: string;
+  moods?: string[];
+  duration_seconds?: number | null;
+  status?: string;
+  source_type?: string;
+  metadata_status?: string;
+  providers?: Record<string, ProviderRecord>;
+};
+type AlbumSource = {
+  artist_ids?: string[];
+  source_urls?: string[];
+  cover_url?: string;
+  cover_source_url?: string;
+};
+
+const songs = songCatalogs.flatMap((catalog) =>
+  catalog.songs.map((record) => {
+    const song = record as SongRecord;
+    const album = albumsById.get(song.album_id) as AlbumSource | undefined;
+    const merged = { ...(catalog.defaults ?? {}), ...song };
+    const youtube = merged.providers?.youtube;
+    const youtubeUrl =
+      youtube?.url ??
+      (youtube?.video_id
+        ? `https://www.youtube.com/watch?v=${youtube.video_id}`
+        : undefined);
+    const providers = merged.providers
+      ? {
+        ...merged.providers,
+        ...(youtube && youtubeUrl
+          ? { youtube: { ...youtube, url: youtubeUrl } }
+          : {}),
+      }
+      : undefined;
+    const listenProvider =
+      merged.listen_provider ?? (providers?.youtube ? "youtube" : undefined);
+    const listenUrl =
+      merged.listen_url ??
+      (listenProvider === "youtube" ? youtubeUrl : undefined);
+    const coverSourceUrl =
+      merged.cover_source_url ??
+      album?.cover_source_url ??
+      (merged.cover_status === "youtube_video_thumbnail"
+        ? youtubeUrl
+        : undefined);
+
+    return {
+      ...merged,
+      artist_ids: merged.artist_ids ?? album?.artist_ids ?? [],
+      source_urls: merged.source_urls ?? album?.source_urls ?? [],
+      cover_url: merged.cover_url ?? album?.cover_url,
+      ...(providers ? { providers } : {}),
+      ...(listenProvider ? { listen_provider: listenProvider } : {}),
+      ...(listenUrl ? { listen_url: listenUrl } : {}),
+      ...(coverSourceUrl ? { cover_source_url: coverSourceUrl } : {}),
+    };
+  }),
+);
 
 // รวมตัวเลขเฉพาะกรณีที่ทุกไฟล์มีค่าตัวเลขที่ตรวจสอบแล้ว
 // ถ้ามีไฟล์ใดเป็น null หรือไม่มีค่า จะคืน null เพื่อไม่ให้ยอดรวมคลาดเคลื่อน
-function sumIfAllKnown(
-  values: (number | null | undefined)[]
-): number | null {
+function sumIfAllKnown(values: (number | null | undefined)[]): number | null {
   if (
     values.length === 0 ||
     values.some((value) => typeof value !== "number")
@@ -92,24 +166,16 @@ function sumIfAllKnown(
     return null;
   }
 
-  return (values as number[]).reduce(
-    (total, value) => total + value,
-    0
-  );
+  return (values as number[]).reduce((total, value) => total + value, 0);
 }
 
 // รวมสถานะ true/false โดยไม่เดาค่าที่ไม่ทราบ
-function combineStatus(
-  values: (boolean | null | undefined)[]
-): boolean | null {
+function combineStatus(values: (boolean | null | undefined)[]): boolean | null {
   if (values.some((value) => value === false)) {
     return false;
   }
 
-  if (
-    values.length > 0 &&
-    values.every((value) => value === true)
-  ) {
+  if (values.length > 0 && values.every((value) => value === true)) {
     return true;
   }
 
@@ -119,9 +185,9 @@ function combineStatus(
 // รวมรายชื่อศิลปินที่อนุญาตจาก Metadata ของทุกไฟล์
 const allowedArtistNames = [
   ...new Set(
-    songCatalogs.flatMap((catalog) =>
-      catalog.data_quality?.allowed_artist_names ?? []
-    )
+    songCatalogs.flatMap(
+      (catalog) => catalog.data_quality?.allowed_artist_names ?? [],
+    ),
   ),
 ];
 
@@ -132,17 +198,15 @@ const notes = [
       .map((catalog) => catalog.data_quality?.note)
       .filter(
         (note): note is string =>
-          typeof note === "string" && note.trim().length > 0
-      )
+          typeof note === "string" && note.trim().length > 0,
+      ),
   ),
 ];
 
 // สร้าง Data Quality ระดับแค็ตตาล็อกรวม
 const dataQuality = {
   youtube_only_export: combineStatus(
-    songCatalogs.map(
-      (catalog) => catalog.data_quality?.youtube_only_export
-    )
+    songCatalogs.map((catalog) => catalog.data_quality?.youtube_only_export),
   ),
 
   artists_total: artists.length,
@@ -151,82 +215,64 @@ const dataQuality = {
 
   youtube_direct_links_found: sumIfAllKnown(
     songCatalogs.map(
-      (catalog) =>
-        catalog.data_quality?.youtube_direct_links_found
-    )
+      (catalog) => catalog.data_quality?.youtube_direct_links_found,
+    ),
   ),
 
   songs_without_verified_youtube_link: sumIfAllKnown(
     songCatalogs.map(
-      (catalog) =>
-        catalog.data_quality?.songs_without_verified_youtube_link
-    )
+      (catalog) => catalog.data_quality?.songs_without_verified_youtube_link,
+    ),
   ),
 
   complete: combineStatus(
-    songCatalogs.map(
-      (catalog) => catalog.data_quality?.complete
-    )
+    songCatalogs.map((catalog) => catalog.data_quality?.complete),
   ),
 
   note: notes.length > 0 ? notes.join("\n") : null,
 
   youtube_complete: combineStatus(
-    songCatalogs.map(
-      (catalog) => catalog.data_quality?.youtube_complete
-    )
+    songCatalogs.map((catalog) => catalog.data_quality?.youtube_complete),
   ),
 
   allowed_artists_only: combineStatus(
-    songCatalogs.map(
-      (catalog) => catalog.data_quality?.allowed_artists_only
-    )
+    songCatalogs.map((catalog) => catalog.data_quality?.allowed_artists_only),
   ),
 
   allowed_artist_names: allowedArtistNames,
 
   songs_removed_outside_allowed_artists: sumIfAllKnown(
     songCatalogs.map(
-      (catalog) =>
-        catalog.data_quality?.songs_removed_outside_allowed_artists
-    )
+      (catalog) => catalog.data_quality?.songs_removed_outside_allowed_artists,
+    ),
   ),
 
   songs_without_youtube_link: sumIfAllKnown(
     songCatalogs.map(
-      (catalog) =>
-        catalog.data_quality?.songs_without_youtube_link
-    )
+      (catalog) => catalog.data_quality?.songs_without_youtube_link,
+    ),
   ),
 };
 
 // ใช้ Metadata จากไฟล์แรกที่มีค่า ไม่ยึดติดกับ Dr.Fuu เพียงไฟล์เดียว
-function firstDefined<T>(
-  values: (T | undefined)[]
-): T | undefined {
+function firstDefined<T>(values: (T | undefined)[]): T | undefined {
   return values.find((value) => value !== undefined);
 }
 
 const musicCatalog = {
   schema_version: firstDefined(
-    songCatalogs.map((catalog) => catalog.schema_version)
+    songCatalogs.map((catalog) => catalog.schema_version),
   ),
 
   catalog_title: firstDefined(
-    songCatalogs.map((catalog) => catalog.catalog_title)
+    songCatalogs.map((catalog) => catalog.catalog_title),
   ),
 
-  language: firstDefined(
-    songCatalogs.map((catalog) => catalog.language)
-  ),
+  language: firstDefined(songCatalogs.map((catalog) => catalog.language)),
 
-  created_at: firstDefined(
-    songCatalogs.map((catalog) => catalog.created_at)
-  ),
+  created_at: firstDefined(songCatalogs.map((catalog) => catalog.created_at)),
 
-  purpose: firstDefined(
-    songCatalogs.map((catalog) => catalog.purpose)
-  ),
+  purpose: firstDefined(songCatalogs.map((catalog) => catalog.purpose)),
 
   artists,
   albums,

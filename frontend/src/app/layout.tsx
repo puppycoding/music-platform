@@ -1,13 +1,19 @@
-
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 
-import MusicPlayerProvider from "../components/music-player/providers/MusicPlayerProvider";
-import PlayerBar from "../components/music-player/components/PlayerBar";
+import { MusicPlayerProvider } from "@/features/music-player";
+import PlayerBar from "../features/music-player/components/PlayerBar";
 import NavigationDots from "../components/navigation/NavigationDots";
 
+const siteUrl =
+  process.env.VERCEL_PROJECT_PRODUCTION_URL ??
+  process.env.VERCEL_URL;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    siteUrl ? `https://${siteUrl}` : "http://localhost:3000",
+  ),
   title: "MUSIC PLATFORM",
   description: "ค้นพบศิลปินและเพลงโปรดของคุณ",
 };
@@ -162,7 +168,6 @@ export default function RootLayout({
 
             <div className="my-7 border-t border-[#302a3b]" />
 
-
             {/* Your Library */}
             <section>
               <p className="mb-3 px-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#777180]">
@@ -178,7 +183,6 @@ export default function RootLayout({
               </Link>
             </section>
 
-
             {/* Footer ของ Sidebar */}
             <div className="mt-auto pt-8">
               <p className="text-xs font-semibold tracking-wide text-[#a78bfa]">
@@ -191,9 +195,7 @@ export default function RootLayout({
           </aside>
 
           {/* พื้นที่เนื้อหาหลักของแต่ละหน้า */}
-          <main className="min-h-screen pb-24 md:ml-60">
-            {children}
-          </main>
+          <main className="min-h-screen pb-24 md:ml-60">{children}</main>
 
           {/* Player Bar ด้านล่าง */}
           <PlayerBar />

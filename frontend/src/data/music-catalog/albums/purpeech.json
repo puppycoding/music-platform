@@ -7,9 +7,6 @@
     {
       "id": "album_purpeech_purfectpeech",
       "title": "PurfectPeech",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "release_year": 2024,
       "album_type": "album_and_singles_collection",
       "cover_url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/a6/48/ba/a648ba9f-2567-c3a9-f0c2-86e661eae74c/cover.jpg/400x400bb.webp",
@@ -40,9 +37,6 @@
     {
       "id": "album_purpeech_live",
       "title": "The Peechman Show Live",
-      "artist_ids": [
-        "artist_purpeech"
-      ],
       "release_year": 2025,
       "album_type": "live_album",
       "cover_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3c/f5/ed/3cf5ede5-ba3d-77d0-0835-5762a3751de8/cover.jpg/3000x3000bb.jpg",
@@ -68,5 +62,10 @@
       "metadata_status": "artwork_url_added_source_linked",
       "cover_source_url": "https://www.shazam.com/song/1834873004/ดีใจที่ได้พบเธอ-peech-live"
     }
-  ]
+  ],
+  "defaults": {
+    "artist_ids": [
+      "artist_purpeech"
+    ]
+  }
 }

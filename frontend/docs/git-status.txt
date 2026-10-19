@@ -1,0 +1,66 @@
+ M ../README.md
+ M AGENTS.md
+ M README.md
+ M eslint.config.mjs
+ M package.json
+ M src/app/artists/[artistId]/albums/[albumId]/page.tsx
+ M src/app/artists/[artistId]/page.tsx
+ M src/app/artists/page.tsx
+ M src/app/layout.tsx
+ M src/app/page.tsx
+ M src/app/search/page.tsx
+ M src/app/songs/page.tsx
+ D src/components/PlayerBar.tsx
+ D src/components/music-player/components/PlayerBar.tsx
+ D src/components/music-player/components/PlayerVolume.tsx
+ D src/components/music-player/components/VolumeControl.tsx
+ D src/components/music-player/players/AppleMusicPlayer.tsx
+ D src/components/music-player/players/SpotifyPlayer.tsx
+ D src/components/music-player/players/YouTubePlayer.tsx
+ D src/components/music-player/providers/MusicPlayerProvider.tsx
+ D src/components/music-player/services/player-service.ts
+ D src/components/music-player/services/playing-next.ts
+ D src/components/music-player/types/player-types.ts
+ D src/components/queue/UpNextPanel.tsx
+ D src/components/queue/components/QueueTrackList.tsx
+ D src/components/queue/components/TrackActions.tsx
+ D src/components/queue/hooks/useQueueReorder.ts
+ M src/data/music-catalog/types.ts
+?? ARCHITECTURE.md
+?? CONTRIBUTING.md
+?? docs/AUDIT.md
+?? docs/FILE-STRUCTURE.md
+?? docs/FINAL-REPORT.md
+?? docs/baseline-files.json
+?? docs/baseline-ref.txt
+?? docs/data-audit.json
+?? docs/git-status.txt
+?? docs/moves-music-player.json
+?? docs/moves-queue.json
+?? docs/route-validation.json
+?? scripts/audit-data.cjs
+?? scripts/validate-source.cjs
+?? src/features/music-player/components/PlayerBar.tsx
+?? src/features/music-player/components/PlayerVolume.tsx
+?? src/features/music-player/components/VolumeControl.tsx
+?? src/features/music-player/index.ts
+?? src/features/music-player/players/AppleMusicPlayer.tsx
+?? src/features/music-player/players/SpotifyPlayer.tsx
+?? src/features/music-player/players/YouTubePlayer.tsx
+?? src/features/music-player/providers/MusicPlayerProvider.tsx
+?? src/features/music-player/services/catalog-tracks.ts
+?? src/features/music-player/services/player-service.ts
+?? src/features/music-player/services/playing-next.ts
+?? src/features/music-player/services/queue-service.ts
+?? src/features/music-player/types/player-types.ts
+?? src/features/queue/UpNextPanel.tsx
+?? src/features/queue/components/QueueTrackList.tsx
+?? src/features/queue/components/TrackActions.tsx
+?? src/features/queue/hooks/useQueueReorder.ts
+?? src/lib/random.ts
+?? src/lib/search-text.ts
+?? tests/catalog.test.cjs
+?? tests/player.test.cjs
+?? tests/provider.test.cjs
+?? tests/register.cjs
+?? tests/youtube-lifecycle.test.cjs

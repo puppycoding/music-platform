@@ -1,0 +1,42 @@
+[
+  {
+    "from": "src/components/music-player/components/PlayerBar.tsx",
+    "to": "src/features/music-player/components/PlayerBar.tsx"
+  },
+  {
+    "from": "src/components/music-player/components/PlayerVolume.tsx",
+    "to": "src/features/music-player/components/PlayerVolume.tsx"
+  },
+  {
+    "from": "src/components/music-player/components/VolumeControl.tsx",
+    "to": "src/features/music-player/components/VolumeControl.tsx"
+  },
+  {
+    "from": "src/components/music-player/players/AppleMusicPlayer.tsx",
+    "to": "src/features/music-player/players/AppleMusicPlayer.tsx"
+  },
+  {
+    "from": "src/components/music-player/players/SpotifyPlayer.tsx",
+    "to": "src/features/music-player/players/SpotifyPlayer.tsx"
+  },
+  {
+    "from": "src/components/music-player/players/YouTubePlayer.tsx",
+    "to": "src/features/music-player/players/YouTubePlayer.tsx"
+  },
+  {
+    "from": "src/components/music-player/providers/MusicPlayerProvider.tsx",
+    "to": "src/features/music-player/providers/MusicPlayerProvider.tsx"
+  },
+  {
+    "from": "src/components/music-player/services/player-service.ts",
+    "to": "src/features/music-player/services/player-service.ts"
+  },
+  {
+    "from": "src/components/music-player/services/playing-next.ts",
+    "to": "src/features/music-player/services/playing-next.ts"
+  },
+  {
+    "from": "src/components/music-player/types/player-types.ts",
+    "to": "src/features/music-player/types/player-types.ts"
+  }
+]

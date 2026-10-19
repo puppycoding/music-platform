@@ -1,10 +1,10 @@
-
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useState } from "react";
-import { useMusicPlayer } from "../../../../../components/music-player/providers/MusicPlayerProvider";
+import { useMusicPlayer } from "@/features/music-player";
 import catalog from "../../../../../data/music-catalog";
 
 type Artist = {
@@ -45,7 +45,7 @@ type Catalog = {
   songs: Song[];
 };
 
-const musicCatalog = catalog as unknown as Catalog;
+const musicCatalog: Catalog = catalog;
 
 export default function AlbumDetailPage() {
   const params = useParams<{
@@ -60,7 +60,7 @@ export default function AlbumDetailPage() {
     songs: playerSongs,
     currentSong,
     isPlaying,
-    playSong,
+    playAlbumSong,
     addToQueue,
   } = useMusicPlayer();
 
@@ -68,17 +68,15 @@ export default function AlbumDetailPage() {
   const [toast, setToast] = useState("");
 
   const artist = (musicCatalog.artists ?? []).find(
-    (item) => item.id === artistId
+    (item) => item.id === artistId,
   );
 
   const album = (musicCatalog.albums ?? []).find(
-    (item) =>
-      item.id === albumId &&
-      item.artist_ids?.includes(artistId)
+    (item) => item.id === albumId && item.artist_ids?.includes(artistId),
   );
 
   const albumSongs = (musicCatalog.songs ?? []).filter(
-    (song) => song.album_id === albumId
+    (song) => song.album_id === albumId,
   );
 
   async function copySongTitle(title: string) {
@@ -99,9 +97,7 @@ export default function AlbumDetailPage() {
   }
 
   function handleAddToQueue(song: Song) {
-    const playerTrack = playerSongs.find(
-      (track) => track.id === song.id
-    );
+    const playerTrack = playerSongs.find((track) => track.id === song.id);
 
     if (!playerTrack) {
       setToast("ไม่พบเพลงในระบบเล่นเพลง");
@@ -161,7 +157,9 @@ export default function AlbumDetailPage() {
             {/* Album cover */}
             <div className="relative mx-auto aspect-square w-48 shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-[#45315f] to-[#191522] shadow-2xl shadow-black/40 sm:mx-0 sm:w-56 lg:w-64">
               {album.cover_url && (
-                <img
+                <Image
+                  fill
+                  sizes="(max-width: 640px) 192px, (max-width: 1024px) 224px, 256px"
                   src={album.cover_url}
                   alt={album.title}
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
@@ -248,7 +246,7 @@ export default function AlbumDetailPage() {
             <div className="overflow-visible rounded-2xl border border-[#302a3b] bg-[#15121c]/90 p-2 shadow-xl shadow-black/10 sm:p-3">
               {albumSongs.map((song, index) => {
                 const playerTrack = playerSongs.find(
-                  (track) => track.id === song.id
+                  (track) => track.id === song.id,
                 );
 
                 const isCurrentSong = currentSong?.id === song.id;
@@ -258,7 +256,10 @@ export default function AlbumDetailPage() {
 
                 const handlePlay = () => {
                   if (canPlay) {
-                    playSong(song.id);
+                    playAlbumSong(
+                      song.id,
+                      albumSongs.map((albumSong) => albumSong.id),
+                    );
                   }
                 };
 
@@ -280,8 +281,8 @@ export default function AlbumDetailPage() {
                       }
                     }}
                     className={`group flex items-center gap-3 rounded-xl border border-transparent px-3 py-3 transition duration-200 sm:gap-4 sm:px-4 ${isCurrentSong
-                        ? "border-violet-400/20 bg-violet-500/[0.10]"
-                        : "hover:border-white/[0.06] hover:bg-white/[0.035]"
+                      ? "border-violet-400/20 bg-violet-500/[0.10]"
+                      : "hover:border-white/[0.06] hover:bg-white/[0.035]"
                       } ${canPlay
                         ? "cursor-pointer"
                         : "cursor-not-allowed opacity-60"
@@ -299,7 +300,9 @@ export default function AlbumDetailPage() {
                     {/* Song cover */}
                     <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg bg-gradient-to-br from-[#35234f] to-[#191522] ring-1 ring-white/[0.06] sm:h-14 sm:w-14">
                       {(song.cover_url || song.image_url) && (
-                        <img
+                        <Image
+                          fill
+                          sizes="48px"
                           src={song.cover_url || song.image_url || ""}
                           alt={song.title}
                           loading="lazy"
@@ -319,8 +322,8 @@ export default function AlbumDetailPage() {
                     <div className="min-w-0 flex-1 py-0.5">
                       <p
                         className={`truncate font-semibold transition-colors ${isCurrentSong
-                            ? "text-violet-300"
-                            : "text-zinc-100 group-hover:text-white"
+                          ? "text-violet-300"
+                          : "text-zinc-100 group-hover:text-white"
                           }`}
                       >
                         {song.title}
@@ -366,14 +369,14 @@ export default function AlbumDetailPage() {
                         type="button"
                         onClick={() =>
                           setActiveMenu((current) =>
-                            current === song.id ? null : song.id
+                            current === song.id ? null : song.id,
                           )
                         }
                         aria-label={`ตัวเลือกเพิ่มเติมสำหรับเพลง ${song.title}`}
                         aria-expanded={menuIsOpen}
                         className={`rounded-full p-2.5 transition ${menuIsOpen
-                            ? "bg-violet-500/20 text-violet-300"
-                            : "text-zinc-400 hover:bg-violet-500/15 hover:text-violet-300"
+                          ? "bg-violet-500/20 text-violet-300"
+                          : "text-zinc-400 hover:bg-violet-500/15 hover:text-violet-300"
                           }`}
                       >
                         <svg
@@ -428,13 +431,7 @@ export default function AlbumDetailPage() {
                               className="h-4 w-4 shrink-0 text-violet-300"
                               aria-hidden="true"
                             >
-                              <rect
-                                x="8"
-                                y="8"
-                                width="12"
-                                height="12"
-                                rx="2"
-                              />
+                              <rect x="8" y="8" width="12" height="12" rx="2" />
                               <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" />
                             </svg>
                             คัดลอกชื่อเพลง

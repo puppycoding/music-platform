@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Music Platform frontend
 
-## Getting Started
+Thai music discovery and YouTube playback built with Next.js 16.4.0 App Router, React 19.3.0, strict TypeScript and Tailwind CSS 4. Catalog: four artists, 61 albums, 217 songs. No backend or persistence is introduced.
 
-First, run the development server:
+## Run
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Use Node.js 24 (validated on 24.14.1) and npm. From frontend, run npm ci for a fresh install, then npm run dev. Existing dependencies were reused during the refactor; none were added.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- npm run dev: development server
+- npm run build: production build
+- npm start: serve production build
+- npm run typecheck: strict TypeScript
+- npm run lint: ESLint (existing image warnings remain)
+- npm test: dependency-free business-rule and provider-command tests
+- npm run audit:data: validate catalog relationships, local assets and URL syntax; missing durations reported without modifying data
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+See ARCHITECTURE.md, CONTRIBUTING.md, AGENTS.md and docs/AUDIT.md. Test harnesses do not verify remote YouTube availability or replace browser regression testing. The existing /saved link has no implemented route; do not silently invent a feature during refactoring.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For this refactor, npm run validate:source checks import resolution, cycles, unchanged JSX/data/styles/assets against the pinned baseline commit. Keep that commit available.

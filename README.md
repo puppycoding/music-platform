@@ -32,3 +32,7 @@ The catalog contains artist, album, and song metadata. Streaming availability an
 ## Status
 
 Project setup in progress.
+
+## Development and architecture
+
+Run commands from frontend. See [frontend setup](frontend/README.md), [architecture](frontend/ARCHITECTURE.md), [contributing](frontend/CONTRIBUTING.md), and [refactor report](frontend/docs/FINAL-REPORT.md).

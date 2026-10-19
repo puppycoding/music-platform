@@ -1,4 +1,3 @@
-
 {
   "schema_version": "1.0.0",
   "catalog_title": "Music Catalog — YouTube Only",
@@ -8,7 +7,6 @@
     {
       "id": "artist_purpeech",
       "name": "PURPEECH",
-      "country": "TH",
       "spotify_artist_id": null,
       "spotify_url": null,
       "image_url": "/images/artists/purpeech.webp",

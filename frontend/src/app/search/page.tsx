@@ -1,10 +1,13 @@
-
 "use client";
+
+import { sampleItems as getRandomItems } from "@/lib/random";
+
+import { normalizeSearchText as normalize } from "@/lib/search-text";
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useMusicPlayer } from "../../components/music-player/providers/MusicPlayerProvider";
+import { useMusicPlayer } from "@/features/music-player";
 import catalog from "../../data/music-catalog";
 
 type Artist = {
@@ -51,13 +54,6 @@ type SearchFilter = "all" | "songs" | "artists";
 const musicCatalog = catalog as MusicCatalog;
 const artists: Artist[] = musicCatalog.artists ?? [];
 const songs: Song[] = musicCatalog.songs ?? [];
-
-function normalize(value: unknown): string {
-  return String(value ?? "")
-    .toLocaleLowerCase("th")
-    .normalize("NFC")
-    .trim();
-}
 
 function getSongTitle(song: Song): string {
   return song.title ?? song.name ?? "ไม่ทราบชื่อเพลง";
@@ -112,17 +108,6 @@ function getInitials(name: string): string {
   }
 
   return name.slice(0, 2).toUpperCase();
-}
-
-function getRandomItems<T>(source: T[], count: number): T[] {
-  const shuffled = [...source];
-
-  for (let i = shuffled.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-
-  return shuffled.slice(0, Math.min(count, shuffled.length));
 }
 
 function getRandomSongs(source: Song[], count = 12): Song[] {
@@ -218,7 +203,7 @@ function ArtistCard({
         try {
           sessionStorage.setItem(
             "artistDetailReturnTo",
-            window.location.pathname + window.location.search
+            window.location.pathname + window.location.search,
           );
         } catch {
           // ไม่ขัดขวางการนำทางหาก sessionStorage ใช้งานไม่ได้
@@ -279,19 +264,24 @@ export default function SearchPage() {
 
   // ใช้ข้อมูลชุดเดียวกันใน Server Render และ Client Render
   // แล้วค่อยสุ่มหลังหน้าเว็บ Mount เพื่อป้องกัน Hydration Error
-  const [recommendedArtists, setRecommendedArtists] =
-    useState<Artist[]>(artists.slice(0, 6));
+  const [recommendedArtists, setRecommendedArtists] = useState<Artist[]>(
+    artists.slice(0, 6),
+  );
 
-  const [recommendedSongs, setRecommendedSongs] =
-    useState<Song[]>(songs.slice(0, 12));
+  const [recommendedSongs, setRecommendedSongs] = useState<Song[]>(
+    songs.slice(0, 12),
+  );
 
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
   const [toast, setToast] = useState("");
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
 
   useEffect(() => {
-    setRecommendedArtists(getRandomArtists(artists, 6));
-    setRecommendedSongs(getRandomSongs(songs, 12));
+    const timer = setTimeout(() => {
+      setRecommendedArtists(getRandomArtists(artists, 6));
+      setRecommendedSongs(getRandomSongs(songs, 12));
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   const searchText = normalize(query);
@@ -302,7 +292,7 @@ export default function SearchPage() {
 
     if (hasQuery) {
       return artists.filter((artist) =>
-        normalize(artist.name).includes(searchText)
+        normalize(artist.name).includes(searchText),
       );
     }
 
@@ -315,7 +305,7 @@ export default function SearchPage() {
 
   const matchedArtistIds = useMemo(
     () => new Set(matchedArtists.map((artist) => artist.id)),
-    [matchedArtists]
+    [matchedArtists],
   );
 
   const filteredSongs = useMemo(() => {
@@ -452,7 +442,9 @@ export default function SearchPage() {
           {/* Hero: แสดงทุกแท็บเมื่อยังไม่ได้ค้นหา */}
           {!hasQuery && (
             <section className="group relative mb-9 min-h-[190px] overflow-hidden rounded-[26px] border border-white/[0.09] bg-[#17102e] shadow-[0_24px_80px_rgba(55,25,105,0.18)] sm:min-h-[230px]">
-              <img
+              <Image
+                fill
+                sizes="(max-width: 768px) 100vw, 1152px"
                 src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1800&q=85"
                 alt=""
                 className="absolute inset-0 h-full w-full object-cover object-center"
@@ -683,7 +675,9 @@ export default function SearchPage() {
                       >
                         <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl bg-[#252033] ring-1 ring-white/[0.08] shadow-md sm:h-[54px] sm:w-[54px]">
                           {cover && !imageErrors[imageKey] ? (
-                            <img
+                            <Image
+                              fill
+                              sizes="(max-width: 640px) 48px, 54px"
                               src={cover}
                               alt={title}
                               loading="lazy"
@@ -728,7 +722,7 @@ export default function SearchPage() {
                             type="button"
                             onClick={() =>
                               setActiveMenu((current) =>
-                                current === key ? null : key
+                                current === key ? null : key,
                               )
                             }
                             aria-label={`ตัวเลือกเพิ่มเติมสำหรับเพลง ${title}`}
