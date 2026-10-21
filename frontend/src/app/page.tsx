@@ -526,21 +526,12 @@ export default function Home() {
 
         <div className="relative mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-3 sm:px-5 md:px-8">
           <div className="min-w-0">
-            <p className="mb-0.5 text-[9px] font-semibold uppercase tracking-[0.2em] text-violet-300/90">
-              YOUR DAILY SOUNDTRACK
-            </p>
             <h1 className="text-sm font-bold tracking-tight text-white sm:text-base">
-              ยินดีต้อนรับ
+              Your Music Starts Here
               <span className="ml-1.5 inline-block">🎧</span>
             </h1>
           </div>
 
-          <button
-            type="button"
-            className="shrink-0 rounded-full border border-violet-300/20 bg-violet-500/[0.08] px-4 py-2 text-xs font-semibold text-violet-100 transition-colors duration-200 hover:border-violet-300/40 hover:bg-violet-500/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/60"
-          >
-            เข้าสู่ระบบ
-          </button>
         </div>
       </header>
 

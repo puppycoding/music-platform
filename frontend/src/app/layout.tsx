@@ -111,7 +111,8 @@ export default function RootLayout({
       <body className="bg-background text-foreground">
         <MusicPlayerProvider>
           {/* Sidebar ด้านซ้าย */}
-          <aside className="fixed inset-y-0 left-0 z-40 hidden w-60 flex-col overflow-y-auto border-r border-[#302a3b] bg-[#13101b] p-6 md:flex">
+          <aside className="fixed inset-y-0 left-0 z-40 hidden w-60 flex-col overflow-hidden border-r border-[#302a3b] bg-[#13101b] p-6 md:flex">
+            <div className="sidebar-scroll flex min-h-0 flex-1 flex-col overflow-y-auto pb-44">
             {/* โลโก้ MUSIC PLATFORM */}
             <Link href="/" className="mb-10 flex items-center gap-3">
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#8b5cf6] text-white shadow-lg shadow-[#8b5cf6]/20">
@@ -184,14 +185,23 @@ export default function RootLayout({
             </section>
 
             {/* Footer ของ Sidebar */}
-            <div className="mt-auto pt-8">
-              <p className="text-xs font-semibold tracking-wide text-[#a78bfa]">
+            {/* <div className="mt-auto pt-8">
+              <p className="mb-3 px-3 text-xs font-semibold tracking-wide text-[#a78bfa]">
                 MUSIC PLATFORM
               </p>
-              <p className="mt-2 text-xs leading-5 text-[#777180]">
-                ค้นพบศิลปินและเพลงโปรดของคุณ
+              <p className="mb-3 px-3 text-xs leading-5 text-[#777180]">
+                ค้นพบศิลปินและเพลงโปรด<br></br>ของคุณ
               </p>
+            </div> */}
             </div>
+            {/* <div className="absolute inset-x-0 bottom-0 z-10 h-40 bg-[#13101b]">
+              <button
+                type="button"
+                className="absolute bottom-28 left-6 right-6 rounded-full border border-violet-300/50 bg-[#8b5cf6] px-4 py-2.5 text-xs font-semibold text-white transition-colors duration-200 hover:border-violet-200 hover:bg-[#a78bfa] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-300/80"
+              >
+                Sign in
+              </button>
+            </div> */}
           </aside>
 
           {/* พื้นที่เนื้อหาหลักของแต่ละหน้า */}

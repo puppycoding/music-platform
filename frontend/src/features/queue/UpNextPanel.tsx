@@ -78,14 +78,10 @@ export default function UpNextPanel({ isOpen, onToggle }: UpNextPanelProps) {
 
   return (
     <>
-      {/* Backdrop */}
-      <button
-        type="button"
-        aria-label="ปิดรายการคิว"
-        aria-hidden={!isOpen}
-        tabIndex={isOpen ? 0 : -1}
-        onClick={onToggle}
-        className={`fixed inset-0 z-[70] bg-black/45 transition-opacity duration-200 ${isOpen
+      {/* Backdrop stays visual only so the rest of the app remains usable. */}
+      <div
+        aria-hidden="true"
+        className={`pointer-events-none fixed inset-0 z-[70] bg-transparent transition-opacity duration-200 ${isOpen
             ? "visible opacity-100"
             : "invisible pointer-events-none opacity-0"
           }`}
@@ -96,7 +92,7 @@ export default function UpNextPanel({ isOpen, onToggle }: UpNextPanelProps) {
         aria-label="รายการเพลงถัดไป"
         aria-hidden={!isOpen}
         inert={!isOpen}
-        className={`fixed bottom-0 right-0 top-0 z-[80] flex w-[min(92vw,400px)] flex-col border-l border-white/[0.07] bg-[#14141a] text-white transition-transform duration-250 ease-out md:bottom-20 ${isOpen ? "translate-x-0" : "pointer-events-none translate-x-full"
+        className={`fixed bottom-[135px] right-0 top-0 z-[80] flex w-[min(88vw,320px)] flex-col border-l border-white/[0.07] bg-[#14141a]/90 text-white backdrop-blur-xl transition-transform duration-250 ease-out md:bottom-[89px] ${isOpen ? "translate-x-0" : "pointer-events-none translate-x-full"
           }`}
       >
         {/* Header */}
